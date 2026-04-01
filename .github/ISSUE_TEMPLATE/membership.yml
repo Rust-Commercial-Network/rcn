@@ -1,0 +1,65 @@
+name: RCN Membership
+description: Application to become a member of the Rust Commercial Network (RCN)
+title: Membership Application for [INSERT COMPANY, INSTITUTION, YOUR NAME, OR OTHER ENTITY]
+labels: ["membership application"]
+assignees: 
+  - LoriLorusso
+body:
+  - type: markdown
+    attributes:
+      value: |
+        PUT DESCRIPTION HERE WHEN HAVE IT!
+
+        > Note that the name, email address, and any company you provide will be public since GitHub issues are public. We do not use your information for any reason other than for membership purposes.
+  - type: input
+    id: Name
+    attributes:
+      label: What is your name?
+    validations:
+      required: true
+  - type: input
+    id: Email
+    attributes:
+      label: What is your preferred email address?
+    validations:
+      required: true
+  - type: dropdown
+    id: representation
+    attributes:
+      label: Do you represent a company, institution, consortium, yourself or other entity?
+      description: In what capacity will you be represented as a member of the RCN?
+      options:
+        - Company
+        - Institution (Academic, etc.)
+        - Consortium
+        - Myself
+        - Other Entity
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: entity-name
+    attributes:
+      label: If you represent a company, institution, consortium, or other entity, please enter it here.
+      description: If you are representing other than yourself, please enter it. Otherwise, type 'Individual'.
+      placeholder: Type company or entity name, or type "Individual" 
+    validations:
+      required: true
+  - type: textarea
+    id: why-interested
+    attributes:
+      label: Why are you interested in joining the RCN?
+      description: If applicable, describe work that you are doing or planning to do in the rcn.
+    validations:
+      required: true
+  - type: dropdown
+    id: membership-type
+    attributes:
+      label: Do you plan to be a producer or observer in the consortium?
+      description: These membership types are used mainly for housekeeping purposes and can be changed.
+      options:
+        - Producer
+        - Observer
+      default: 1
+    validations:
+      required: true
