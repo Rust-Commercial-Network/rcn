@@ -42,7 +42,6 @@ The RCN is a community initiative focused on professional users of Rust. The RCN
 
 RCN members can propose consortiums or working groups focused on specific topics to the Steering Committee. These groups will have a unified focus and will report findings back to the Steering Committee and will operate under the guidelines listed below.
 
-\*The [**Safety Critical Consortium**](https://github.com/safety-critical-rust-consortium%20), established in June 2024 will be moved under the RCN but this will not impact the way they operate.
 
 ### Consortium and Working Group Operations
 
@@ -116,9 +115,7 @@ The RCN aims to create a safe and neutral space for discussing what can at times
 
 Its guiding spirit is: share the information you receive, but do not reveal the identity of who said it.
 
-No recordings, no transcriptions, no AI bots.
-
-Following somewhat from above in following Chatham House Rule, we prohibit taking screen or voice recordings. We also disallow any other means of taking transcriptions, such as AI bots.
+Following somewhat from above in following Chatham House Rule, *we prohibit taking screen or voice recordings*. *We also disallow any other means of taking transcriptions, such as AI bots*.
 
 ### Meeting Option
 
@@ -151,11 +148,11 @@ The RCN Steering Committee is tasked with:
 
 #### Composition and Selection
 
-Seats on the RCN Steering Committee are only available to employees of companies and organizations that are Rust Foundation members. Voting on the RCN Steering Committee members will be done by RCN members in good standing. A member in good standing has attended at least 2 RCN meetings and is officially listed on the RCN GitHub Repo as a RCN member. There should be no less than five and no more than seven RCN SC members. For a listing of Rust Foundation Members visit https://rustfoundation.org/members/. 
+Seats on the RCN Steering Committee are only available to employees of companies and organizations that are Rust Foundation members. Voting on the RCN Steering Committee members will be done by RCN members in good standing. A member in good standing has attended at least 2 RCN meetings and is officially listed on the RCN GitHub Repo as a RCN member. For a listing of Rust Foundation Members visit https://rustfoundation.org/members/. 
 
 #### The RCN Steering Committee consists of:
 
-* No more than seven and no less than five representatives from Platinum, Gold, Silver, and Associate Rust Foundation members.There cannot be two Steering Committee Members from one company.  
+* No more than seven and no less than five representatives from Platinum, Gold, Silver, and Associate Rust Foundation members. There cannot be two Steering Committee Members from one company.  
 * The Rust Foundation will have a seat on the Steering Committee in an advisory capacity.  
 * The Rust Project will have a seat on the Steering Committee in an advisory capacity.
 
