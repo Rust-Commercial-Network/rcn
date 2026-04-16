@@ -1,6 +1,8 @@
 # Rust Commercial Network (RCN)
 
-## Where companies and communities work together to advance Rust adoption.
+Where companies and communities work together to advance Rust adoption. 
+
+** To join the RCN, please fill out the [application](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml). You will be sent an invitation to Zulip, added to the RCN Channel, and listed as a member. **.
 
 ## Overview
 
@@ -192,7 +194,7 @@ This is an invite only, in-person event and is coupled with RustConf. This one d
 
 ## How to Join the RCN 
 
-Send an email to BLANK. You will be sent an invitation to Zulip, added to the RCN Channel, and listed on BLANK.
+Fill out the [application](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml). You will be sent an invitation to Zulip, added to the RCN Channel, and listed as a member.
 
 ## Contributing
 
