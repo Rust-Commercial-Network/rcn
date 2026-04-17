@@ -8,7 +8,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        PUT DESCRIPTION HERE WHEN HAVE IT!
+        The Rust Commercial Network (RCN), facilitated by the Rust Foundation, is composed of Rust Foundation Members, Rust Advocates within their companies/industry, Rust Project Members, and individuals that represent commercial companies, industries, academia, and organizations that are using Rust or looking to adopt Rust. The RCN is the umbrella network that houses the RCN’s industry consortiums, working groups, etc and their work is overseen by the RCN Steering Committee.
+
+        The RCN is designed to be a community of industry professionals, thought leaders, and Rust Project members sharing their experiences adopting Rust and using it in production.
+
+        Membership in the RCN is free.
 
         > Note that the name, email address, and any company you provide will be public since GitHub issues are public. We do not use your information for any reason other than for membership purposes.
   - type: input
@@ -26,7 +30,7 @@ body:
   - type: dropdown
     id: representation
     attributes:
-      label: Do you represent a company, institution, consortium, yourself or other entity?
+      label: Do you represent a company, institution (e.g. academic), consortium, yourself or other entity?
       description: In what capacity will you be represented as a member of the RCN?
       options:
         - Company
@@ -50,16 +54,5 @@ body:
     attributes:
       label: Why are you interested in joining the RCN?
       description: If applicable, describe work that you are doing or planning to do in the rcn.
-    validations:
-      required: true
-  - type: dropdown
-    id: membership-type
-    attributes:
-      label: Do you plan to be a producer or observer in the consortium?
-      description: These membership types are used mainly for housekeeping purposes and can be changed.
-      options:
-        - Producer
-        - Observer
-      default: 1
     validations:
       required: true

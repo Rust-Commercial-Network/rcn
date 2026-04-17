@@ -6,9 +6,13 @@ Where companies and communities work together to advance Rust adoption.
 
 ## Overview
 
-The Rust Commercial Network (RCN), facilitated by the Rust Foundation, is composed of Rust Foundation Members, Rust Advocates within their companies/industry, Rust Project Members, and individuals that represent commercial companies, industries, and organizations that are using Rust or looking to adopt Rust. The RCN is the umbrella network that houses the RCN’s industry consortiums, working groups, etc and their work is overseen by the RCN Steering Committee. This is not to be confused with the Rust Project’s developing Rust Society that is geared towards hobbyists and individuals although there may be some overlap over time.
+The Rust Commercial Network (RCN), facilitated by the Rust Foundation, is composed of Rust Foundation Members, Rust Advocates within their companies/industry, Rust Project Members, and individuals that represent commercial companies, industries, academia, and organizations that are using Rust or looking to adopt Rust. The RCN is the umbrella network that houses the RCN’s industry consortiums, working groups, etc and their work is overseen by the RCN Steering Committee. This is not to be confused with the Rust Project’s developing Rust Society that is geared towards hobbyists and individuals although there may be some overlap over time.
 
-The RCN is designed to be a community of industry professionals, thought leaders, and Rust Project members sharing their experiences adopting Rust and using it in production. The mission of the RCN includes:
+The RCN is designed to be a community of industry professionals, thought leaders, and Rust Project members sharing their experiences adopting Rust and using it in production. 
+
+Membership in the RCN is free.
+
+The mission of the RCN includes:
 
 * Starting consortiums and working groups to focus on industry-specific challenges  
 * Improving visibility into Rust adoption among commercial, industrial, and organizational users  
