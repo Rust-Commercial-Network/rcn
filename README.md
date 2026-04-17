@@ -6,7 +6,7 @@ Where companies and communities work together to advance Rust adoption.
 
 ## Overview
 
-The Rust Commercial Network (RCN), facilitated by the Rust Foundation, is composed of Rust Foundation Members, Rust Advocates within their companies/industry, Rust Project Members, and individuals that represent commercial companies, industries, and organizations that are using Rust or looking to adopt Rust. The RCN is the umbrella network that houses the RCN’s industry consortiums, working groups, etc and their work is overseen by the RCN Steering Committee. This is not to be confused with the Rust Project’s developing [Rust Society](https://github.com/jamesmunns/rust-society/blob/main/reports/pdf/2025-04-04.pdf) that is geared towards hobbyists and individuals although there may be some overlap over time.
+The Rust Commercial Network (RCN), facilitated by the Rust Foundation, is composed of Rust Foundation Members, Rust Advocates within their companies/industry, Rust Project Members, and individuals that represent commercial companies, industries, and organizations that are using Rust or looking to adopt Rust. The RCN is the umbrella network that houses the RCN’s industry consortiums, working groups, etc and their work is overseen by the RCN Steering Committee. This is not to be confused with the Rust Project’s developing Rust Society that is geared towards hobbyists and individuals although there may be some overlap over time.
 
 The RCN is designed to be a community of industry professionals, thought leaders, and Rust Project members sharing their experiences adopting Rust and using it in production. The mission of the RCN includes:
 
@@ -18,11 +18,11 @@ The RCN is designed to be a community of industry professionals, thought leaders
 * Developing pathways to contributions within the Rust Project and Ecosystem   
 * Collaborating with the Rust Project
 
-The RCN is a community initiative focused on professional users of Rust. The RCN is open to all commercial, industrial, and organizational users of Rust and members of the Rust Project. 
+The RCN is a community initiative focused on professional users of Rust. The RCN is open to all commercial, industrial, academic, and organizational users of Rust and members of the Rust Project. 
 
 ## Types of Activities
 
-* Have meetings on a regular cadence   
+* Have meetings on a regular cadence
 * Proactively address topics of interest to those using Rust in production  
 * Promote industry specific adoption of Rust  
 * Meet in person at the Rust Foundation Member Summit (attached to RustConf)  
@@ -85,12 +85,6 @@ The RCN Steering Committee's oversight of consortiums and working groups pertain
 
 For the avoidance of doubt, "alignment with the RCN's mission" means that the consortium or working group operates within the broad domain of Rust adoption by commercial, industrial, or organizational users. It does not authorize the SC to require changes to a consortium's or working group's scope, priorities, deliverables, publication schedule, or processes in order to maintain affiliation.
 
-Consortium/Working Group Members may vote on RCN matters that directly affect the consortium or working group in which they hold membership, including but not limited to: policies governing consortium operations, changes to the relationship between the RCN and its consortiums or working groups, and amendments to this charter that alter the rights or obligations of consortiums or working groups.
-
-Consortium/Working Group Members do not vote in RCN-wide elections such as Steering Committee seats unless they independently qualify under another RCN member definition.
-
-For the purposes of determining good standing, Consortium/Working Group Members must meet the membership requirements of their respective consortium or working group. Attendance at RCN-level meetings is not required for Consortium/Working Group Members to maintain good standing.
-
 ### Voting rights
 
 Only RCN members in good standing may vote in RCN-level elections (such as SC seats). Only consortium/working group members may vote in consortium/working group-level decisions, as defined by that group's own governance.
@@ -105,7 +99,7 @@ An RCN-affiliated consortium or working group may withdraw from the RCN at any t
 
 ## Meetings
 
-The RCN aims to create a safe and neutral space for discussing what can at times be sensitive topics. We propose to have a meeting policy to follow Chatham House Rule. The intent is to allow participants to feel comfortable with being candid and foster open collaboration. The RCN will host a public monthly meeting(s)\* to discuss topics related to end users of Rust. The meeting will take place on BLANK via LINK.
+The RCN aims to create a safe and neutral space for discussing what can at times be sensitive topics. We propose to have a meeting policy to follow Chatham House Rule. The intent is to allow participants to feel comfortable with being candid and foster open collaboration. The RCN will host public monthly meeting(s)\* to discuss topics related to end users of Rust. The meetings will take place on Google Meet.
 
 \*The RCN will determine the cadence and number of meetings per year.
 
@@ -123,7 +117,7 @@ If the RCN determines that they do not need to follow Chatham House Rule to be a
 
 ### Notetaker Role
 
-Each meeting a representative from the Rust Foundation or an attendee will be asked to take meeting notes using A SPECIFIC HACKMD ACCOUNT for full accessibility for all participants.
+Each meeting a representative from the Rust Foundation or an attendee will be asked to take meeting notes. See the [notetaker.md](./docs/notetaker-role.md) doc for more details and information.
 
 ### Communication
 
@@ -131,7 +125,7 @@ The RCN will have a Zulip channel in the [Rust Project Zulip](https://rust-lang.
 
 ## Governance
 
-The RCN is a volunteer driven community maintained by the Rust Foundation. The RCN will be composed of a Steering Committee that creates and oversees consortiums and or working groups. You can be a member of the RCN to network with your peers \- you do not need to join a consortium and or working group.
+The RCN is a volunteer driven community maintained by the Rust Foundation. TThe RCN consists of the membership, a Steering Committee, and the consortiums and working groups that the Steering Committee creates and oversees. You can be a member of the RCN to network with your peers \- you do not need to join a consortium and or working group.
 
 ### RCN Steering Committee
 
@@ -148,7 +142,7 @@ The RCN Steering Committee is tasked with:
 
 #### Composition and Selection
 
-Seats on the RCN Steering Committee are only available to employees of companies and organizations that are Rust Foundation members. Voting on the RCN Steering Committee members will be done by RCN members in good standing. A member in good standing has attended at least 2 RCN meetings and is officially listed on the RCN GitHub Repo as a RCN member. For a listing of Rust Foundation Members visit https://rustfoundation.org/members/. 
+Voting on the RCN Steering Committee members will be done by RCN members in good standing. A member in good standing has attended at least 2 RCN meetings and is officially listed on the RCN GitHub Repo as a RCN member. For a listing of Rust Foundation Members visit https://rustfoundation.org/members/.
 
 #### The RCN Steering Committee consists of:
 
@@ -163,7 +157,7 @@ Seats on the RCN Steering Committee are only available to employees of companies
 
 #### Vacancies and Alternates
 
-* Vacancies are filled by election or invitation, depending on circumstances.
+* Vacancies that would put steering committee membership below five (5) are filled by election or invitation.
 
 #### Eligibility and Criteria
 
@@ -177,7 +171,7 @@ General members of the RCN that would like to focus on a specific topic related 
 * Identifying shared challenges in Rust adoption and crate maintenance  
 * Creating high-level frameworks or templates to help others adopt Rust  
 * Exploring what the commercial/industry community would like to have/needs to build greater adoption of Rust   
-* Highlighting popular and/or innovative projects that are not in the Rust Innovation Lab (RIL) that would benefit the Rust community if given a larger platform for development and support by joining the RIL
+* Highlighting popular and/or innovative projects that are not in the [Rust Innovation Lab (RIL)](https://rustfoundation.org/rust-innovation-lab/) that would benefit the Rust community if given a larger platform for development and support by joining the RIL
 
 ## [Code of Conduct](https://foundation.rust-lang.org/policies/code-of-conduct/)
 
@@ -187,7 +181,7 @@ The [Rust Foundation](https://rustfoundation.org/) has adopted a Code of Conduct
 
 ### Rust Foundation Member Summit
 
-This is an invite only, in-person event and is coupled with RustConf. This one day event will have a light agenda and will foster in-person collaboration with RCN members, Rust Foundation members that may not be active in the RCN, Rust Foundation Board Members, and members of the Rust Project. 
+This is an invite only, in-person event and is coupled with RustConf. This one day event will have a light agenda and will foster in-person collaboration with RCN members, Rust Foundation members that may not be active in the RCN, Rust Foundation Board Members, and members of the Rust Project. Meeting logistics and rules will be decided closer to the event.
 
 ## How to Join the RCN 
 
