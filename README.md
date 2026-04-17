@@ -129,7 +129,7 @@ The RCN will have a Zulip channel in the [Rust Project Zulip](https://rust-lang.
 
 ## Governance
 
-The RCN is a volunteer driven community maintained by the Rust Foundation. TThe RCN consists of the membership, a Steering Committee, and the consortiums and working groups that the Steering Committee creates and oversees. You can be a member of the RCN to network with your peers \- you do not need to join a consortium and or working group.
+The RCN is a volunteer driven community maintained by the Rust Foundation. The RCN consists of the membership, a Steering Committee, and the consortiums and working groups that the Steering Committee creates and oversees. You can be a member of the RCN to network with your peers \- you do not need to join a consortium and or working group.
 
 ### RCN Steering Committee
 
