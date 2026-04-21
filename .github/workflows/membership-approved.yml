@@ -43,6 +43,7 @@ jobs:
             }
 
             core.setFailed(`Sender "${sender}" is neither an assignee nor a repo admin. Skipping.`);
+
       - name: Parse membership issue body
         id: parse
         uses: actions/github-script@v7
@@ -50,17 +51,18 @@ jobs:
           script: |
             const body = context.payload.issue.body || '';
 
-            // Helper to extract a field value from the issue body.
-            // GitHub issue forms render as:
-            //   ### <label>
-            //   <blank line>
-            //   <value>
+            // Helper: extract the value under a ### heading.
+            // GitHub issue forms render as "### <label>\n\n<value>".
+            // Instead of regex-escaping the heading (which has tooling issues),
+            // we split on ### boundaries and match by simple string inclusion.
             function extractField(body, heading) {
-              // Escape special regex chars in heading text
-              const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-              const regex = new RegExp(`###\\s*${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n###|$)`);
-              const match = body.match(regex);
-              return match ? match[1].trim() : '';
+              const sections = body.split(/^###\s*/m);
+              for (const section of sections) {
+                if (section.startsWith(heading)) {
+                  return section.slice(heading.length).trim();
+                }
+              }
+              return '';
             }
 
             const name           = extractField(body, 'What is your name?');
@@ -146,15 +148,15 @@ jobs:
             const fields  = project.fields.nodes;
 
             // Map of field display-name -> value to set
-            // If needed, adjust the keys below to match the exact column names in the GitHub Projects board.
+            // Adjust the keys below to match the exact column names in the GitHub Projects board.
             const fieldValues = {
               'GitHub ID':       process.env.FIELD_GITHUB_ID,
               'GitHub Profile':  process.env.FIELD_GITHUB_PROFILE,
               'Name':            process.env.FIELD_NAME,
-              'Email':          process.env.FIELD_EMAIL,
-              'Representation': process.env.FIELD_REPRESENTATION,
-              'Entity':         process.env.FIELD_ENTITY_NAME,
-              'Why Interested': process.env.FIELD_WHY_INTERESTED,
+              'Email':           process.env.FIELD_EMAIL,
+              'Representation':  process.env.FIELD_REPRESENTATION,
+              'Entity':          process.env.FIELD_ENTITY_NAME,
+              'Why Interested':  process.env.FIELD_WHY_INTERESTED,
             };
 
             const itemId = process.env.ITEM_ID;
