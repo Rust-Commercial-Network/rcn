@@ -2,13 +2,13 @@ name: Add Approved Member to Membership Project Board
 
 on:
   issues:
-    types: [labeled, closed]
+    types: [closed]
 
 jobs:
   add-to-project:
-    # Only run when the issue is closed, has both 'membership' and 'membership-approved' labels
+    # Only run when the issue is closed by an assignee or repo admin,
+    # and has both 'membership' and 'membership-approved' labels
     if: >-
-      github.event.issue.state == 'closed' &&
       contains(toJSON(github.event.issue.labels.*.name), 'membership') &&
       contains(toJSON(github.event.issue.labels.*.name), 'membership-approved')
     runs-on: ubuntu-latest
@@ -16,6 +16,33 @@ jobs:
       issues: read
 
     steps:
+      - name: Verify sender is assignee or admin
+        id: auth
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const sender = context.payload.sender.login;
+            const assignees = context.payload.issue.assignees.map(a => a.login);
+
+            // Check if sender is an assignee
+            if (assignees.includes(sender)) {
+              core.info(`Sender "${sender}" is an assignee. Authorized.`);
+              return;
+            }
+
+            // Check if sender has admin permission on the repo
+            const { data: permData } = await github.rest.repos.getCollaboratorPermissionLevel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              username: sender,
+            });
+
+            if (permData.permission === 'admin') {
+              core.info(`Sender "${sender}" is a repo admin. Authorized.`);
+              return;
+            }
+
+            core.setFailed(`Sender "${sender}" is neither an assignee nor a repo admin. Skipping.`);
       - name: Parse membership issue body
         id: parse
         uses: actions/github-script@v7
@@ -38,7 +65,7 @@ jobs:
 
             const name           = extractField(body, 'What is your name?');
             const email          = extractField(body, 'What is your preferred email address?');
-            const representation = extractField(body, 'Do you represent a company, the Rust Project, non-profit \\(e\\.g\\. foundation\\), institution \\(e\\.g\\. academic\\), consortium, yourself or other entity?');
+            const representation = extractField(body, 'Do you represent a company, the Rust Project, non-profit (e.g. foundation), institution (e.g. academic), consortium, yourself or other entity?');
             const entityName     = extractField(body, 'If you represent a company, institution, consortium, or other entity, please enter it here. If you represent the Rust Project, please enter the Rust Project team.');
             const whyInterested  = extractField(body, 'Why are you interested in joining the RCN?');
 
