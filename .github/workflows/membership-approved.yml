@@ -1,0 +1,189 @@
+name: Add Approved Member to Project
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add-to-project:
+    # Only run when 'membership-approved' label is added to an issue that also has 'membership'
+    if: >-
+      github.event.label.name == 'membership-approved' &&
+      contains(toJSON(github.event.issue.labels.*.name), 'membership')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: read
+
+    steps:
+      - name: Parse membership issue body
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+
+            // Helper to extract a field value from the issue body.
+            // GitHub issue forms render as:
+            //   ### <label>
+            //   <blank line>
+            //   <value>
+            function extractField(body, heading) {
+              // Escape special regex chars in heading text
+              const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+              const regex = new RegExp(`###\\s*${escaped}\\s*\\n+([\\s\\S]*?)(?=\\n###|$)`);
+              const match = body.match(regex);
+              return match ? match[1].trim() : '';
+            }
+
+            const name           = extractField(body, 'What is your name?');
+            const email          = extractField(body, 'What is your preferred email address?');
+            const representation = extractField(body, 'Do you represent a company, the Rust Project, institution \\(e\\.g\\. academic\\), consortium, yourself or other entity?');
+            const entityName     = extractField(body, 'If you represent a company, institution, consortium, or other entity, please enter it here. If you represent the Rust Project, please enter the Rust Project team.');
+            const whyInterested  = extractField(body, 'Why are you interested in joining the RCN?');
+
+            const githubId = context.payload.issue.user.login;
+
+            core.setOutput('github_id', githubId);
+            core.setOutput('name', name);
+            core.setOutput('email', email);
+            core.setOutput('representation', representation);
+            core.setOutput('entity_name', entityName);
+            core.setOutput('why_interested', whyInterested);
+
+            core.info(`Parsed — GitHub ID: ${githubId}, Name: ${name}, Email: ${email}, Representation: ${representation}, Entity: ${entityName}`);
+
+      - name: Add issue to GitHub Project
+        id: add-to-project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          project-url: ${{ vars.MEMBERSHIP_PROJECT_URL }}
+          github-token: ${{ secrets.MEMBERSHIP_APPROVAL_PROJECT_TOKEN }}
+
+      - name: Populate project fields
+        uses: actions/github-script@v7
+        env:
+          PROJECT_URL: ${{ vars.MEMBERSHIP_PROJECT_URL }}
+          PROJECT_TOKEN: ${{ secrets.MEMBERSHIP_APPROVAL_PROJECT_TOKEN }}
+          ITEM_ID: ${{ steps.add-to-project.outputs.itemId }}
+          FIELD_GITHUB_ID: ${{ steps.parse.outputs.github_id }}
+          FIELD_NAME: ${{ steps.parse.outputs.name }}
+          FIELD_EMAIL: ${{ steps.parse.outputs.email }}
+          FIELD_REPRESENTATION: ${{ steps.parse.outputs.representation }}
+          FIELD_ENTITY_NAME: ${{ steps.parse.outputs.entity_name }}
+          FIELD_WHY_INTERESTED: ${{ steps.parse.outputs.why_interested }}
+        with:
+          github-token: ${{ env.PROJECT_TOKEN }}
+          script: |
+            // Extract the project number and org from the URL
+            // Expected format: https://github.com/orgs/<org>/projects/<number>
+            const url = process.env.PROJECT_URL;
+            const urlMatch = url.match(/orgs\/([^/]+)\/projects\/(\d+)/);
+            if (!urlMatch) {
+              core.setFailed(`Could not parse project URL: ${url}`);
+              return;
+            }
+            const orgLogin     = urlMatch[1];
+            const projectNumber = parseInt(urlMatch[2], 10);
+
+            // Look up the project's node ID and its fields
+            const projectQuery = await github.graphql(`
+              query($org: String!, $number: Int!) {
+                organization(login: $org) {
+                  projectV2(number: $number) {
+                    id
+                    fields(first: 50) {
+                      nodes {
+                        ... on ProjectV2Field {
+                          id
+                          name
+                          dataType
+                        }
+                        ... on ProjectV2SingleSelectField {
+                          id
+                          name
+                          dataType
+                          options { id name }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `, { org: orgLogin, number: projectNumber });
+
+            const project = projectQuery.organization.projectV2;
+            const fields  = project.fields.nodes;
+
+            // Map of field display-name -> value to set
+            // If needed, adjust the keys below to match the exact column names in the GitHub Projects board.
+            const fieldValues = {
+              'GitHub ID':      process.env.FIELD_GITHUB_ID,
+              'Name':           process.env.FIELD_NAME,
+              'Email':          process.env.FIELD_EMAIL,
+              'Representation': process.env.FIELD_REPRESENTATION,
+              'Entity':         process.env.FIELD_ENTITY_NAME,
+              'Why Interested': process.env.FIELD_WHY_INTERESTED,
+            };
+
+            const itemId = process.env.ITEM_ID;
+
+            for (const [displayName, value] of Object.entries(fieldValues)) {
+              if (!value) {
+                core.info(`Skipping empty field: ${displayName}`);
+                continue;
+              }
+
+              const field = fields.find(f => f.name === displayName);
+              if (!field) {
+                core.warning(`Field "${displayName}" not found in project. Skipping. Available fields: ${fields.map(f => f.name).join(', ')}`);
+                continue;
+              }
+
+              // Single-select fields need the option ID, text fields need the value directly
+              if (field.dataType === 'SINGLE_SELECT') {
+                const option = field.options.find(o => o.name === value);
+                if (!option) {
+                  core.warning(`Option "${value}" not found for field "${displayName}". Available: ${field.options.map(o => o.name).join(', ')}`);
+                  continue;
+                }
+                await github.graphql(`
+                  mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $optionId: String!) {
+                    updateProjectV2ItemFieldValue(input: {
+                      projectId: $projectId
+                      itemId: $itemId
+                      fieldId: $fieldId
+                      value: { singleSelectOptionId: $optionId }
+                    }) {
+                      projectV2Item { id }
+                    }
+                  }
+                `, {
+                  projectId: project.id,
+                  itemId,
+                  fieldId: field.id,
+                  optionId: option.id,
+                });
+              } else {
+                await github.graphql(`
+                  mutation($projectId: ID!, $itemId: ID!, $fieldId: ID!, $value: String!) {
+                    updateProjectV2ItemFieldValue(input: {
+                      projectId: $projectId
+                      itemId: $itemId
+                      fieldId: $fieldId
+                      value: { text: $value }
+                    }) {
+                      projectV2Item { id }
+                    }
+                  }
+                `, {
+                  projectId: project.id,
+                  itemId,
+                  fieldId: field.id,
+                  value,
+                });
+              }
+
+              core.info(`Set "${displayName}" = "${value}"`);
+            }
+
+            core.info('All fields populated successfully.');

@@ -30,11 +30,12 @@ body:
   - type: dropdown
     id: representation
     attributes:
-      label: Do you represent a company, the Rust Project, institution (e.g. academic), consortium, yourself or other entity?
+      label: Do you represent a company, the Rust Project, non-profit (e.g. foundation), institution (e.g. academic), consortium, yourself or other entity?
       description: In what capacity will you be represented as a member of the RCN?
       options:
         - Company
         - Rust Project
+        - Non-Profit (Foundation, etc.)
         - Institution (Academic, etc.)
         - Consortium
         - Myself
