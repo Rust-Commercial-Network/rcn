@@ -1,15 +1,16 @@
-name: Add Approved Member to Project
+name: Add Approved Member to Membership Project Board
 
 on:
   issues:
-    types: [labeled]
+    types: [labeled, closed]
 
 jobs:
   add-to-project:
-    # Only run when 'membership-approved' label is added to an issue that also has 'membership'
+    # Only run when the issue is closed, has both 'membership' and 'membership-approved' labels
     if: >-
-      github.event.label.name == 'membership-approved' &&
-      contains(toJSON(github.event.issue.labels.*.name), 'membership')
+      github.event.issue.state == 'closed' &&
+      contains(toJSON(github.event.issue.labels.*.name), 'membership') &&
+      contains(toJSON(github.event.issue.labels.*.name), 'membership-approved')
     runs-on: ubuntu-latest
     permissions:
       issues: read
@@ -37,13 +38,15 @@ jobs:
 
             const name           = extractField(body, 'What is your name?');
             const email          = extractField(body, 'What is your preferred email address?');
-            const representation = extractField(body, 'Do you represent a company, the Rust Project, institution \\(e\\.g\\. academic\\), consortium, yourself or other entity?');
+            const representation = extractField(body, 'Do you represent a company, the Rust Project, non-profit \\(e\\.g\\. foundation\\), institution \\(e\\.g\\. academic\\), consortium, yourself or other entity?');
             const entityName     = extractField(body, 'If you represent a company, institution, consortium, or other entity, please enter it here. If you represent the Rust Project, please enter the Rust Project team.');
             const whyInterested  = extractField(body, 'Why are you interested in joining the RCN?');
 
             const githubId = context.payload.issue.user.login;
+            const githubProfile = `https://github.com/${githubId}`;
 
             core.setOutput('github_id', githubId);
+            core.setOutput('github_profile', githubProfile);
             core.setOutput('name', name);
             core.setOutput('email', email);
             core.setOutput('representation', representation);
@@ -66,6 +69,7 @@ jobs:
           PROJECT_TOKEN: ${{ secrets.MEMBERSHIP_APPROVAL_PROJECT_TOKEN }}
           ITEM_ID: ${{ steps.add-to-project.outputs.itemId }}
           FIELD_GITHUB_ID: ${{ steps.parse.outputs.github_id }}
+          FIELD_GITHUB_PROFILE: ${{ steps.parse.outputs.github_profile }}
           FIELD_NAME: ${{ steps.parse.outputs.name }}
           FIELD_EMAIL: ${{ steps.parse.outputs.email }}
           FIELD_REPRESENTATION: ${{ steps.parse.outputs.representation }}
@@ -117,8 +121,9 @@ jobs:
             // Map of field display-name -> value to set
             // If needed, adjust the keys below to match the exact column names in the GitHub Projects board.
             const fieldValues = {
-              'GitHub ID':      process.env.FIELD_GITHUB_ID,
-              'Name':           process.env.FIELD_NAME,
+              'GitHub ID':       process.env.FIELD_GITHUB_ID,
+              'GitHub Profile':  process.env.FIELD_GITHUB_PROFILE,
+              'Name':            process.env.FIELD_NAME,
               'Email':          process.env.FIELD_EMAIL,
               'Representation': process.env.FIELD_REPRESENTATION,
               'Entity':         process.env.FIELD_ENTITY_NAME,
