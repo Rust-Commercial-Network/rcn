@@ -210,8 +210,7 @@ policy][ip-policy].
 
 ## Other Policies
 
-You can read about other Rust Foundation policies on the [Rust Foundation
-website][policies].
+Members of the RCN mustl adhere to the Rust Foundation’s anti-trust policy [https://rustfoundation.org/policy/anti-trust-policy/](https://rustfoundation.org/policy/anti-trust-policy/) as you are a participant in the Foundation. Additional policies can be found on the [Rust Foundation website](https://rustfoundation.org/policies-resources/).  
 
 [code-of-conduct]: https://rustfoundation.org/policy/code-of-conduct/
 [ip-policy]: https://rustfoundation.org/policy/intellectual-property-policy/
