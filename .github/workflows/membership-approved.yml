@@ -70,6 +70,7 @@ jobs:
             const representation = extractField(body, 'Do you represent a company, the Rust Project, non-profit (e.g. foundation), institution (e.g. academic), consortium, yourself or other entity?');
             const entityName     = extractField(body, 'If you represent a company, institution, consortium, or other entity, please enter it here. If you represent the Rust Project, please enter the Rust Project team.');
             const whyInterested  = extractField(body, 'Why are you interested in joining the RCN?');
+            const foundationMember = extractField(body, 'Are you or the entity you represent a Rust Foundation Member?');
 
             const githubId = context.payload.issue.user.login;
             const githubProfile = `https://github.com/${githubId}`;
@@ -81,6 +82,7 @@ jobs:
             core.setOutput('representation', representation);
             core.setOutput('entity_name', entityName);
             core.setOutput('why_interested', whyInterested);
+            core.setOutput('foundation_member', foundationMember);
 
             core.info(`Parsed — GitHub ID: ${githubId}, Name: ${name}, Email: ${email}, Representation: ${representation}, Entity: ${entityName}`);
 
@@ -104,6 +106,7 @@ jobs:
           FIELD_REPRESENTATION: ${{ steps.parse.outputs.representation }}
           FIELD_ENTITY_NAME: ${{ steps.parse.outputs.entity_name }}
           FIELD_WHY_INTERESTED: ${{ steps.parse.outputs.why_interested }}
+          FIELD_FOUNDATION_MEMBER: ${{ steps.parse.outputs.foundation_member }}
         with:
           github-token: ${{ env.PROJECT_TOKEN }}
           script: |
@@ -156,7 +159,8 @@ jobs:
               'Email':           process.env.FIELD_EMAIL,
               'Representation':  process.env.FIELD_REPRESENTATION,
               'Entity':          process.env.FIELD_ENTITY_NAME,
-              'Why Interested':  process.env.FIELD_WHY_INTERESTED,
+              'Why Interested':      process.env.FIELD_WHY_INTERESTED,
+              'Foundation Member':   process.env.FIELD_FOUNDATION_MEMBER,
             };
 
             const itemId = process.env.ITEM_ID;

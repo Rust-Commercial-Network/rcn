@@ -58,3 +58,14 @@ body:
       description: If applicable, describe work that you are doing or planning to do in the rcn.
     validations:
       required: true
+  - type: dropdown
+    id: foundation-member
+    attributes:
+      label: Are you or the entity you represent a Rust Foundation Member?
+      description: Let us know if you, your company, or association is already a member of the Rust Foundation
+      options:
+        - No
+        - Yes
+      default: 0
+    validations:
+      required: true
