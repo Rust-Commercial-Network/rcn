@@ -64,8 +64,8 @@ body:
       label: Are you or the entity you represent a Rust Foundation Member?
       description: Let us know if you, your company, or association is already a member of the Rust Foundation
       options:
-        - No
-        - Yes
+        - 'No'
+        - 'Yes'
       default: 0
     validations:
       required: true
