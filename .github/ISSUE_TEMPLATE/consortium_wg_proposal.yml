@@ -1,7 +1,7 @@
 name: Consortium/Working Group Proposal
 description: Propose a new consortium or working group for the RCN
 title: "Consortium/WG Proposal: [NAME]"
-labels: ["consortium-wg-proposal"]
+labels: ["consortium-or-wg-proposal"]
 assignees:
   - LoriLorusso
 body:

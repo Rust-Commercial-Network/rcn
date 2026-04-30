@@ -55,6 +55,10 @@ Each consortium and working group defines and administers its own membership cri
 
 Membership in the RCN and membership in an RCN consortium or working group are independent. RCN membership does not confer membership, standing, or participation rights in any consortium or working group. 
 
+### Proposing a Consortium and Working Group
+
+To propose a consortium or working group, please [file an application using the GitHub Issue template provided here](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=consortium-or-wg-proposal%2Cstatus%3A+needs+review&projects=&template=consoritum_wg_proposal.yml).
+
 ## RCN Member Definitions
 
 ### Rust Foundation Member
