@@ -57,7 +57,7 @@ Membership in the RCN and membership in an RCN consortium or working group are i
 
 ### Proposing a Consortium and Working Group
 
-To propose a consortium or working group, please [file an application using the GitHub Issue template provided here](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=consortium-or-wg-proposal%2Cstatus%3A+needs+review&projects=&template=consoritum_wg_proposal.yml).
+To propose a consortium or working group, please [file an application using the GitHub Issue template provided here](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=consortium-or-wg-proposal%2Cstatus%3A+needs+review&projects=&template=consortium_wg_proposal.yml).
 
 ## RCN Member Definitions
 
