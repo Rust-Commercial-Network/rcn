@@ -1,0 +1,165 @@
+name: Consortium/Working Group Proposal
+description: Propose a new consortium or working group for the RCN
+title: "Consortium/WG Proposal: [NAME]"
+labels: ["consortium-wg-proposal"]
+assignees:
+  - LoriLorusso
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 1: Overview
+
+  - type: textarea
+    id: elevator-pitch
+    attributes:
+      label: "1.1 Elevator Pitch"
+      description: Provide a short description of the working group, its goals, and why it matters.
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: Describe why the group exists and what problem it solves.
+    validations:
+      required: true
+
+  - type: textarea
+    id: key-goals
+    attributes:
+      label: Key Goals
+      description: List the key goals of the working group.
+      placeholder: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: sponsoring-companies
+    attributes:
+      label: "1.2 Sponsoring Companies"
+      description: List the companies sponsoring this proposal.
+      value: |
+        - Company Name, Contact (Name, Email)
+        - Company Name, Contact (Name, Email)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 2: Deliverables / Artifacts
+
+  - type: checkboxes
+    id: deliverables
+    attributes:
+      label: "The working group will produce:"
+      description: Select all that apply.
+      options:
+        - label: Technical documentation
+        - label: Reference implementations
+        - label: Open-source tools
+        - label: Whitepapers
+        - label: Case studies
+        - label: Presentations/workshops
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 3: Resources Required
+
+  - type: textarea
+    id: staff-time
+    attributes:
+      label: Staff Time
+      description: Estimate hours/week.
+    validations:
+      required: true
+
+  - type: textarea
+    id: funding
+    attributes:
+      label: Funding
+      description: Describe any funding needs.
+    validations:
+      required: false
+
+  - type: textarea
+    id: infrastructure
+    attributes:
+      label: Infrastructure
+      description: Tools, repos, communication platforms needed.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 4: Governance & Leadership
+
+  - type: input
+    id: wg-lead-name
+    attributes:
+      label: Working Group Lead - Name
+    validations:
+      required: true
+
+  - type: input
+    id: wg-lead-company
+    attributes:
+      label: Working Group Lead - Company
+    validations:
+      required: true
+
+  - type: textarea
+    id: wg-lead-responsibilities
+    attributes:
+      label: Working Group Lead - Responsibilities
+    validations:
+      required: true
+
+  - type: textarea
+    id: membership
+    attributes:
+      label: Membership
+      description: Who can join and how?
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision-making
+    attributes:
+      label: Decision-Making
+      description: How will decisions be made? (Consensus, voting, etc.)
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 5: Success Criteria
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will success be measured?
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Section 6: Lifecycle
+
+  - type: textarea
+    id: lifecycle
+    attributes:
+      label: Lifecycle
+      description: What happens when the group ends or transitions?
+    validations:
+      required: true
