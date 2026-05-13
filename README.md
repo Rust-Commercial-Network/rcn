@@ -154,7 +154,7 @@ Voting on the RCN Steering Committee members will be done by RCN members in good
 
 #### The RCN Steering Committee consists of:
 
-* No more than seven and no less than five representatives from Platinum, Gold, Silver, and Associate Rust Foundation members. There cannot be two Steering Committee Members from one company.  
+* No more than seven and no less than five representatives from Platinum (1), Gold (1) , Silver (2), and Associate (1) Rust Foundation members. There cannot be two Steering Committee Members from one company.  
 * The Rust Foundation will have a seat on the Steering Committee in an advisory capacity.  
 * The Rust Project will have a seat on the Steering Committee in an advisory capacity.
 
