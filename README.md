@@ -10,7 +10,7 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 
 ## Overview
 
-The RCN is open to Rust users of all sizes: individual commercial users, consultants, startups, small businesses, larger companies, academic users, organizations, Rust Foundation Members, Rust Advocates, and members of the Rust Project. The RCN supports industry consortiums and working groups, with review from the RCN Steering Committee.
+The RCN is open to Rust users of all sizes: individual commercial users, consultants, startups, small businesses, larger companies, academic users, organizations, Rust Foundation Members, Rust Advocates, and members of the Rust Project. The RCN supports industry consortiums, interest groups, working groups, and other initiatives, with review from the RCN Steering Committee.
 
 The RCN is separate from the Rust Project’s developing [Rust Society](https://github.com/jamesmunns/rust-society/blob/main/reports/pdf/2025-04-04.pdf), although there may be some overlap over time.
 
@@ -19,7 +19,7 @@ Membership in the RCN is free.
 The RCN works to:
 
 * Identify Rust adoption and maintenance problems shared by production users
-* Form working groups around industry-specific or ecosystem-wide needs
+* Form consortiums, working groups, and interest groups around industry-specific or ecosystem-wide needs
 * Help members contribute time, funding, testing, documentation, and maintainer support
 * Share findings with the Rust Project, ecosystem maintainers, and the Rust Foundation
 
@@ -32,7 +32,7 @@ The RCN works to:
 * Work with the Rust Project and ecosystem maintainers to identify and resolve issues that affect commercial and organizational use, including tooling gaps, crate reliability, maintenance bottlenecks, and adoption papercuts
   * Members may contribute engineering time, funding, testing, maintainer support, documentation work, contributions to the Rust Foundation Maintainer’s Fund, or other help
 
-### RCN working groups may produce:
+### RCN may produce:
 
 * Best practice guides and reference architectures
 * Adoption playbooks
@@ -43,11 +43,11 @@ The RCN works to:
 
 \*Individual issues can be brought up to the Project independent of the RCN. The RCN aims to identify recurring or broadly shared issues, including smaller papercuts that add up to adoption, reliability, or maintenance problems across organizations.
 
-## Working Groups and Consortiums
+## RCN Initiatives: Interest Groups, Working Groups, and Consortiums
 
-RCN members can propose consortiums or working groups focused on shared adoption blockers, ecosystem maintenance, or industry-specific needs. These groups can produce guides, reports, recommendations, or other outputs for the Rust community.
+RCN members can propose initiatives focused on shared adoption blockers, ecosystem maintenance, or industry-specific needs. These initiatives may be formally organized as interest groups, working groups, or consortiums which can produce guides, reports, recommendations, or other outputs for the Rust community.
 
-To propose a group, [file an application using the GitHub Issue template](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=consortium-or-wg-proposal%2Cstatus%3A+needs+review&projects=&template=consortium_wg_proposal.yml). See [Working Groups and Consortiums](docs/working-groups.md) for operations, Steering Committee scope, voting rights, and withdrawal details.
+To propose an initiative, [file an application using the GitHub Issue template](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=initiative-proposal%2Cstatus%3A+needs+review&projects=&template=initiative_proposal.yml). See [RCN Initiatives: Interest Groups, Working Groups, and Consortiums](docs/initiatives.md) for operations, Steering Committee scope, voting rights, and withdrawal details.
 
 ## Meetings and Communication
 
@@ -59,7 +59,7 @@ Public discussion happens in the RCN channel in the [Rust Project Zulip](https:/
 
 ## Member Definitions and Governance
 
-RCN membership is free. See [Membership](docs/membership.md) for member definitions, including Rust Foundation Members, Commercial/Organizational Members, Rust Advocates, Rust Project Members, and Consortium/Working Group Members.
+RCN membership is free. See [Membership](docs/membership.md) for member definitions, including Rust Foundation Members, Commercial/Organizational Members, Rust Advocates, Rust Project Members, and RCN Initiative Members.
 
 The Rust Foundation maintains the RCN with support from the RCN Steering Committee. See [Governance](docs/governance.md) for Steering Committee duties, composition, selection, terms, vacancies, and eligibility.
 
@@ -74,7 +74,7 @@ The Rust Foundation Member Summit, attached to RustConf, may provide one place f
 ## Next Steps
 
 * [Apply to join the RCN](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml)
-* [Propose a working group or consortium](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=consortium-or-wg-proposal%2Cstatus%3A+needs+review&projects=&template=consortium_wg_proposal.yml)
+* [Propose an initiative](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=initiative-proposal%2Cstatus%3A+needs+review&projects=&template=initiative_proposal.yml)
 * Join the RCN channel in the [Rust Project Zulip](https://rust-lang.zulipchat.com/)
 
 ## Contributing

@@ -1,6 +1,6 @@
 # RCN Governance
 
-The RCN is a volunteer-driven community maintained by the Rust Foundation. It consists of the membership, a Steering Committee, and the consortiums and working groups that the Steering Committee approves and reviews. You can be a member of the RCN without joining a consortium or working group.
+The RCN is a volunteer-driven community maintained by the Rust Foundation. It consists of the membership, a Steering Committee, and the initiatives (consortiums, working groups, interest groups, etc.) that the Steering Committee approves and reviews. You can be a member of the RCN without joining an initiative.
 
 ## RCN Steering Committee
 
@@ -9,10 +9,10 @@ The RCN is a volunteer-driven community maintained by the Rust Foundation. It co
 The RCN Steering Committee:
 
 1. Represents the RCN to the Rust Foundation Board, conferences, and media
-2. Shares user needs with the Rust Project and works with Project members on possible solutions. The SC does not speak on behalf of any consortium or working group to the Rust Project or external bodies without that group's explicit consent.
-3. Reviews and votes on proposed RCN consortiums and working groups
-4. Develops policies and procedures consistent with this charter
-5. Reviews RCN consortiums and working groups
+2. Shares user needs with the Rust Project and works with Project members on possible solutions. The SC does not speak on behalf of any initiative to the Rust Project or external bodies without that initiative's explicit consent.
+3. Reviews and votes on proposed RCN initiatives
+4. Helps RCN initiatives establish an appropriate organizational structure (a consortium, a working group, an interest group, etc.) and develop respective governance documents
+5. Develops policies and procedures consistent with this charter
 6. Keeps RCN work documented and public
 
 ### Composition and Selection
@@ -21,7 +21,7 @@ RCN members in good standing vote on RCN Steering Committee members. A member in
 
 ### The RCN Steering Committee Consists Of
 
-* No more than seven and no less than five representatives from Platinum (1), Gold (1) , Silver (2), and Associate (1) Rust Foundation members. There cannot be two Steering Committee Members from one company.
+* No more than seven and no less than five representatives from Platinum (1), Gold (1), Silver (2), and Associate (1) Rust Foundation members. There cannot be two Steering Committee Members from one company.
 * The Rust Foundation will have a seat on the Steering Committee in an advisory capacity.
 * The Rust Project will have a seat on the Steering Committee in an advisory capacity.
 

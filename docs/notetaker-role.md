@@ -9,7 +9,7 @@ Reminder that we follow the RCN-wide agreed meeting policies. Please refer to th
 Start with the right meeting notes template:
 
 * [Full RCN meeting notes template](rcn-meeting-notes-template.md)
-* [Working Group meeting notes template](working-group-meeting-notes-template.md)
+* [RCN Initiative meeting notes template](initiative-meeting-notes-template.md)
 
 During the meeting you'll take meeting minutes of participants' discussion in a Google Docs document that will be shared as the meeting begins.
 
