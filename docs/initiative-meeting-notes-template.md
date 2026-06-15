@@ -1,4 +1,4 @@
-# \<Foo\> Working Group Meeting on \<date\> @ \<time\>
+# \<Foo\> RCN Initiative Meeting on \<date\> @ \<time\>
 
 | Search Key | Description |
 | :---- | :---- |

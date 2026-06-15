@@ -1,0 +1,132 @@
+name: Rust Commercial Network Initiative Proposal
+description: Propose a new initiative for the RCN
+title: "RCN Initiative Proposal: [NAME]"
+labels: ["initiative-proposal"]
+assignees:
+  - LoriLorusso
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Rust Commercial Network supports initiatives that bring together organizations and individuals around topics of shared interest.
+        
+        An initiative is an exploratory effort intended to gather interested participants, validate demand, and identify opportunities for collaboration. Over time, an initiative may evolve into a consortium, working group, interest group, or another structure that best serves its goals.
+        
+        This proposal is intended to capture the initial idea and participants. Detailed governance, success metrics, and long-term operating models can be developed later in collaboration with the RCN Steering Committee.
+
+  - type: textarea
+    id: initiative-proposal
+    attributes:
+      label: "Initiative Description"
+      description: Use the template provided to describe the initiative.
+      value: |
+        ## 1. The Idea
+        
+        ### Initiative Name
+        
+          > Replace this with the proposed name of the initiative.
+        
+        ### Elevator Pitch
+        
+          > Provide a short description of the initiative and why it matters.
+          >
+          > Examples:
+          >
+          > - The WebAssembly Initiative brings together organizations and individuals to coordinate investment in Rust-Wasm tooling, libraries, and developer resources. This helps reduce ecosystem fragmentation and makes Rust a stronger choice for web, edge, and cloud applications.
+          > - The Rust in Automotive Initiative coordinates efforts to address shared adoption challenges and advance the ecosystem needed to deploy Rust in production vehicles.
+          > - The Rust for AI Initiative fosters collaboration on the libraries, tooling, and infrastructure needed to expand Rust’s role in modern AI and machine learning workloads.
+        
+        ### Why Now?
+        
+          > What opportunity, challenge, or need motivates this proposal?
+        
+        ### Initial Goals
+        
+          > What would the initiative like to explore or achieve during its early phase? Goals do not need to be exhaustive or final.
+          >
+          > Examples:
+          >
+          > - Share knowledge and best practices
+          > - Coordinate efforts across organizations
+          > - Improve communication within the ecosystem
+          > - Identify common challenges and opportunities
+          > - Explore potential collaborations
+          > - Produce guidance or recommendations
+        
+        ## 2. Initial Participants
+        
+          > List organizations and/or individuals interested in participating. Additional participants may join as the initiative evolves.
+        
+          * Name or handle, Affiliation (optional), Role/Perspective, Contact Info
+          *
+        
+        ## 3. Activities & Outputs
+        
+        ### Potential Activities
+        
+          > What kinds of activities could help achieve the initiative's goals?
+          >
+          > Examples:
+          >
+          > - Regular discussions and experience sharing
+          > - Technical investigations
+          > - Documentation efforts
+          > - Case studies
+          > - Workshops and presentations
+          > - Open-source collaboration
+          > - Research and whitepapers
+          > - Recommendations to the RCN or Rust ecosystem
+        
+        ### Possible Outputs
+        
+          > What kinds of artifacts might the initiative produce? Please treat them as examples rather than commitments.
+          >
+          > Examples:
+          >
+          > - Documentation
+          > - Best-practice guides
+          > - Case studies
+          > - Reports
+          > - Reference implementations
+          > - Open-source tools
+          > - Presentations and workshops
+          > - Community resources
+        
+        ## 4. Getting Started
+        
+        ### Initial Coordinators
+        
+          > Who will help convene discussions and coordinate the initiative's early activities?
+        
+          * Name or handle, Contact Info
+          *
+        
+        ### Expected Participation
+        
+          > Briefly describe any initial expectations regarding:
+          >
+          > - Meeting cadence
+          > - Communication channels
+          > - Participant involvement
+          >
+          > High-level estimates are sufficient.
+        
+        ### Resources and Support
+        
+          > List any known requirements or assumptions regarding:
+          >
+          > - Staff time
+          > - Infrastructure and communication platforms
+          > - Funding (if applicable)
+          >
+          > Detailed planning can be developed later if needed.
+        
+        ### Future Development
+        
+          > This proposal is intended to establish an initial direction and gather interested participants.
+          >
+          > Topics such as governance, decision-making processes, membership models, leadership structure, success metrics, and long-term sustainability are expected to be refined as the initiative develops. An RCN Steering Committee representative will be appointed to work with initiative participants, helping guide this process and evaluate potential next steps. Depending on community interest, participation, and outcomes, the initiative may evolve into a consortium, working group, interest group, or another structure appropriate to its goals.
+          >
+          > While detailed proposals for these topics are not required at this stage, proponents are encouraged to share any preliminary thoughts, preferences, or assumptions that may help inform future discussions.
+    validations:
+      required: true

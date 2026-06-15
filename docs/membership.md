@@ -22,12 +22,12 @@ Rust Advocates are experienced Rust practitioners who work in areas such as Robo
 
 Rust Project Members are individuals on a [Rust Team](https://rust-lang.org/governance/teams/) who make significant contributions to the development and maintenance of the Rust programming language and its associated tools.
 
-### Consortium/Working Group Member
+### RCN Initiative Member
 
-A Consortium/Working Group Member is an individual who is an active member of an RCN-affiliated consortium or working group, as determined by that group's own membership criteria and processes. Consortium/Working Group Members are recognized as RCN participants and may attend RCN meetings, contribute to discussions, and access RCN communication channels.
+An RCN Initiative Member is an individual who is an active member of an RCN-affiliated consortium, working group, interest group, or other RCN initiative as determined by that initiative's own membership criteria and processes. RCN Initiative Members are recognized as RCN participants and may attend RCN meetings, contribute to discussions, and access RCN communication channels.
 
-Consortium/Working Group Members may vote on RCN matters that directly affect the consortium or working group in which they hold membership, including but not limited to: policies governing consortium operations, changes to the relationship between the RCN and its consortiums or working groups, and amendments to this charter that alter the rights or obligations of consortiums or working groups.
+RCN Initiative Members may vote on RCN matters that directly affect the RCN initiative in which they hold membership, including but not limited to: policies governing RCN initiative operations, changes to the relationship between the RCN and its consortiums, working groups, or interest groups, and amendments to this charter that alter the rights or obligations of RCN initiatives.
 
-Consortium/Working Group Members do not vote in RCN-wide elections such as Steering Committee seats unless they independently qualify under another RCN member definition.
+RCN Initiative Members do not vote in RCN-wide elections such as Steering Committee seats unless they independently qualify under another RCN member definition.
 
-For the purposes of determining good standing, Consortium/Working Group Members must meet the membership requirements of their respective consortium or working group. Attendance at RCN-level meetings is not required for Consortium/Working Group Members to maintain good standing.
+For the purposes of determining good standing, RCN Initiative Members must meet the membership requirements of their respective RCN initiative. Attendance at RCN-level meetings is not required for RCN Initiative Members to maintain good standing.
