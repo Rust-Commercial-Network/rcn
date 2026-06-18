@@ -159,13 +159,39 @@ function escapeMarkdown(text) {
   return text.replace(/([\\`*_{}[\]()#+.!|-])/g, '\\$1');
 }
 
-function memberLine(member) {
+function companyLine(member) {
+  const company = member.company || member.name;
+  const label = escapeMarkdown(company);
+  return member.url ? `- [${label}](${member.url})` : `- ${label}`;
+}
+
+function memberNameLine(member) {
   const label = escapeMarkdown(member.name);
-  const linked = member.url ? `[${label}](${member.url})` : label;
-  if (member.company && member.company !== member.name) {
-    return `- ${linked}, ${escapeMarkdown(member.company)}`;
+  return member.url ? `- [${label}](${member.url})` : `- ${label}`;
+}
+
+function uniqueCompanies(members) {
+  const companiesByName = new Map();
+
+  for (const member of members) {
+    if (memberKind(member) !== 'company') {
+      continue;
+    }
+
+    const company = member.company || member.name;
+    if (company.toLowerCase() === 'rust project') {
+      continue;
+    }
+
+    const key = company.toLowerCase();
+    if (!companiesByName.has(key)) {
+      companiesByName.set(key, { ...member, company });
+    }
   }
-  return `- ${linked}`;
+
+  return Array.from(companiesByName.values()).sort((a, b) =>
+    a.company.localeCompare(b.company, 'en', { sensitivity: 'base' }),
+  );
 }
 
 async function projectItems() {
@@ -193,8 +219,7 @@ function render(project, items) {
     .filter((member) => member.name)
     .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
-  const companies = members.filter((member) => memberKind(member) === 'company');
-  const individuals = members.filter((member) => memberKind(member) === 'individual');
+  const companies = uniqueCompanies(members);
 
   const lines = [
     '# Members',
@@ -206,11 +231,11 @@ function render(project, items) {
   ];
 
   if (companies.length) {
-    lines.push('## Companies', '', ...companies.map(memberLine), '');
+    lines.push('## Companies', '', ...companies.map(companyLine), '');
   }
 
-  if (individuals.length) {
-    lines.push('## Individuals', '', ...individuals.map(memberLine), '');
+  if (members.length) {
+    lines.push('## Member Names', '', ...members.map(memberNameLine), '');
   }
 
   if (!members.length) {
