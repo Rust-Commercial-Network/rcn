@@ -180,7 +180,7 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 Useful when: production services terminate or initiate TLS and depend on timely security response, compatibility, and connection-heavy performance.
 
-[rustls][rustls] provides TLS functionality for many Rust applications and services. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
+[rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
 
 [Dirkjan Ochtman (@djc)](https://github.com/djc) is seeking maintenance time for rustls security coordination, releases, contribution review, 1.0 work, async handshake performance, and production-user feedback.
 
