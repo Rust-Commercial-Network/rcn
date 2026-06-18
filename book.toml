@@ -1,0 +1,7 @@
+[book]
+title = "Rust Commercial Network"
+language = "en"
+src = "."
+
+[output.html]
+git-repository-url = "https://github.com/Rust-Commercial-Network/rcn"
