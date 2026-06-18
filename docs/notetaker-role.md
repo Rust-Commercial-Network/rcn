@@ -2,7 +2,7 @@
 
 Thank you for taking notes for a session! The following are the steps you will follow.
 
-Reminder that we follow the RCN-wide agreed meeting policies. Please refer to them in the [Meeting policies section of the README](../README.md#meetings).
+Reminder that we follow the RCN-wide agreed meeting policies. Please refer to the [Meetings](./meetings.md) doc.
 
 ## Take meeting notes live in a Google Docs document
 
@@ -25,11 +25,11 @@ Feel free to speak up during the meeting to clarify if something has risen to th
 
 ## Submit the meeting minutes to the repo
 
-Following the meeting you will select all the contents of the Google Doc, right click, and then click `Copy as Markdown` on the menu that pops up. You have to make sure Markdown is enabled for the document. Enabling it can be done by navigating to **Tools > Preferences** and checking **Enable Markdown**.
+Following the meeting you will select all the contents of the Google Doc, right click, and then click `Copy as Markdown` on the menu that pops up. You have to make sure Markdown is enabled for the document. Enable it from **Tools > Preferences** by checking **Enable Markdown**.
 
 Fork this repository if not done yet.
 
-Create a new branch on your fork, navigate to the `minutes.md` for the meeting you've taken minutes for and paste the contents.
+Create a new branch on your fork, open the `minutes.md` for the meeting you've taken minutes for, and paste the contents.
 
 ### Inserting annotation key
 

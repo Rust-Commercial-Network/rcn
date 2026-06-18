@@ -14,13 +14,13 @@
 
 **Please add your name, and an emoji that describes your day.**
 
-* 
+*
 
 **Notetaker:**
 
 * 
 
-For tips on how we take notes in the Safety-Critical Rust Consortium, please see the [Meeting Notetaker Role](https://github.com/Rust-Commercial-Network/rcn/blob/main/docs/notetaker-role.md) doc.
+For tips on how we take notes in the RCN, please see the [Meeting Notetaker Role](https://github.com/Rust-Commercial-Network/rcn/blob/main/docs/notetaker-role.md) doc.
 
 ## Housekeeping section
 
@@ -38,4 +38,4 @@ For tips on how we take notes in the Safety-Critical Rust Consortium, please see
 
 Any material to read before the meeting should be included here.
 
-* 
+*
