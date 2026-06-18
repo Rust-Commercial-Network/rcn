@@ -4,11 +4,11 @@ const token = process.env.GITHUB_TOKEN;
 const org = process.env.SPONSORS_PROJECT_ORG || 'Rust-Commercial-Network';
 const projectNumber = Number(process.env.SPONSORS_PROJECT_NUMBER || '1');
 const docsDir = process.env.DOCS_DIR || 'docs';
-const outputPath = `${docsDir}/sponsors.md`;
+const outputPath = `${docsDir}/members.md`;
 const summaryPath = `${docsDir}/SUMMARY.md`;
 
 if (!token) {
-  throw new Error('GITHUB_TOKEN is required to generate the sponsors page.');
+  throw new Error('GITHUB_TOKEN is required to generate the member list.');
 }
 
 async function graphql(query, variables) {
@@ -17,7 +17,7 @@ async function graphql(query, variables) {
     headers: {
       authorization: `Bearer ${token}`,
       'content-type': 'application/json',
-      'user-agent': 'rcn-sponsors-page-generator',
+      'user-agent': 'rcn-member-list-generator',
     },
     body: JSON.stringify({ query, variables }),
   });
@@ -125,13 +125,13 @@ function firstField(fields, names) {
   return '';
 }
 
-function sponsorFromItem(item) {
+function memberFromItem(item) {
   const fields = fieldMap(item);
   const title = item.content?.title?.trim() || '';
   const url = item.content?.url || '';
-  const name = firstField(fields, ['Sponsor Name', 'Name', 'Company', 'Organization', 'Entity']) || title;
+  const name = firstField(fields, ['Member Name', 'Name', 'Company', 'Organization', 'Entity']) || title;
   const company = firstField(fields, ['Company', 'Organization', 'Entity', 'Employer']);
-  const type = firstField(fields, ['Sponsor Type', 'Type', 'Category', 'Representation']);
+  const type = firstField(fields, ['Member Type', 'Type', 'Category', 'Representation']);
   const website = firstField(fields, ['Website', 'URL', 'Link']);
 
   return {
@@ -142,8 +142,8 @@ function sponsorFromItem(item) {
   };
 }
 
-function sponsorKind(sponsor) {
-  const text = `${sponsor.type} ${sponsor.company}`.toLowerCase();
+function memberKind(member) {
+  const text = `${member.type} ${member.company}`.toLowerCase();
   if (/\b(individual|person|personal|self)\b/.test(text)) {
     return 'individual';
   }
@@ -151,7 +151,7 @@ function sponsorKind(sponsor) {
     return 'company';
   }
 
-  const hasSeparateCompany = sponsor.company && sponsor.company !== sponsor.name;
+  const hasSeparateCompany = member.company && member.company !== member.name;
   return hasSeparateCompany ? 'individual' : 'company';
 }
 
@@ -159,11 +159,11 @@ function escapeMarkdown(text) {
   return text.replace(/([\\`*_{}[\]()#+.!|-])/g, '\\$1');
 }
 
-function sponsorLine(sponsor) {
-  const label = escapeMarkdown(sponsor.name);
-  const linked = sponsor.url ? `[${label}](${sponsor.url})` : label;
-  if (sponsor.company && sponsor.company !== sponsor.name) {
-    return `- ${linked}, ${escapeMarkdown(sponsor.company)}`;
+function memberLine(member) {
+  const label = escapeMarkdown(member.name);
+  const linked = member.url ? `[${label}](${member.url})` : label;
+  if (member.company && member.company !== member.name) {
+    return `- ${linked}, ${escapeMarkdown(member.company)}`;
   }
   return `- ${linked}`;
 }
@@ -188,33 +188,33 @@ async function projectItems() {
 }
 
 function render(project, items) {
-  const sponsors = items
-    .map(sponsorFromItem)
-    .filter((sponsor) => sponsor.name)
+  const members = items
+    .map(memberFromItem)
+    .filter((member) => member.name)
     .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
-  const companies = sponsors.filter((sponsor) => sponsorKind(sponsor) === 'company');
-  const individuals = sponsors.filter((sponsor) => sponsorKind(sponsor) === 'individual');
+  const companies = members.filter((member) => memberKind(member) === 'company');
+  const individuals = members.filter((member) => memberKind(member) === 'individual');
 
   const lines = [
-    '# Sponsors',
+    '# Members',
     '',
-    'The Rust Commercial Network thanks the companies and individuals who support this work.',
+    'The Rust Commercial Network includes companies and individuals working together to make Rust easier to adopt and maintain.',
     '',
     `This page is generated from the [${project.title}](${project.url}) GitHub Project during the website deployment.`,
     '',
   ];
 
   if (companies.length) {
-    lines.push('## Companies', '', ...companies.map(sponsorLine), '');
+    lines.push('## Companies', '', ...companies.map(memberLine), '');
   }
 
   if (individuals.length) {
-    lines.push('## Individuals', '', ...individuals.map(sponsorLine), '');
+    lines.push('## Individuals', '', ...individuals.map(memberLine), '');
   }
 
-  if (!sponsors.length) {
-    lines.push('No sponsors are listed yet.', '');
+  if (!members.length) {
+    lines.push('No members are listed yet.', '');
   }
 
   return lines.join('\n');
@@ -222,16 +222,16 @@ function render(project, items) {
 
 async function addSummaryEntry() {
   const summary = await fs.readFile(summaryPath, 'utf8');
-  if (summary.includes('./sponsors.md')) {
+  if (summary.includes('./members.md')) {
     return;
   }
 
   const overviewEntry = '- [Overview](./overview.md)\n';
   if (!summary.includes(overviewEntry)) {
-    throw new Error(`Could not add sponsors page to ${summaryPath}: overview entry not found.`);
+    throw new Error(`Could not add member list to ${summaryPath}: overview entry not found.`);
   }
 
-  const updated = summary.replace(overviewEntry, `${overviewEntry}- [Sponsors](./sponsors.md)\n`);
+  const updated = summary.replace(overviewEntry, `${overviewEntry}- [Members](./members.md)\n`);
   await fs.writeFile(summaryPath, updated);
 }
 

@@ -38,13 +38,13 @@ jobs:
           private-key: ${{ secrets.RCN_PROJECT_APP_PRIVATE_KEY }}
           owner: Rust-Commercial-Network
           repositories: rcn
-          permission-projects: read
-      - name: Generate sponsors page
+          permission-organization-projects: read
+      - name: Generate member list
         env:
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
           SPONSORS_PROJECT_ORG: Rust-Commercial-Network
           SPONSORS_PROJECT_NUMBER: "1"
-        run: node .github/scripts/generate-sponsors.mjs
+        run: node .github/scripts/generate-members.mjs
       - uses: actions/configure-pages@v5
       - run: mdbook build
       - uses: actions/upload-pages-artifact@v3
