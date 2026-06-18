@@ -6,6 +6,7 @@
 
 - [Membership](./membership.md)
 - [Governance](./governance.md)
+- [Conflict of Interest Policy](./conflict-of-interest-policy.md)
 - [Meetings](./meetings.md)
 - [Initiatives](./initiatives.md)
 - [Meeting Notetaker Role](./notetaker-role.md)

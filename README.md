@@ -14,6 +14,7 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 
 * [Membership](docs/membership.md)
 * [Governance](docs/governance.md)
+* [Conflict of Interest Policy](CONFLICT_OF_INTEREST_POLICY.md)
 * [Meetings](docs/meetings.md)
 * [Initiatives](docs/initiatives.md)
 * [Meeting notetaker role](docs/notetaker-role.md)
