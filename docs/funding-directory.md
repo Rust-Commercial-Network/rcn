@@ -8,7 +8,7 @@ RFEF sponsors may receive recognition, fund reporting, sponsorship coordination,
 
 ## How to Help
 
-Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. If an organization wants to support Rust maintainers more generally, the RCN can also help route general donations to the Rust Foundation Maintainer Fund or [RustNL Foundation][rustnl].
+Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. For Rust Project goals seeking support, see the [Rust Project Goals funding page][project-goals-funding]. If an organization wants to support Rust maintainers more generally, the RCN can also help route general donations to the Rust Foundation Maintainer Fund or [RustNL Foundation][rustnl].
 
 Funding does not buy control over Rust technical decisions, RFC outcomes, stabilization, release timing, maintainer review, priority, or project roadmaps.
 
@@ -217,6 +217,7 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [hyperium-roadmap]: https://hyper.rs/contrib/roadmap/
 [incremental-system-rethought]: https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html
 [open-namespaces-goal]: https://rust-lang.github.io/rust-project-goals/2025h1/open-namespaces.html
+[project-goals-funding]: https://rust-lang.github.io/rust-project-goals/2026/funding.html
 [rcn-email]: mailto:rust-commercial-network@rustfoundation.org
 [rcn-zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-rcn
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
