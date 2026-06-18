@@ -150,7 +150,9 @@ function sponsorKind(sponsor) {
   if (/\b(company|organization|organisation|corporate|business|institution|foundation)\b/.test(text)) {
     return 'company';
   }
-  return sponsor.company && sponsor.company !== sponsor.name ? 'individual' : 'company';
+
+  const hasSeparateCompany = sponsor.company && sponsor.company !== sponsor.name;
+  return hasSeparateCompany ? 'individual' : 'company';
 }
 
 function escapeMarkdown(text) {
@@ -199,7 +201,7 @@ function render(project, items) {
     '',
     'The Rust Commercial Network thanks the companies and individuals who support this work.',
     '',
-    `This page is generated from the [${project.title}](${project.url}) GitHub Project during the mdBook deploy.`,
+    `This page is generated from the [${project.title}](${project.url}) GitHub Project during the website deployment.`,
     '',
   ];
 
@@ -224,10 +226,12 @@ async function addSummaryEntry() {
     return;
   }
 
-  const updated = summary.replace(
-    '- [Overview](./overview.md)\n',
-    '- [Overview](./overview.md)\n- [Sponsors](./sponsors.md)\n',
-  );
+  const overviewEntry = '- [Overview](./overview.md)\n';
+  if (!summary.includes(overviewEntry)) {
+    throw new Error(`Could not add sponsors page to ${summaryPath}: overview entry not found.`);
+  }
+
+  const updated = summary.replace(overviewEntry, `${overviewEntry}- [Sponsors](./sponsors.md)\n`);
   await fs.writeFile(summaryPath, updated);
 }
 
