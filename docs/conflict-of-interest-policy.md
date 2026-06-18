@@ -1,0 +1,1 @@
+{{#include ../CONFLICT_OF_INTEREST_POLICY.md}}

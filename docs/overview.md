@@ -79,13 +79,13 @@ The Rust Foundation Member Summit, attached to RustConf, may provide one place f
 
 ## Contributing
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/Rust-Commercial-Network/rcn/blob/main/CONTRIBUTING.md).
 
 ## Licenses
 
 Rust is primarily distributed under the terms of both the MIT license and the Apache License (Version 2.0), with documentation portions covered by the Creative Commons Attribution 4.0 International license.
 
-See [LICENSE-APACHE](../LICENSE-APACHE), [LICENSE-MIT](../LICENSE-MIT), [LICENSE-documentation](../LICENSE-documentation), and [COPYRIGHT](../COPYRIGHT) for details.
+See [LICENSE-APACHE](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-APACHE), [LICENSE-MIT](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-MIT), [LICENSE-documentation](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-documentation), and [COPYRIGHT](https://github.com/Rust-Commercial-Network/rcn/blob/main/COPYRIGHT) for details.
 
 You can also read more under the Foundation's [intellectual property policy][ip-policy].
 
