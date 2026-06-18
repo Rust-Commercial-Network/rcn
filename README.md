@@ -1,6 +1,6 @@
 # Rust Commercial Network (RCN)
 
-Read the full RCN guide and process docs in the [RCN mdBook](https://rust-commercial-network.github.io/rcn/).
+Read the full RCN guide and process docs on the [RCN website](https://rust-commercial-network.github.io/rcn/).
 
 Where Rust users, businesses, and communities work together to make Rust easier to adopt and maintain.
 
