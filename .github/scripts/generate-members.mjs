@@ -142,17 +142,14 @@ function memberFromItem(item) {
   };
 }
 
-function memberKind(member) {
-  const text = `${member.type} ${member.company}`.toLowerCase();
-  if (/\b(individual|person|personal|self)\b/.test(text)) {
-    return 'individual';
-  }
-  if (/\b(company|organization|organisation|corporate|business|institution|foundation)\b/.test(text)) {
-    return 'company';
-  }
+// Representation values that indicate the member participates as an individual.
+// Anything else (Company, Non-Profit, Other Entity, future options) is an
+// organization. The project board is the source of truth and can be corrected
+// directly, so classification keys off the representation field alone.
+const INDIVIDUAL_PATTERN = /\b(individual|self|myself|rust project)\b/;
 
-  const hasSeparateCompany = member.company && member.company !== member.name;
-  return hasSeparateCompany ? 'individual' : 'company';
+function memberKind(member) {
+  return INDIVIDUAL_PATTERN.test(member.type.toLowerCase()) ? 'individual' : 'company';
 }
 
 function escapeMarkdown(text) {
@@ -179,10 +176,6 @@ function uniqueCompanies(members) {
     }
 
     const company = member.company || member.name;
-    if (company.toLowerCase() === 'rust project') {
-      continue;
-    }
-
     const key = company.toLowerCase();
     if (!companiesByName.has(key)) {
       companiesByName.set(key, { ...member, company });
@@ -224,14 +217,14 @@ function render(project, items) {
   const lines = [
     '# Members',
     '',
-    'The Rust Commercial Network includes companies and individuals working together to make Rust easier to adopt and maintain.',
+    'The Rust Commercial Network includes organizations and individuals working together to make Rust easier to adopt and maintain.',
     '',
     `This page is generated from the [${project.title}](${project.url}) GitHub Project during the website deployment.`,
     '',
   ];
 
   if (companies.length) {
-    lines.push('## Companies', '', ...companies.map(companyLine), '');
+    lines.push('## Organizations', '', ...companies.map(companyLine), '');
   }
 
   if (members.length) {
