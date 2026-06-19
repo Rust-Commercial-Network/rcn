@@ -108,7 +108,7 @@ Useful when: async Rust libraries or service frameworks rely on boxed workaround
 
 Rust supports `async fn` in traits, but using async methods through `dyn` trait objects still requires workarounds such as `#[async_trait]`.
 
-Funding would help [Santiago Pastorino (@spastorino)](https://github.com/spastorino) and [WyeWorks](https://www.wyeworks.com/) prototype native async-fn-in-`dyn` support and carry the work through Rust design review if the approach is accepted. Any language change would still need Rust design review and stabilization.
+Funding would help [Santiago Pastorino (@spastorino)](https://github.com/spastorino), [Jack Huey (@jackh726)](https://github.com/jackh726), and [WyeWorks](https://www.wyeworks.com/) prototype native async-fn-in-`dyn` support and carry the work through Rust design review if the approach is accepted. Any language change would still need Rust design review and stabilization.
 
 Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust].
 
