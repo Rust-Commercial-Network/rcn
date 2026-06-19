@@ -104,13 +104,13 @@ Implementation work is underway across rustc, Cargo, and crates.io while the nex
 
 Related: [RFC 3243][rfc-3243], [previous project goal][open-namespaces-goal], [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust]. A new project goal has not been published yet.
 
-### Async Functions in Dynamic Trait Objects
+### Native async fn dynamic dispatch in traits
 
-Useful when: async Rust libraries or service frameworks rely on boxed workarounds that add allocations or make public APIs harder to maintain.
+Rust supports async fn in traits, but using async methods through dyn trait objects still requires workarounds such as #[async_trait], which add allocation overhead, obscure signatures, and split the ecosystem between native async traits and boxed trait-object patterns.
 
-Rust supports `async fn` in traits, but using async methods through `dyn` trait objects still requires workarounds such as `#[async_trait]`.
+Funding would support work by [Santiago Pastorino (@spastorino)](https://github.com/spastorino), [Jack Huey (@jackh726)](https://github.com/jackh726), and [WyeWorks](https://www.wyeworks.com/) to make async trait methods usable through dynamic dispatch. The work has two parts: first, making Rust more precise about which trait methods are dyn-compatible, and second, adding native support for async dispatch through trait objects.
 
-Funding would help [Santiago Pastorino (@spastorino)](https://github.com/spastorino), [Jack Huey (@jackh726)](https://github.com/jackh726), and [WyeWorks](https://www.wyeworks.com/) prototype native async-fn-in-`dyn` support and carry the work through Rust design review if the approach is accepted. Any language change would still need Rust design review and stabilization.
+The goal is to reduce reliance on #[async_trait], give library authors a cleaner path for async trait APIs, and make the feature available for real-world testing on nightly before final syntax is designed.
 
 Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust].
 
