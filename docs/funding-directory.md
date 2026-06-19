@@ -2,6 +2,8 @@
 
 This directory lists Rust compiler, Cargo, tooling, and library work where maintainers are looking for funding, production data, or feedback from companies using Rust at scale.
 
+The initiatives below represent active funding opportunities. Most already have at least one supporting organization and are looking for additional partners.
+
 To discuss funding, procurement, or sharing private production feedback, contact [rust-commercial-network@rustfoundation.org][rcn-email]. For public discussion, use the [RCN channel in the Rust Project Zulip][rcn-zulip].
 
 RFEF sponsors may receive recognition, fund reporting, sponsorship coordination, and advance security disclosures when coordinated private notice is needed.
