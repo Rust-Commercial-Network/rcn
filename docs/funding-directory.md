@@ -108,7 +108,7 @@ Related: [RFC 3243][rfc-3243], [previous project goal][open-namespaces-goal], [C
 
 Rust supports async fn in traits, but using async methods through dyn trait objects still requires workarounds such as #[async_trait], which add allocation overhead, obscure signatures, and split the ecosystem between native async traits and boxed trait-object patterns.
 
-Funding would support work by [Santiago Pastorino (@spastorino)](https://github.com/spastorino), [Jack Huey (@jackh726)](https://github.com/jackh726), and [WyeWorks](https://www.wyeworks.com/) to make async trait methods usable through dynamic dispatch. The work has two parts: first, making Rust more precise about which trait methods are dyn-compatible, and second, adding native support for async dispatch through trait objects.
+Funding would support work by [Santiago Pastorino (@spastorino)](https://github.com/spastorino) and [Jack Huey (@jackh726)](https://github.com/jackh726) to make async trait methods usable through dynamic dispatch. The work has two parts: first, making Rust more precise about which trait methods are dyn-compatible, and second, adding native support for async dispatch through trait objects.
 
 The goal is to reduce reliance on #[async_trait], give library authors a cleaner path for async trait APIs, and make the feature available for real-world testing on nightly before final syntax is designed.
 
