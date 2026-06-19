@@ -66,9 +66,9 @@ Useful when: teams rebuild large Rust services many times per day and care most 
 
 Cranelift is an alternative Rust code generation backend. The current goal is a 2x speedup in Cranelift code generation for debug builds, reducing local compile time for developers.
 
-Sponsor support would cover time for [bjorn3 (@bjorn3)][bjorn3] and [Folkert de Vries (@folkertdev)][folkertdev], through [Trifecta Tech Foundation][trifecta], to work through the performance improvements in the project goal.
+Sponsor support would cover time for [bjorn3 (@bjorn3)][bjorn3] and [Folkert de Vries (@folkertdev)][folkertdev], through [Tweede Golf][tweede-golf], to work through the performance improvements in the project goal.
 
-Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift][cranelift], [Trifecta Tech Foundation][trifecta].
+Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift][cranelift], [Tweede Golf][tweede-golf].
 
 ## Developer Experience and Tooling
 
