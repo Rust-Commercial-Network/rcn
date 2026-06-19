@@ -8,7 +8,7 @@ RFEF sponsors may receive recognition, fund reporting, sponsorship coordination,
 
 ## How to Help
 
-Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. For Rust Project goals seeking support, see the [Rust Project Goals funding page][project-goals-funding]. If an organization wants to support Rust maintainers more generally, the RCN can also help route general donations to the Rust Foundation Maintainer Fund or [RustNL Foundation][rustnl].
+Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. For Rust Project goals seeking support, see the [Rust Project Goals funding page][project-goals-funding]. If an organization wants to support Rust maintainers more generally, please check out the  [Rust Project Funding page](https://rust-lang.org/funding/) where you can support the Rust Foundation Maintainers Fund or individual Rust project members.
 
 Funding does not buy control over Rust technical decisions, RFC outcomes, stabilization, release timing, maintainer review, priority, or project roadmaps.
 
