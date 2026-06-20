@@ -94,6 +94,23 @@ Many Rust roadmap items need Cargo review or implementation work. This item fund
 
 Related: [Cargo][cargo], [crates.io][crates-io].
 
+
+### C and C++ Interoperability
+
+Many organizations adopting Rust continue to operate in mixed-language environments. Improving interoperability with existing C and C++ codebases lowers adoption barriers, simplifies migrations, and makes it easier to incrementally introduce Rust into existing systems.
+
+Funding would support work by [teor (@teor2345)](https://github.com/teor2345), [bjorn3 (Folkert de Vries)](https://github.com/bjorn3) at Tweede Golf, and other collaborators working to identify and address high-impact interoperability gaps between Rust and C/C++.
+
+Dozens of interoperability problem statements and use cases have already been identified through collaboration with industry participants, and new implementation efforts continue to emerge from that work. Current areas of interest include support for C floating-point types such as `long double`, function overloading, variable arguments, and other interoperability gaps identified through collaboration with industry users.
+
+Links:
+
+- [Interop Initiative issue tracker](https://github.com/rustfoundation/interop-initiative/issues)
+- [Detailed problem statements](https://github.com/rustfoundation/interop-initiative/tree/main/problem-space)
+- [Interop project goals and proposals](https://docs.google.com/document/d/1pFOUJXcs3bZKsCwrMOVHaCbjSe8XEb5ZtHux_4nTwp0/edit?usp=drivesdk)
+- [Interop work inventory](https://docs.google.com/document/d/1-REi68Us_fPOlW1GlEmEqdbtDJAt4UjhBgnXHs-NEmc/edit?usp=drivesdk)
+- [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://github.com/folkertdev/rust-project-goals/blob/c-longdouble-interop/src/2026/interop-f80-f128.md)
+
 ### Crate Namespaces
 
 Useful when: organizations publish related crate families, internal platform crates, SDKs, or official packages.
