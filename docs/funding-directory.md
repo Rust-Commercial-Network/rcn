@@ -24,9 +24,7 @@ Named contributors and related projects are included to identify likely contacts
 
 ### Wild
 
-Useful when: link time is a visible cost in CI or local development.
-
-Wild is a [Rust Innovation Lab](https://rustfoundation.org/rust-innovation-lab/) project building a faster linker for Rust workloads. Current work is aimed at large binaries, more platforms, and the missing linker features that prevent projects from trying Wild today.
+Wild is a [Rust Innovation Lab](https://rustfoundation.org/rust-innovation-lab/) project building a faster linker for Rust workloads. It addresses link time as a visible cost in CI or local development. Current work is aimed at large binaries, more platforms, and the missing linker features that prevent projects from trying Wild today.
 
 The most useful sponsor input is real build data: linker timing profiles, crate graph shape, binary size, platform constraints, and failure cases. Maintainers will prioritize work that fits Wild's goals and available time.
 
@@ -34,9 +32,7 @@ Led by [David Lattimore (@davidlattimore)](https://github.com/davidlattimore). R
 
 ### Faster Builds Roadmap
 
-Useful when: build time affects developer wait time, CI spend, or release latency.
-
-The Faster Builds Roadmap would fund [bjorn3 (@bjorn3)][bjorn3] for an additional day per week of Rust build performance work, complementing time already contributed through [Tweede Golf][tweede-golf].
+The Faster Builds Roadmap is aimed at organizations where build time affects developer wait time, CI spend, or release latency. It would fund [bjorn3 (@bjorn3)][bjorn3] for an additional day per week of Rust build performance work, complementing time already contributed through [Tweede Golf][tweede-golf].
 
 bjorn3 would spend the funded time on the roadmap items most likely to shorten real build times.
 
@@ -44,9 +40,7 @@ Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-go
 
 ### Cargo Cross-Workspace Cache
 
-Useful when: duplicate Cargo build artifacts are costing CI time, disk space, or local setup time.
-
-Cargo Cross-Workspace Cache would reduce duplicate build artifacts across Cargo workspaces. A shared cache could cut repeated CI minutes and disk use, provided it holds up against production build patterns.
+Cargo Cross-Workspace Cache would reduce duplicate build artifacts across Cargo workspaces. It targets teams losing CI time, disk space, or local setup time to repeated Cargo artifacts. A shared cache could cut repeated CI minutes and disk use, provided it holds up against production build patterns.
 
 [Ross Sullivan (@ranger-ross)](https://github.com/ranger-ross) is seeking support to design and implement a first version that the Cargo team can evaluate. If accepted, support would carry the work through normal Cargo review and nightly testing. Useful data includes build times, cache hit rates, cache storage costs, workspace structure, and failure cases.
 
@@ -54,9 +48,7 @@ Related: [Cargo Cross-Workspace Cache][cargo-cross-workspace-cache], [Cargo][car
 
 ### Reusable Build Artifacts
 
-Useful when: teams run `cargo check` before `cargo build` in local development or CI.
-
-Today, `cargo check` and `cargo build` largely duplicate work. This project aims to make build artifacts reusable across both workflows, so work done for `cargo check` can carry into `cargo build`.
+Today, `cargo check` and `cargo build` largely duplicate work, which matters for teams that run both in local development or CI. This project aims to make build artifacts reusable across both workflows, so work done for `cargo check` can carry into `cargo build`.
 
 Funding would give [Alejandra Gonzalez (@blyxyas)](https://github.com/blyxyas) time to pursue a new incremental compilation design. This work may also support Cargo Cross-Workspace Cache and other build reuse work.
 
@@ -64,9 +56,7 @@ Related: [Incremental Compilation System, Rethought][incremental-system-rethough
 
 ### Cranelift
 
-Useful when: teams rebuild large Rust services many times per day and care most about local debug-build time.
-
-Cranelift is an alternative Rust code generation backend. The current goal is a 2x speedup in Cranelift code generation for debug builds, reducing local compile time for developers.
+Cranelift is an alternative Rust code generation backend. The current goal is a 2x speedup in Cranelift code generation for debug builds, reducing local compile time for teams rebuilding large Rust services many times per day.
 
 Sponsor support would cover time for [bjorn3 (@bjorn3)][bjorn3] and [Folkert de Vries (@folkertdev)][folkertdev], through [Tweede Golf][tweede-golf], to work through the performance improvements in the project goal.
 
@@ -76,9 +66,7 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 
 ### cargo-nextest
 
-Useful when: Rust test suites are a release gate and slow or flaky test runs delay shipping.
-
-`cargo-nextest` is a Rust test runner used in local development and CI. Maintenance funding pays for the work users rely on but do not always see: releases, issue triage, contributor review, platform support, and CI-scale fixes.
+`cargo-nextest` is a Rust test runner used in local development and CI. For teams whose Rust test suites gate releases, slow or flaky runs can delay shipping. Maintenance funding pays for the work users rely on but do not always see: releases, issue triage, contributor review, platform support, and CI-scale fixes.
 
 Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://github.com/sunshowers): releases, issue triage, contributor review, and fixes requested by users running nextest in CI. RCN members can provide feedback, test cases, or contributions through the same public channels as other users.
 
@@ -86,9 +74,7 @@ Related: [cargo-nextest](https://nexte.st/).
 
 ### Cargo Maintenance
 
-Useful when: Cargo review or implementation work blocks supply-chain policy, build reproducibility, C++ interoperability, signed crates, or sandboxed build scripts.
-
-Many Rust roadmap items need Cargo review or implementation work. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
+Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
 
 [Arlo Siemsen (@arlosi)](https://github.com/arlosi) would use additional funded time for Cargo review, mentoring, implementation, and moving accepted changes through Cargo review. Cargo maintainers and Rust Project teams retain authority over review, acceptance, prioritization, and release timing.
 
@@ -113,9 +99,7 @@ Links:
 
 ### Crate Namespaces
 
-Useful when: organizations publish related crate families, internal platform crates, SDKs, or official packages.
-
-Crate namespaces would let organizations publish related crates under one namespace, making ownership clearer and reducing collisions with similarly named crates.
+Crate namespaces would help organizations publishing related crate families, internal platform crates, SDKs, or official packages. Namespaces would let those crates live under one namespace, making ownership clearer and reducing collisions with similarly named crates.
 
 Implementation work is underway across rustc, Cargo, and crates.io while the next project goal is still being drafted. Funding would help contributors such as [Takayuki Maeda (@TaKO8Ki)](https://github.com/TaKO8Ki) continue implementing RFC 3243 and related changes. Cargo, crates.io, and rust-lang teams still decide design and policy questions through their normal processes.
 
@@ -135,9 +119,7 @@ Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust]
 
 ### Async State Machine Improvements
 
-Useful when: state-machine code generation affects CPU use, memory pressure, binary size, or compiler limits in async services.
-
-Rust's async implementation generates state machines behind the scenes. Better state-machine generation can shrink binaries, improve runtime performance, and avoid compiler limits such as maximum query recursion depth.
+Rust's async implementation generates state machines behind the scenes. For async services, better state-machine generation can reduce CPU use, memory pressure, binary size, and compiler limits such as maximum query recursion depth.
 
 [Dion Dokter (@diondokter)](https://github.com/diondokter) at [Tweede Golf][tweede-golf] is seeking support to continue async state machine code generation work.
 
@@ -145,9 +127,7 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 
 ### F16 Stabilization
 
-Useful when: Rust code needs to pass f16 data between ML inference, graphics, simulation, scientific computing, or hardware APIs.
-
-Many machine learning, graphics, and scientific computing workloads use 16-bit floating point formats. Native f16 support would make it easier to pass data between Rust, hardware APIs, and libraries that already use those values.
+Many machine learning, graphics, simulation, and scientific computing workloads use 16-bit floating point formats. Native f16 support would make it easier to pass f16 data between Rust, hardware APIs, and libraries that already use those values.
 
 Sponsor support would help [Folkert de Vries (@folkertdev)][folkertdev], through [Trifecta Tech Foundation][trifecta], continue the implementation, testing, documentation, and review work needed before f16 can be considered for stabilization. Stabilization would still be decided through the Rust Project process.
 
@@ -155,9 +135,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 
 ### Stable MIR and rustc_public
 
-Useful when: static analysis, verification, GPU, compliance, or internal platform tools need Rust compiler data.
-
-Stable MIR is intended to give external tools a supported way to read compiler data without depending on unstable rustc internals.
+Stable MIR is intended to give external tools a supported way to read compiler data without depending on unstable rustc internals. That matters for static analysis, verification, GPU, compliance, and internal platform tooling.
 
 The next project goal is still pending. Funding would help [Makai41 (@Makai41)](https://github.com/Makai41) and the Stable MIR project publish `rustc_public` to crates.io, expand API coverage, and improve documentation. API additions should be evaluated for general Rust tooling value, not for any one downstream project.
 
@@ -165,9 +143,7 @@ Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rus
 
 ### Binary Size Reduction
 
-Useful when: Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost.
-
-A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcat)](https://github.com/hexcat). Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
+A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcat)](https://github.com/hexcat). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
 
 This is a funding interest area, not an approved Rust Project goal or committed outcome.
 
@@ -175,9 +151,7 @@ Related: [rust-lang/rust][rust-lang-rust]. Binary-size roadmap link to be added 
 
 ### Declarative Macro Improvements
 
-Useful when: dependency review, supply-chain controls, or build-time code execution policies make proc macros expensive to adopt.
-
-Better declarative macros could replace some proc macros, cutting build time, dependency surface area, and supply-chain review burden.
+Better declarative macros could replace some proc macros, cutting build time, dependency surface area, and supply-chain review burden. That helps where dependency review, supply-chain controls, or build-time code execution policies make proc macros expensive to adopt.
 
 Funding would help [Josh Triplett (@joshtriplett)](https://github.com/joshtriplett) work on declarative attributes and derive macros. It may also support related work by [Oli Scherer (@oli-obk)](https://github.com/oli-obk) on compile-time Rust evaluation, or "comptime". Design questions remain subject to the relevant RFC, lang/compiler team, and stabilization processes.
 
@@ -187,9 +161,7 @@ Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust
 
 ### Tokio Runtime Optimizations
 
-Useful when: Tokio scheduler behavior affects production latency, fairness, CPU use, or incident risk.
-
-[Tokio](https://tokio.rs/) is the foundation for many Rust network services and async applications. Runtime and scheduler work matters when production workloads combine network IO, timers, and compute-heavy tasks.
+[Tokio](https://tokio.rs/) is the foundation for many Rust network services and async applications. Runtime and scheduler work matters when production workloads combine network IO, timers, and compute-heavy tasks, especially where scheduler behavior affects latency, fairness, CPU use, or incident risk.
 
 [Folkert de Vries (@folkertdev)][folkertdev] at [Tweede Golf][tweede-golf] is seeking support for runtime and scheduler improvements in Tokio. Production feedback from large Tokio users would be useful, especially where scheduler behavior affects latency or incidents. Maintainers still make changes through Tokio's public design and review process.
 
@@ -197,9 +169,7 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 ### rustls
 
-Useful when: production services terminate or initiate TLS and depend on timely security response, compatibility, and connection-heavy performance.
-
-[rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
+[rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Production services that terminate or initiate TLS depend on timely security response, compatibility, and connection-heavy performance. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
 
 [Dirkjan Ochtman (@djc)](https://github.com/djc) is seeking maintenance time for rustls security coordination, releases, contribution review, 1.0 work, async handshake performance, and production-user feedback.
 
@@ -207,9 +177,7 @@ Related: [rustls][rustls].
 
 ### Hyperium
 
-Useful when: Rust HTTP services depend on Hyper, Tower, h2, or related crates for availability, protocol correctness, observability, or performance.
-
-[Hyperium][hyperium] maintains Hyper, Tower, h2, and related networking crates used by Rust services.
+[Hyperium][hyperium] maintains Hyper, Tower, h2, and related networking crates used by Rust services. Teams depend on those crates for availability, protocol correctness, observability, and performance.
 
 [Sean McArthur (@seanmonstar)](https://github.com/seanmonstar) is seeking time for the work that keeps Hyperium crates healthy: releases, issue triage, modularization, h2 performance, buffer pooling, observability, and production-user feedback.
 
