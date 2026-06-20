@@ -87,7 +87,7 @@ Many organizations adopting Rust continue to operate in mixed-language environme
 
 Funding would support work by [teor (@teor2345)](https://github.com/teor2345), [bjorn3 (Folkert de Vries)](https://github.com/bjorn3) at Tweede Golf, and other collaborators working to identify and address high-impact interoperability gaps between Rust and C/C++.
 
-Dozens of interoperability problem statements and use cases have already been identified through collaboration with industry participants, and new implementation efforts continue to emerge from that work. Current areas of interest include support for C floating-point types such as `long double`, function overloading, variable arguments, and other interoperability gaps identified through collaboration with industry users.
+Dozens of interoperability problem statements and use cases have already been identified with industry participants, and new implementation efforts continue to emerge from that work. Current areas of interest include support for C floating-point types such as `long double`, function overloading, variable arguments, and other high-impact gaps.
 
 Links:
 
