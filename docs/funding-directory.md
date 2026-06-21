@@ -74,11 +74,9 @@ Related: [cargo-nextest](https://nexte.st/).
 
 ### cargo-semver-checks
 
-`cargo-semver-checks` is a Semantic Versioning (SemVer) linter for Rust. Its goal is to make `cargo update` and `cargo publish` fearless, allowing maintainers to publish new releases without accidentally shipping breaking changes. In turn, this allows users to fearlessly update their dependency versions without having their projects broken by accidental upstream breakage.
+`cargo-semver-checks` helps Rust maintainers catch accidental SemVer breakage before publishing releases. This is especially useful for SDKs and libraries where breaking changes can disrupt downstream customers and make dependency upgrades risky.
 
-RCN members may find `cargo-semver-checks` most useful when publishing SDKs intended for customer use. [Accidental breakage is common](https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer/) and frustrates paying customers of such SDKs; `cargo-semver-checks` helps prevent such incidents, giving both maintainers and users confidence that version upgrades will "just work."
-
-Despite its usefulness, the coverage `cargo-semver-checks` offers has material gaps and points of friction that funding would help address. SemVer lints currently cannot catch type-related breakage like changing a pub field from `i64` to `String`, and cannot perform cross-crate analysis causing any items re-exported across crate boundaries to not be checked. This leads to both false-positives and false-negatives. Additionally, the current `cargo-semver-checks` developer experience is not friendly toward PR-based workflows: it's difficult to use the tool to flag breaking changes that are newly made in that PR, versus ones made in prior PRs that were merged after the most-recently published version.
+Funding would support work to close major coverage gaps and improve PR-based workflows. Current limitations include missing type-related breaking changes, missing cross-crate analysis for re-exports, and difficulty distinguishing breakage introduced by a new PR from breakage that already exists since the last published release.
 
 Related:
 - [cargo-semver-checks][cargo-semver-checks]
