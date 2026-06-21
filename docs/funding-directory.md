@@ -72,6 +72,20 @@ Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://
 
 Related: [cargo-nextest](https://nexte.st/).
 
+### cargo-semver-checks
+
+`cargo-semver-checks` is a Semantic Versioning (SemVer) linter for Rust. Its goal is to make `cargo update` and `cargo publish` fearless, allowing maintainers to publish new releases without accidentally shipping breaking changes. In turn, this allows users to fearlessly update their dependency versions without having their projects broken by accidental upstream breakage.
+
+RCN members may find `cargo-semver-checks` most useful when publishing SDKs intended for customer use. [Accidental breakage is common](https://predr.ag/blog/semver-violations-are-common-better-tooling-is-the-answer/) and frustrates paying customers of such SDKs; `cargo-semver-checks` helps prevent such incidents, giving both maintainers and users confidence that version upgrades will "just work."
+
+Despite its usefulness, the coverage `cargo-semver-checks` offers has material gaps and points of friction that funding would help address. SemVer lints currently cannot catch type-related breakage like changing a pub field from `i64` to `String`, and cannot perform cross-crate analysis causing any items re-exported across crate boundaries to not be checked. This leads to both false-positives and false-negatives. Additionally, the current `cargo-semver-checks` developer experience is not friendly toward PR-based workflows: it's difficult to use the tool to flag breaking changes that are newly made in that PR, versus ones made in prior PRs that were merged after the most-recently published version.
+
+Related:
+- [cargo-semver-checks][cargo-semver-checks]
+- [roadmap](https://predr.ag/blog/cargo-semver-checks-2025-year-in-review/#the-path-forward-for-2026-and-beyond)
+- [project goal][cargo-semver-checks-goal]
+- [goal tracking issue][cargo-semver-checks-goal-tracking]
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -192,6 +206,9 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [async-state-machine-goal]: https://rust-lang.github.io/rust-project-goals/2026/async-statemachine-optimisation.html#funding
 [bjorn3]: https://github.com/bjorn3
 [cargo]: https://github.com/rust-lang/cargo
+[cargo-semver-checks]: https://github.com/obi1kenobi/cargo-semver-checks
+[cargo-semver-checks-goal]: https://rust-lang.github.io/rust-project-goals/2026/cargo-semver-checks.html
+[cargo-semver-checks-goal-tracking]: https://github.com/rust-lang/rust-project-goals/issues/104
 [cargo-cross-workspace-cache]: https://rust-lang.github.io/rust-project-goals/2026/cargo-cross-workspace-cache.html
 [cranelift]: https://github.com/bytecodealliance/wasmtime/tree/main/cranelift
 [cranelift-performance]: https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html
