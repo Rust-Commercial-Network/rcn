@@ -155,7 +155,7 @@ Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rus
 
 ### Binary Size Reduction
 
-A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcat)](https://github.com/hexcat). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
+A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcatnl)](https://github.com/hexcatnl). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
 
 This is a funding interest area, not an approved Rust Project goal or committed outcome.
 
