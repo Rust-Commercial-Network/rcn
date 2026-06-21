@@ -72,6 +72,18 @@ Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://
 
 Related: [cargo-nextest](https://nexte.st/).
 
+### cargo-semver-checks
+
+`cargo-semver-checks` helps Rust maintainers catch accidental SemVer breakage before publishing releases. This is especially useful for SDKs and libraries where breaking changes can disrupt downstream customers and make dependency upgrades risky.
+
+Funding would support work to close major coverage gaps and improve PR-based workflows. Current limitations include missing type-related breaking changes, missing cross-crate analysis for re-exports, and difficulty distinguishing breakage introduced by a new PR from breakage that already exists since the last published release.
+
+Related:
+- [cargo-semver-checks][cargo-semver-checks]
+- [roadmap](https://predr.ag/blog/cargo-semver-checks-2025-year-in-review/#the-path-forward-for-2026-and-beyond)
+- [project goal][cargo-semver-checks-goal]
+- [goal tracking issue][cargo-semver-checks-goal-tracking]
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -192,6 +204,9 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [async-state-machine-goal]: https://rust-lang.github.io/rust-project-goals/2026/async-statemachine-optimisation.html#funding
 [bjorn3]: https://github.com/bjorn3
 [cargo]: https://github.com/rust-lang/cargo
+[cargo-semver-checks]: https://github.com/obi1kenobi/cargo-semver-checks
+[cargo-semver-checks-goal]: https://rust-lang.github.io/rust-project-goals/2026/cargo-semver-checks.html
+[cargo-semver-checks-goal-tracking]: https://github.com/rust-lang/rust-project-goals/issues/104
 [cargo-cross-workspace-cache]: https://rust-lang.github.io/rust-project-goals/2026/cargo-cross-workspace-cache.html
 [cranelift]: https://github.com/bytecodealliance/wasmtime/tree/main/cranelift
 [cranelift-performance]: https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html
