@@ -107,7 +107,7 @@ Links:
 - [Detailed problem statements](https://github.com/rustfoundation/interop-initiative/tree/main/problem-space)
 - [Interop project goals and proposals](https://docs.google.com/document/d/1pFOUJXcs3bZKsCwrMOVHaCbjSe8XEb5ZtHux_4nTwp0/edit?usp=drivesdk)
 - [Interop work inventory](https://docs.google.com/document/d/1-REi68Us_fPOlW1GlEmEqdbtDJAt4UjhBgnXHs-NEmc/edit?usp=drivesdk)
-- [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://github.com/folkertdev/rust-project-goals/blob/c-longdouble-interop/src/2026/interop-f80-f128.md)
+- [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://rust-lang.github.io/rust-project-goals/2026/interop-f80-f128.html)
 
 ### Crate Namespaces
 
