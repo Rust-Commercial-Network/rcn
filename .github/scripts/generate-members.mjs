@@ -187,6 +187,21 @@ function uniqueCompanies(members) {
   );
 }
 
+function uniqueMembers(members) {
+  const membersByName = new Map();
+
+  for (const member of members) {
+    const key = member.name.toLowerCase();
+    if (!membersByName.has(key)) {
+      membersByName.set(key, member);
+    }
+  }
+
+  return Array.from(membersByName.values()).sort((a, b) =>
+    a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }),
+  );
+}
+
 async function projectItems() {
   let cursor = null;
   let project = null;
@@ -213,6 +228,7 @@ function render(project, items) {
     .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
   const companies = uniqueCompanies(members);
+  const memberNames = uniqueMembers(members);
 
   const lines = [
     '# Members',
@@ -228,7 +244,7 @@ function render(project, items) {
   }
 
   if (members.length) {
-    lines.push('## Member Names', '', ...members.map(memberNameLine), '');
+    lines.push('## Member Names', '', ...memberNames.map(memberNameLine), '');
   }
 
   if (!members.length) {
