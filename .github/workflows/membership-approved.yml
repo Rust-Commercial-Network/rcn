@@ -333,9 +333,9 @@ jobs:
 
             function maskPart(part) {
               if (part.length === 1) {
-                return `${part}**`;
+                return `${part}∗∗`;
               }
-              return `${part[0]}**${part[part.length - 1]}`;
+              return `${part[0]}∗∗${part[part.length - 1]}`;
             }
 
             function maskEmail(email) {
@@ -357,23 +357,38 @@ jobs:
               return `${maskPart(local)}@${maskPart(domainName)}${domainSuffix}`;
             }
 
-            function replaceField(body, heading, value) {
-              const sections = body.split(/^###\s*/m);
-              let replaced = false;
-
-              for (let i = 1; i < sections.length; i += 1) {
-                if (sections[i].startsWith(heading)) {
-                  sections[i] = `${heading}\n\n${value}\n\n`;
-                  replaced = true;
-                  break;
-                }
-              }
-
-              if (!replaced) {
+            function findFieldValueRange(body, heading) {
+              const headingText = `### ${heading}`;
+              const headingStart = body.indexOf(headingText);
+              if (headingStart === -1) {
                 return null;
               }
 
-              return `${sections[0]}${sections.slice(1).map((section) => `### ${section}`).join('')}`;
+              const valueStartSearch = headingStart + headingText.length;
+              const nextHeadingMatch = /^###\s/m.exec(body.slice(valueStartSearch));
+              const sectionEnd = nextHeadingMatch ? valueStartSearch + nextHeadingMatch.index : body.length;
+              const sectionValue = body.slice(valueStartSearch, sectionEnd);
+              const leadingWhitespace = sectionValue.match(/^\s*/)[0].length;
+              const trailingWhitespace = sectionValue.match(/\s*$/)[0].length;
+
+              return {
+                start: valueStartSearch + leadingWhitespace,
+                end: sectionEnd - trailingWhitespace,
+              };
+            }
+
+            function replaceFieldValue(body, heading, oldValue, newValue) {
+              const range = findFieldValueRange(body, heading);
+              if (!range) {
+                return null;
+              }
+
+              const currentValue = body.slice(range.start, range.end);
+              if (currentValue.trim() !== oldValue) {
+                return null;
+              }
+
+              return `${body.slice(0, range.start)}${newValue}${body.slice(range.end)}`;
             }
 
             const maskedEmail = maskEmail(email);
@@ -382,9 +397,10 @@ jobs:
               return;
             }
 
-            const updatedBody = replaceField(
+            const updatedBody = replaceFieldValue(
               context.payload.issue.body || '',
               'What is your preferred email address?',
+              email,
               maskedEmail,
             );
 
