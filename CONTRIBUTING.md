@@ -48,11 +48,11 @@ address in the public issue body.
 Before applying `membership-approved`, review the answer to the Entity question.
 This value becomes the public company, organization, team, or individual name in
 the member directory. Use a short public directory name rather than a sentence
-or explanation.
+or explanation. Do not leave a generic value such as `Company`.
 
 The approval workflow removes `membership-approved` and comments on the issue if
-the Entity answer is longer than 80 characters. After editing the issue body,
-apply `membership-approved` again and close the issue.
+the Entity answer is longer than 80 characters or is only `Company`. After
+editing the issue body, apply `membership-approved` again and close the issue.
 
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [pull-requests]: https://help.github.com/articles/about-pull-requests/
