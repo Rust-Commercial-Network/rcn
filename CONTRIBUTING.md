@@ -34,27 +34,19 @@ the `Issues` tab.
 
 ### Membership Approvals
 
-Membership applications are filed as public GitHub issues using the membership
-issue form. When reviewing an application, confirm that the applicant's answers
-are complete and suitable for the public membership directory before marking the
-issue approved.
+Membership applications are public GitHub issues. The issue body is the source
+for the membership project fields and generated member directory.
 
-The `membership-approved` label marks an application as approved. After that
-label is applied, closing the issue copies the application into the membership
-project and populates the project fields used by the generated member
-directory. When the approved issue is closed, the workflow also masks the email
-address in the public issue body.
+Before applying `membership-approved`, edit the issue body if any public
+directory value needs cleanup. Pay special attention to Entity: it becomes the
+public company, organization, team, or individual name. Use a short name, not a
+sentence, explanation, website URL, email address, or generic value such as
+`Company`. Move context into the "Why are you interested in joining the RCN?"
+answer.
 
-Before applying `membership-approved`, review the answer to the Entity question.
-This value becomes the public company, organization, team, or individual name in
-the member directory. Use a short public directory name rather than a sentence,
-explanation, website URL, or email address. Do not leave a generic value such as
-`Company`. Move context or explanation into the "Why are you interested in
-joining the RCN?" answer.
-
-The approval workflow removes `membership-approved` and comments on the issue if
-the Entity answer is longer than 80 characters or is only `Company`. After
-editing the issue body, apply `membership-approved` again and close the issue.
+After the issue body is ready, apply `membership-approved` and close the issue.
+Closing an approved issue copies the issue body into the membership project and
+masks the email address in the public issue body.
 
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [pull-requests]: https://help.github.com/articles/about-pull-requests/
