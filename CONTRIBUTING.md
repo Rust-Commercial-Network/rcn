@@ -30,5 +30,29 @@ for more information on using pull requests.
 Do you just want to file an issue for the project? Please do so in GitHub under 
 the `Issues` tab.
 
+## Internal Contributors
+
+### Membership Approvals
+
+Membership applications are filed as public GitHub issues using the membership
+issue form. When reviewing an application, confirm that the applicant's answers
+are complete and suitable for the public membership directory before marking the
+issue approved.
+
+The `membership-approved` label marks an application as approved. After that
+label is applied, closing the issue copies the application into the membership
+project and populates the project fields used by the generated member
+directory. When the approved issue is closed, the workflow also masks the email
+address in the public issue body.
+
+Before applying `membership-approved`, review the answer to the Entity question.
+This value becomes the public company, organization, team, or individual name in
+the member directory. Use a short public directory name rather than a sentence
+or explanation.
+
+The approval workflow removes `membership-approved` and comments on the issue if
+the Entity answer is longer than 80 characters. After editing the issue body,
+apply `membership-approved` again and close the issue.
+
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [pull-requests]: https://help.github.com/articles/about-pull-requests/

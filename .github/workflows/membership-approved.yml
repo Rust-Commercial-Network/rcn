@@ -2,18 +2,85 @@ name: Add Approved Member to Membership Project Board
 
 on:
   issues:
-    types: [closed]
+    types: [closed, labeled]
 
 jobs:
+  validate-membership-approval:
+    # Run as soon as a maintainer applies the approval label so directory data can
+    # be cleaned up before the issue is closed and copied into the project.
+    if: >-
+      github.event.action == 'labeled' &&
+      github.event.label.name == 'membership-approved' &&
+      contains(toJSON(github.event.issue.labels.*.name), 'membership')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Validate public entity name
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const maxEntityLength = 80;
+            const body = context.payload.issue.body || '';
+
+            function extractField(body, heading) {
+              const sections = body.split(/^###\s*/m);
+              for (const section of sections) {
+                if (section.startsWith(heading)) {
+                  return section.slice(heading.length).trim();
+                }
+              }
+              return '';
+            }
+
+            const entityName = extractField(
+              body,
+              'If you represent a company, institution, consortium, or other entity, please enter it here. If you represent the Rust Project, please enter the Rust Project team.',
+            );
+
+            if (entityName.length <= maxEntityLength) {
+              core.info(`Entity name length is ${entityName.length}, within the ${maxEntityLength} character limit.`);
+              return;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: [
+                `@${context.payload.sender.login}, the Entity answer is ${entityName.length} characters, which is longer than the ${maxEntityLength} character limit used for the public member directory.`,
+                '',
+                'Please edit the membership issue body so the Entity answer is the short public directory name, then re-apply `membership-approved`.',
+              ].join('\n'),
+            });
+
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'membership-approved',
+              });
+            } catch (error) {
+              if (error.status !== 404) {
+                throw error;
+              }
+              core.info('membership-approved label was already removed.');
+            }
+
+            core.setFailed(`Entity answer is ${entityName.length} characters. Limit is ${maxEntityLength}.`);
+
   add-to-project:
     # Only run when the issue is closed by an assignee or repo admin,
     # and has both 'membership' and 'membership-approved' labels
     if: >-
+      github.event.action == 'closed' &&
       contains(toJSON(github.event.issue.labels.*.name), 'membership') &&
       contains(toJSON(github.event.issue.labels.*.name), 'membership-approved')
     runs-on: ubuntu-latest
     permissions:
-      issues: read
+      issues: write
 
     steps:
       - name: Verify sender is assignee or admin
@@ -85,6 +152,93 @@ jobs:
             core.setOutput('foundation_member', foundationMember);
 
             core.info(`Parsed — GitHub ID: ${githubId}, Name: ${name}, Email: ${email}, Representation: ${representation}, Entity: ${entityName}`);
+
+      - name: Check public entity name length
+        uses: actions/github-script@v7
+        env:
+          FIELD_ENTITY_NAME: ${{ steps.parse.outputs.entity_name }}
+        with:
+          script: |
+            const maxEntityLength = 80;
+            const entityName = process.env.FIELD_ENTITY_NAME || '';
+
+            if (entityName.length > maxEntityLength) {
+              core.setFailed(`Entity answer is ${entityName.length} characters. Limit is ${maxEntityLength}. Edit the membership issue body before closing.`);
+              return;
+            }
+
+            core.info(`Entity name length is ${entityName.length}, within the ${maxEntityLength} character limit.`);
+
+      - name: Mask public email address
+        uses: actions/github-script@v7
+        env:
+          FIELD_EMAIL: ${{ steps.parse.outputs.email }}
+        with:
+          script: |
+            const email = process.env.FIELD_EMAIL || '';
+
+            function maskEmail(email) {
+              const atIndex = email.indexOf('@');
+              if (atIndex <= 0 || atIndex !== email.lastIndexOf('@') || atIndex === email.length - 1) {
+                return email;
+              }
+
+              function maskPart(part) {
+                if (part.length === 1) {
+                  return `${part}**`;
+                }
+                return `${part[0]}**${part[part.length - 1]}`;
+              }
+
+              const local = email.slice(0, atIndex);
+              const domain = email.slice(atIndex + 1);
+              return `${maskPart(local)}@${maskPart(domain)}`;
+            }
+
+            function replaceField(body, heading, value) {
+              const sections = body.split(/^###\s*/m);
+              let replaced = false;
+
+              for (let i = 1; i < sections.length; i += 1) {
+                if (sections[i].startsWith(heading)) {
+                  sections[i] = `${heading}\n\n${value}\n\n`;
+                  replaced = true;
+                  break;
+                }
+              }
+
+              if (!replaced) {
+                return null;
+              }
+
+              return `${sections[0]}${sections.slice(1).map((section) => `### ${section}`).join('')}`;
+            }
+
+            const maskedEmail = maskEmail(email);
+            if (!email || maskedEmail === email) {
+              core.info('No public email masking update needed.');
+              return;
+            }
+
+            const updatedBody = replaceField(
+              context.payload.issue.body || '',
+              'What is your preferred email address?',
+              maskedEmail,
+            );
+
+            if (!updatedBody) {
+              core.warning('Could not find the email field in the issue body.');
+              return;
+            }
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: updatedBody,
+            });
+
+            core.info('Masked the public email address in the issue body.');
 
       - name: Add issue to GitHub Project
         id: add-to-project
