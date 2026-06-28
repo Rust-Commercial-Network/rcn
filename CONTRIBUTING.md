@@ -48,7 +48,8 @@ address in the public issue body.
 Before applying `membership-approved`, review the answer to the Entity question.
 This value becomes the public company, organization, team, or individual name in
 the member directory. Use a short public directory name rather than a sentence
-or explanation. Do not leave a generic value such as `Company`.
+explanation, website URL, or email address. Do not leave a generic value such as
+`Company`.
 
 The approval workflow removes `membership-approved` and comments on the issue if
 the Entity answer is longer than 80 characters or is only `Company`. After
