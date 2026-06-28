@@ -1,6 +1,8 @@
 # Summary
 
 - [Overview](./overview.md)
+- [Member Directory](./members.md)
+- [Funding Directory](./funding-directory.md)
 
 # Process
 
@@ -9,7 +11,6 @@
 - [Conflict of Interest Policy](./conflict-of-interest-policy.md)
 - [Meetings](./meetings.md)
 - [Initiatives](./initiatives.md)
-- [Funding Directory](./funding-directory.md)
 - [Meeting Notetaker Role](./notetaker-role.md)
 
 # Templates

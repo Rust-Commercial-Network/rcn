@@ -265,7 +265,7 @@ async function addSummaryEntry() {
     throw new Error(`Could not add member list to ${summaryPath}: overview entry not found.`);
   }
 
-  const updated = summary.replace(overviewEntry, `${overviewEntry}- [Members](./members.md)\n`);
+  const updated = summary.replace(overviewEntry, `${overviewEntry}- [Member Directory](./members.md)\n`);
   await fs.writeFile(summaryPath, updated);
 }
 

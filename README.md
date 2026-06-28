@@ -12,16 +12,15 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 
 **Discuss:** use the RCN channel in the [Rust Project Zulip](https://rust-lang.zulipchat.com/).
 
-**Support Rust ecosystem work:** see the [Funding Directory](docs/funding-directory.md).
+**Support Rust ecosystem work:** see the [Funding Directory](https://rust-commercial-network.github.io/rcn/funding-directory.html).
 
 ## Process Docs
 
 * [Membership](docs/membership.md)
 * [Governance](docs/governance.md)
-* [Conflict of Interest Policy](CONFLICT_OF_INTEREST_POLICY.md)
+* [Conflict of Interest Policy](docs/conflict-of-interest-policy.md)
 * [Meetings](docs/meetings.md)
 * [Initiatives](docs/initiatives.md)
-* [Funding Directory](docs/funding-directory.md)
 * [Meeting notetaker role](docs/notetaker-role.md)
 
 ## Templates
@@ -32,9 +31,3 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Licenses
-
-Rust is primarily distributed under the terms of both the MIT license and the Apache License (Version 2.0), with documentation portions covered by the Creative Commons Attribution 4.0 International license.
-
-See [LICENSE-APACHE](LICENSE-APACHE), [LICENSE-MIT](LICENSE-MIT), [LICENSE-documentation](LICENSE-documentation), and [COPYRIGHT](COPYRIGHT) for details.

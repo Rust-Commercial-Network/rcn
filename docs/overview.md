@@ -6,6 +6,8 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 
 **Join:** fill out the [membership application](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml).
 
+**Members:** see the current [RCN member list](https://rust-commercial-network.github.io/rcn/members.html).
+
 **Discuss:** use the RCN channel in the [Rust Project Zulip](https://rust-lang.zulipchat.com/).
 
 **Support Rust ecosystem work:** see the [Funding Directory](./funding-directory.md).
@@ -65,9 +67,9 @@ RCN membership is free. See [Membership](./membership.md) for member definitions
 
 The Rust Foundation maintains the RCN with support from the RCN Steering Committee. See [Governance](./governance.md) for Steering Committee duties, composition, selection, terms, vacancies, and eligibility.
 
-## Code of Conduct
+## Policies
 
-The [Rust Foundation](https://rustfoundation.org/) has adopted a [Code of Conduct](https://foundation.rust-lang.org/policies/code-of-conduct/) that we expect RCN participants to adhere to. Please read the full text so that you can understand what actions will and will not be tolerated.
+RCN participants are expected to follow the Rust Foundation [Code of Conduct](https://foundation.rust-lang.org/policies/code-of-conduct/), the Rust Foundation [anti-trust policy](https://rustfoundation.org/policy/anti-trust-policy/), and the RCN [Conflict of Interest Policy](./conflict-of-interest-policy.md). Additional Rust Foundation policies are available on the [Rust Foundation website](https://rustfoundation.org/policies-resources/).
 
 ## Community Events
 
@@ -83,21 +85,3 @@ The Rust Foundation Member Summit, attached to RustConf, may provide one place f
 ## Contributing
 
 See [CONTRIBUTING.md](https://github.com/Rust-Commercial-Network/rcn/blob/main/CONTRIBUTING.md).
-
-## Licenses
-
-Rust is primarily distributed under the terms of both the MIT license and the Apache License (Version 2.0), with documentation portions covered by the Creative Commons Attribution 4.0 International license.
-
-See [LICENSE-APACHE](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-APACHE), [LICENSE-MIT](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-MIT), [LICENSE-documentation](https://github.com/Rust-Commercial-Network/rcn/blob/main/LICENSE-documentation), and [COPYRIGHT](https://github.com/Rust-Commercial-Network/rcn/blob/main/COPYRIGHT) for details.
-
-You can also read more under the Foundation's [intellectual property policy][ip-policy].
-
-## Other Policies
-
-Members of the RCN must adhere to the Rust Foundation's anti-trust policy [https://rustfoundation.org/policy/anti-trust-policy/](https://rustfoundation.org/policy/anti-trust-policy/) as you are a participant in the Foundation. Additional policies can be found on the [Rust Foundation website](https://rustfoundation.org/policies-resources/).
-
-[code-of-conduct]: https://rustfoundation.org/policy/code-of-conduct/
-[ip-policy]: https://rustfoundation.org/policy/intellectual-property-policy/
-[media-guide and trademark]: https://rustfoundation.org/policy/trademark-policy/
-[policies]: https://rustfoundation.org/policies-resources/
-[rust-foundation]: https://rustfoundation.org/

@@ -1,3 +1,4 @@
+```markdown
 # RCN Meeting on \<date\> @ \<time\>
 
 | Search Key | Description |
@@ -8,7 +9,7 @@
 
 ## Agenda
 
-1. 
+1.
 
 ## Check-in area
 
@@ -18,24 +19,25 @@
 
 **Notetaker:**
 
-* 
+*
 
 For tips on how we take notes in the RCN, please see the [Meeting Notetaker Role](https://github.com/Rust-Commercial-Network/rcn/blob/main/docs/notetaker-role.md) doc.
 
 ## Housekeeping section
 
-* 
+*
 
 ## Tasks
 
-* 
+*
 
 ## Meeting Minutes
 
-* 
+*
 
 ## Material
 
 Any material to read before the meeting should be included here.
 
 *
+```
