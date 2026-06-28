@@ -14,7 +14,7 @@ body:
 
         Membership in the RCN is free.
 
-        > Note that the name, email address, and any company you provide will be public since GitHub issues are public. We do not use your information for any reason other than for membership purposes.
+        > Note that your name, email address, and any company or organization you provide will be visible on this public GitHub issue when submitted. If your application is approved, the issue body email address will be masked when the issue is closed, but it may still appear in GitHub notifications, history, or other places outside this repository. We do not use your information for any reason other than for membership purposes.
   - type: input
     id: Name
     attributes:
