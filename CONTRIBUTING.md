@@ -30,5 +30,23 @@ for more information on using pull requests.
 Do you just want to file an issue for the project? Please do so in GitHub under 
 the `Issues` tab.
 
+## Internal Contributors
+
+### Membership Approvals
+
+Membership applications are public GitHub issues. The issue body is the source
+for the membership project fields and generated member directory.
+
+Before applying `membership-approved`, edit the issue body if any public
+directory value needs cleanup. Pay special attention to Entity: it becomes the
+public company, organization, team, or individual name. Use a short name, not a
+sentence, explanation, website URL, email address, or generic value such as
+`Company`. Move context into the "Why are you interested in joining the RCN?"
+answer.
+
+After the issue body is ready, apply `membership-approved` and close the issue.
+Closing an approved issue copies the issue body into the membership project and
+masks the email address in the public issue body.
+
 [ip-policy]: https://foundation.rust-lang.org/policies/intellectual-property-policy/
 [pull-requests]: https://help.github.com/articles/about-pull-requests/
