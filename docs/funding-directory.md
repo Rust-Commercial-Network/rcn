@@ -4,7 +4,7 @@ This directory lists Rust compiler, Cargo, tooling, and library work where maint
 
 The initiatives below represent active funding opportunities. Most already have at least one supporting organization and are looking for additional partners.
 
-To discuss funding, procurement, or sharing private production feedback, contact [rust-commercial-network@rustfoundation.org][rcn-email]. For public discussion, use the [RCN channel in the Rust Project Zulip][rcn-zulip].
+To discuss funding, procurement, or sharing private production feedback, come to [Funding Initiative office hours][funding-office-hours-zulip]. For async public discussion, join us on [Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
 RFEF sponsors may receive recognition, fund reporting, sponsorship coordination, and advance security disclosures when coordinated private notice is needed.
 
@@ -260,7 +260,7 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 
 ## Contact
 
-To discuss funding, procurement, or private production feedback, contact [rust-commercial-network@rustfoundation.org][rcn-email]. For public discussion, use the [RCN channel in the Rust Project Zulip][rcn-zulip].
+To discuss funding, procurement, or private production feedback, come to [Funding Initiative office hours][funding-office-hours-zulip]. For async public discussion, join us on [Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
@@ -277,13 +277,13 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [declarative-macro-improvements]: https://github.com/rust-lang/rust-project-goals/issues/629
 [faster-builds-roadmap]: https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html
 [folkertdev]: https://github.com/folkertdev
+[funding-office-hours-zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Funding.20Initiative.20.2F.20office.20hours/with/607451311
 [hyperium]: https://hyper.rs/
 [hyperium-roadmap]: https://hyper.rs/contrib/roadmap/
 [incremental-system-rethought]: https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html
 [open-namespaces-goal]: https://rust-lang.github.io/rust-project-goals/2025h1/open-namespaces.html
 [project-goals-funding]: https://rust-lang.github.io/rust-project-goals/2026/funding.html
 [rcn-email]: mailto:rust-commercial-network@rustfoundation.org
-[rcn-zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-rcn
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
@@ -292,3 +292,4 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
 [tokio-runtime-discussion]: https://github.com/tokio-rs/tokio/issues/8085
 [tweede-golf]: https://tweedegolf.nl/
+[zulip]: https://rust-lang.zulipchat.com/
