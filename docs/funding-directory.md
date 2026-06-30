@@ -30,6 +30,10 @@ The most useful sponsor input is real build data: linker timing profiles, crate 
 
 Led by [David Lattimore (@davidlattimore)](https://github.com/davidlattimore). Related project: [Wild](https://github.com/wild-linker/wild).
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
 ### Faster Builds Roadmap
 
 The Faster Builds Roadmap is aimed at organizations where build time affects developer wait time, CI spend, or release latency. It would fund [bjorn3 (@bjorn3)][bjorn3] for an additional day per week of Rust build performance work, complementing time already contributed through [Tweede Golf][tweede-golf].
@@ -37,6 +41,10 @@ The Faster Builds Roadmap is aimed at organizations where build time affects dev
 bjorn3 would spend the funded time on the roadmap items most likely to shorten real build times.
 
 Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-golf].
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
 ### Cargo Cross-Workspace Cache
 
@@ -46,6 +54,10 @@ Cargo Cross-Workspace Cache would reduce duplicate build artifacts across Cargo 
 
 Related: [Cargo Cross-Workspace Cache][cargo-cross-workspace-cache], [Cargo][cargo].
 
+| Q3 '26 | Q4 '26 | Q1 '27 |
+|--------|--------|--------|
+| ✅ Funded | ✅ Funded | ⚠️ Partial |
+
 ### Reusable Build Artifacts
 
 Today, `cargo check` and `cargo build` largely duplicate work, which matters for teams that run both in local development or CI. This project aims to make build artifacts reusable across both workflows, so work done for `cargo check` can carry into `cargo build`.
@@ -54,6 +66,10 @@ Funding would give [Alejandra Gonzalez (@blyxyas)](https://github.com/blyxyas) t
 
 Related: [Incremental Compilation System, Rethought][incremental-system-rethought], [rust-lang/rust][rust-lang-rust].
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
 ### Cranelift
 
 Cranelift is an alternative Rust code generation backend. The current goal is a 2x speedup in Cranelift code generation for debug builds, reducing local compile time for teams rebuilding large Rust services many times per day.
@@ -61,6 +77,10 @@ Cranelift is an alternative Rust code generation backend. The current goal is a 
 Sponsor support would cover time for [bjorn3 (@bjorn3)][bjorn3] and [Folkert de Vries (@folkertdev)][folkertdev], through [Tweede Golf][tweede-golf], to work through the performance improvements in the project goal.
 
 Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift][cranelift], [Tweede Golf][tweede-golf].
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
 ## Developer Experience and Tooling
 
@@ -71,6 +91,10 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://github.com/sunshowers): releases, issue triage, contributor review, and fixes requested by users running nextest in CI. RCN members can provide feedback, test cases, or contributions through the same public channels as other users.
 
 Related: [cargo-nextest](https://nexte.st/).
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
 ### cargo-semver-checks
 
@@ -84,6 +108,10 @@ Related:
 - [project goal][cargo-semver-checks-goal]
 - [goal tracking issue][cargo-semver-checks-goal-tracking]
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -92,6 +120,9 @@ Many Rust roadmap items need Cargo review or implementation work, including work
 
 Related: [Cargo][cargo], [crates.io][crates-io].
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
 ### C and C++ Interoperability
 
@@ -109,6 +140,10 @@ Links:
 - [Interop work inventory](https://docs.google.com/document/d/1-REi68Us_fPOlW1GlEmEqdbtDJAt4UjhBgnXHs-NEmc/edit?usp=drivesdk)
 - [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://rust-lang.github.io/rust-project-goals/2026/interop-f80-f128.html)
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
 ### Crate Namespaces
 
 Crate namespaces would help organizations publishing related crate families, internal platform crates, SDKs, or official packages. Namespaces would let those crates live under one namespace, making ownership clearer and reducing collisions with similarly named crates.
@@ -116,6 +151,10 @@ Crate namespaces would help organizations publishing related crate families, int
 Implementation work is underway across rustc, Cargo, and crates.io while the next project goal is still being drafted. Funding would help contributors such as [Takayuki Maeda (@TaKO8Ki)](https://github.com/TaKO8Ki) continue implementing RFC 3243 and related changes. Cargo, crates.io, and rust-lang teams still decide design and policy questions through their normal processes.
 
 Related: [RFC 3243][rfc-3243], [previous project goal][open-namespaces-goal], [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust]. A new project goal has not been published yet.
+
+| Q3 '26 | Q4 '26 | Q1 '27 |
+|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
 ### Native async fn dynamic dispatch in traits
 
@@ -127,6 +166,10 @@ The goal is to reduce reliance on #[async_trait], give library authors a cleaner
 
 Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust].
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
 ## Language and Compiler
 
 ### Async State Machine Improvements
@@ -137,13 +180,9 @@ Rust's async implementation generates state machines behind the scenes. For asyn
 
 Related: [project goal][async-state-machine-goal], [background][async-state-machine-background], [rust-lang/rust][rust-lang-rust].
 
-### F16 Stabilization
-
-Many machine learning, graphics, simulation, and scientific computing workloads use 16-bit floating point formats. Native f16 support would make it easier to pass f16 data between Rust, hardware APIs, and libraries that already use those values.
-
-Sponsor support would help [Folkert de Vries (@folkertdev)][folkertdev], through [Trifecta Tech Foundation][trifecta], continue the implementation, testing, documentation, and review work needed before f16 can be considered for stabilization. Stabilization would still be decided through the Rust Project process.
-
-Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust].
+| Q3 '26 | Q4 '26 |
+|--------|--------|
+| ✅ Funded | ⚠️ Partial |
 
 ### Stable MIR and rustc_public
 
@@ -153,6 +192,10 @@ The next project goal is still pending. Funding would help [Makai41 (@Makai41)](
 
 Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rust-lang-rust]. The next project goal has not been published yet.
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
 ### Binary Size Reduction
 
 A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcatnl)](https://github.com/hexcatnl). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
@@ -161,6 +204,10 @@ This is a funding interest area, not an approved Rust Project goal or committed 
 
 Related: [rust-lang/rust][rust-lang-rust]. Binary-size roadmap link to be added once published.
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
 ### Declarative Macro Improvements
 
 Better declarative macros could replace some proc macros, cutting build time, dependency surface area, and supply-chain review burden. That helps where dependency review, supply-chain controls, or build-time code execution policies make proc macros expensive to adopt.
@@ -168,6 +215,10 @@ Better declarative macros could replace some proc macros, cutting build time, de
 Funding would help [Josh Triplett (@joshtriplett)](https://github.com/joshtriplett) work on declarative attributes and derive macros. It may also support related work by [Oli Scherer (@oli-obk)](https://github.com/oli-obk) on compile-time Rust evaluation, or "comptime". Design questions remain subject to the relevant RFC, lang/compiler team, and stabilization processes.
 
 Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust-lang/rust][rust-lang-rust].
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
 ## Production Systems
 
@@ -179,6 +230,10 @@ Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust
 
 Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coop-prototype], [runtime optimization discussion][tokio-runtime-discussion].
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ✅ Funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
 ### rustls
 
 [rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Production services that terminate or initiate TLS depend on timely security response, compatibility, and connection-heavy performance. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
@@ -187,6 +242,10 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 Related: [rustls][rustls].
 
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
 ### Hyperium
 
 [Hyperium][hyperium] maintains Hyper, Tower, h2, and related networking crates used by Rust services. Teams depend on those crates for availability, protocol correctness, observability, and performance.
@@ -194,6 +253,10 @@ Related: [rustls][rustls].
 [Sean McArthur (@seanmonstar)](https://github.com/seanmonstar) is seeking time for the work that keeps Hyperium crates healthy: releases, issue triage, modularization, h2 performance, buffer pooling, observability, and production-user feedback.
 
 Related: [Hyperium Roadmap][hyperium-roadmap].
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
 ## Contact
 
@@ -212,7 +275,6 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [cranelift-performance]: https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html
 [crates-io]: https://crates.io/
 [declarative-macro-improvements]: https://github.com/rust-lang/rust-project-goals/issues/629
-[f16-stabilization]: https://rust-lang.github.io/rust-project-goals/2026/stabilizing-f16.html#funding
 [faster-builds-roadmap]: https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html
 [folkertdev]: https://github.com/folkertdev
 [hyperium]: https://hyper.rs/
@@ -225,10 +287,8 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
-[rustnl]: https://rustnl.org/
 [stable-mir-previous-goal]: https://github.com/rust-lang/rust-project-goals/issues/266
 [tokio]: https://tokio.rs/
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
 [tokio-runtime-discussion]: https://github.com/tokio-rs/tokio/issues/8085
-[trifecta]: https://trifectatech.org/
 [tweede-golf]: https://tweedegolf.nl/
