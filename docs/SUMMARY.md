@@ -2,7 +2,7 @@
 
 - [Overview](./overview.md)
 - [Member Directory](./members.md)
-- [Funding](./funding.md)
+- [Fund the Rust Ecosystem](./funding.md)
   - [Funding Directory](./funding-directory.md)
   - [Funding Office Hours](./funding-office-hours.md)
 
