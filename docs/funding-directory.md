@@ -262,6 +262,20 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 
 To discuss funding, procurement, or private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
+## Fully Funded
+
+### F16 Stabilization
+
+Many machine learning, graphics, simulation, and scientific computing workloads use 16-bit floating point formats. Native f16 support would make it easier to pass f16 data between Rust, hardware APIs, and libraries that already use those values.
+
+Sponsor support would help [Folkert de Vries (@folkertdev)][folkertdev], through [Tweede Golf][tweede-golf], continue the implementation, testing, documentation, and review work needed before f16 can be considered for stabilization. Stabilization would still be decided through the Rust Project process.
+
+Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust].
+
+| Q1 '26 | Q2 '26 |
+|--------|--------|
+| ✅ Funded | ✅ Funded |
+
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
 [async-state-machine-goal]: https://rust-lang.github.io/rust-project-goals/2026/async-statemachine-optimisation.html#funding
@@ -275,6 +289,7 @@ To discuss funding, procurement, or private production feedback, come to [Fundin
 [cranelift-performance]: https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html
 [crates-io]: https://crates.io/
 [declarative-macro-improvements]: https://github.com/rust-lang/rust-project-goals/issues/629
+[f16-stabilization]: https://rust-lang.github.io/rust-project-goals/2026/stabilizing-f16.html#funding
 [faster-builds-roadmap]: https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html
 [folkertdev]: https://github.com/folkertdev
 [hyperium]: https://hyper.rs/

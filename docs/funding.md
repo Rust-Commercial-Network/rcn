@@ -1,4 +1,4 @@
-# Funding
+# Fund the Rust Ecosystem
 
 Does your company depend on Rust?
 
