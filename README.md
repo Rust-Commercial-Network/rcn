@@ -10,7 +10,7 @@ The Rust Commercial Network (RCN) is a Rust Foundation group for people and orga
 
 **Members:** see the current [RCN member list](https://rust-commercial-network.github.io/rcn/members.html).
 
-**Support Rust ecosystem work:** see [Fund the Rust Ecosystem](https://rust-commercial-network.github.io/rcn/funding.html).
+**Fund the Rust Ecosystem:** see [Fund the Rust Ecosystem](https://rust-commercial-network.github.io/rcn/funding.html).
 
 **Discuss:** use the RCN channel in the [Rust Project Zulip](https://rust-lang.zulipchat.com/).
 
