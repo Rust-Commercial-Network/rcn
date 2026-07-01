@@ -2,7 +2,9 @@
 
 - [Overview](./overview.md)
 - [Member Directory](./members.md)
-- [Funding Directory](./funding-directory.md)
+- [Funding](./funding.md)
+  - [Funding Directory](./funding-directory.md)
+  - [Funding Office Hours](./funding-office-hours.md)
 
 # Process
 
