@@ -1,16 +1,16 @@
 # Rust Ecosystem Work Seeking Support
 
-This directory lists Rust compiler, Cargo, tooling, and library work where maintainers are looking for funding, production data, or feedback from companies using Rust at scale.
+This directory lists Rust ecosystem work seeking funding from companies using Rust at scale. It includes work on the Rust compiler, Cargo, tooling, libraries, and crates published on crates.io.
 
 The initiatives below represent active funding opportunities. Most already have at least one supporting organization and are looking for additional partners.
 
-To discuss funding, procurement, or sharing private production feedback, contact [rust-commercial-network@rustfoundation.org][rcn-email]. For public discussion, use the [RCN channel in the Rust Project Zulip][rcn-zulip].
+To discuss funding, procurement, or sharing private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
 RFEF sponsors may receive recognition, fund reporting, sponsorship coordination, and advance security disclosures when coordinated private notice is needed.
 
 ## How to Help
 
-Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. For Rust Project goals seeking support, see the [Rust Project Goals funding page][project-goals-funding]. If an organization wants to support Rust maintainers more generally, please check out the  [Rust Project Funding page](https://rust-lang.org/funding/) where you can support the Rust Foundation Maintainers Fund or individual Rust project members.
+Most listed work can be supported through the Rust Foundation Ecosystem Fund (RFEF), which directs funding to the maintainers or projects doing the work. For all Rust Project goals seeking support, see the [Rust Project Goals funding page][project-goals-funding]. If an organization wants to support Rust maintainers more generally, please check out the  [Rust Project Funding page](https://rust-lang.org/funding/) where you can support the Rust Foundation Maintainers Fund or individual Rust project members.
 
 Funding does not buy control over Rust technical decisions, RFC outcomes, stabilization, release timing, maintainer review, priority, or project roadmaps.
 
@@ -260,7 +260,7 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 
 ## Contact
 
-To discuss funding, procurement, or private production feedback, contact [rust-commercial-network@rustfoundation.org][rcn-email]. For public discussion, use the [RCN channel in the Rust Project Zulip][rcn-zulip].
+To discuss funding, procurement, or private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
@@ -283,7 +283,6 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [open-namespaces-goal]: https://rust-lang.github.io/rust-project-goals/2025h1/open-namespaces.html
 [project-goals-funding]: https://rust-lang.github.io/rust-project-goals/2026/funding.html
 [rcn-email]: mailto:rust-commercial-network@rustfoundation.org
-[rcn-zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-rcn
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
@@ -292,3 +291,4 @@ To discuss funding, procurement, or private production feedback, contact [rust-c
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
 [tokio-runtime-discussion]: https://github.com/tokio-rs/tokio/issues/8085
 [tweede-golf]: https://tweedegolf.nl/
+[zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network
