@@ -5,6 +5,7 @@
 - [Fund the Rust Ecosystem](./funding.md)
   - [Funding Directory](./funding-directory.md)
   - [Funding Office Hours](./funding-office-hours.md)
+- [Network Services Working Group](./network-services-wg.md)
 
 # Process
 
