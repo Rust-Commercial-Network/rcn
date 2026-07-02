@@ -142,7 +142,7 @@ Links:
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
-| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
 ### Crate Namespaces
 
