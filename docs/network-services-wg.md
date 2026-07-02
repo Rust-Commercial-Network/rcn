@@ -6,7 +6,7 @@ Scope: HTTP servers, proxies, gRPC services, async service frameworks, event pro
 
 ## Status
 
-The working group held its kickoff meeting in early 2025 and is now scheduling regular meetings. Async discussion is ongoing in the [Zulip thread][zulip-thread]. We're looking for members to help shape the agenda and first deliverables.
+The working group held its kickoff meeting in June 2026 and is now scheduling regular meetings. Async discussion is ongoing in the [Zulip thread][zulip-thread]. We're looking for members to help shape the agenda and first deliverables.
 
 ## Goals
 
@@ -46,8 +46,8 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 Discussion: [Network Services WG meeting schedule on Zulip][zulip-thread]
 
-## Past Meetings
+## Past Meeting Notes
 
-* [Kickoff meeting notes](https://docs.google.com/document/d/1Awt5K_TrUx7Mv_I7oIkKvm7cZPEtZzpRNCkJAqnnXrQ/edit?usp=drivesdk)
+* [2025-06-09 Kickoff](https://docs.google.com/document/d/1Awt5K_TrUx7Mv_I7oIkKvm7cZPEtZzpRNCkJAqnnXrQ/edit?usp=drivesdk)
 
 [zulip-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Network.20Services.20WG.20meeting.20schedule/with/606595503
