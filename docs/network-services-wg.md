@@ -19,8 +19,8 @@ The working group held its kickoff meeting in early 2025 and is now scheduling r
 Participation is open to everyone, including non-RCN members.
 
 * **Join the conversation:** follow the [Network Services WG topic on Zulip][zulip-thread]
-* **Shape the next meeting:** fill out the [scheduling poll](https://lettucemeet.com/l/NAlr8) and share it with anyone who'd want to join
-* **See what we discussed last time:** check the [past meeting notes](#past-meetings) below
+* **Join the next meeting:** see [details that follow](#next-meeting)
+* **See what we discussed last time:** check the [past meeting notes](#past-meetings) that follow
 
 Meetings are roughly monthly, about an hour. Between meetings, coordination happens on Zulip.
 
@@ -30,7 +30,19 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-Currently scheduling. Fill out the [scheduling poll](https://lettucemeet.com/l/NAlr8) if you want to join, and please share it around.
+**July 10, 2026**
+
+| Time zone | Time |
+| :--- | :--- |
+| Pacific (PT) | 8:00 AM |
+| Eastern (ET) | 11:00 AM |
+| UTC | 15:00 |
+| Central European (CEST) | 5:00 PM |
+| Japan (JST) | 12:00 AM (July 11) |
+| Australia Eastern (AEST) | 1:00 AM (July 11) |
+
+[Calendar link](https://tinyurl.com/rcn-nswg-7-10-26) ·
+[Notes and agenda](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
 
 Discussion: [Network Services WG meeting schedule on Zulip][zulip-thread]
 
