@@ -30,7 +30,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**July 10, 2026**
+**July 9, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
@@ -38,8 +38,8 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 | Eastern (ET) | 11:00 AM |
 | UTC | 15:00 |
 | Central European (CEST) | 5:00 PM |
-| Japan (JST) | 12:00 AM (July 11) |
-| Australia Eastern (AEST) | 1:00 AM (July 11) |
+| Japan (JST) | 12:00 AM (July 10) |
+| Australia Eastern (AEST) | 1:00 AM (July 10) |
 
 [Calendar link](https://tinyurl.com/rcn-nswg-7-10-26) ·
 [Notes and agenda](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
