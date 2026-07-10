@@ -184,11 +184,11 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 |--------|--------|
 | ✅ Funded | ⚠️ Partial |
 
-### Stable MIR and rustc_public
+### rustc_public
 
-Stable MIR is intended to give external tools a supported way to read compiler data without depending on unstable rustc internals. That matters for static analysis, verification, GPU, compliance, and internal platform tooling.
+`rustc_public`(formerly Stable MIR) is intended to give external tools a supported way to read compiler data without depending on unstable rustc internals. That matters for static analysis, verification, GPU, compliance, and internal platform tooling.
 
-The next project goal is still pending. Funding would help [Makai41 (@Makai41)](https://github.com/Makai41) and the Stable MIR project publish `rustc_public` to crates.io, expand API coverage, and improve documentation. API additions should be evaluated for general Rust tooling value, not for any one downstream project.
+The next project goal is still pending. Funding would help [Makai (@makai410)](https://github.com/makai410) and the Rustc Public project publish `rustc_public` to crates.io, expand API coverage, and improve documentation. API additions should be evaluated for general Rust tooling value, not for any one downstream project.
 
 Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rust-lang-rust]. The next project goal has not been published yet.
 
