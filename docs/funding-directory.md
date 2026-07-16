@@ -150,7 +150,7 @@ Crate namespaces would help organizations publishing related crate families, int
 
 Implementation work is underway across rustc, Cargo, and crates.io. Funding would help contributors such as [Takayuki Maeda (@TaKO8Ki)](https://github.com/TaKO8Ki) continue implementing RFC 3243 and related changes. Cargo, crates.io, and rust-lang teams still decide design and policy questions through their normal processes.
 
-Related: [RFC 3243][rfc-3243], [2026 project goal](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html), [previous project goal][open-namespaces-goal], [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust].
+Related: [RFC 3243][rfc-3243], [2026 project goal](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html), [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust].
 
 | Q3 '26 | Q4 '26 | Q1 '27 |
 |--------|--------|--------|
@@ -295,7 +295,6 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [hyperium]: https://hyper.rs/
 [hyperium-roadmap]: https://hyper.rs/contrib/roadmap/
 [incremental-system-rethought]: https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html
-[open-namespaces-goal]: https://rust-lang.github.io/rust-project-goals/2025h1/open-namespaces.html
 [project-goals-funding]: https://rust-lang.github.io/rust-project-goals/2026/funding.html
 [rcn-email]: mailto:rust-commercial-network@rustfoundation.org
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
