@@ -148,9 +148,9 @@ Links:
 
 Crate namespaces would help organizations publishing related crate families, internal platform crates, SDKs, or official packages. Namespaces would let those crates live under one namespace, making ownership clearer and reducing collisions with similarly named crates.
 
-Implementation work is underway across rustc, Cargo, and crates.io while the next project goal is still being drafted. Funding would help contributors such as [Takayuki Maeda (@TaKO8Ki)](https://github.com/TaKO8Ki) continue implementing RFC 3243 and related changes. Cargo, crates.io, and rust-lang teams still decide design and policy questions through their normal processes.
+Implementation work is underway across rustc, Cargo, and crates.io. Funding would help contributors such as [Takayuki Maeda (@TaKO8Ki)](https://github.com/TaKO8Ki) continue implementing RFC 3243 and related changes. Cargo, crates.io, and rust-lang teams still decide design and policy questions through their normal processes.
 
-Related: [RFC 3243][rfc-3243], [previous project goal][open-namespaces-goal], [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust]. A new project goal has not been published yet.
+Related: [RFC 3243][rfc-3243], [2026 project goal](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html), [previous project goal][open-namespaces-goal], [Cargo][cargo], [crates.io][crates-io], [rust-lang/rust][rust-lang-rust].
 
 | Q3 '26 | Q4 '26 | Q1 '27 |
 |--------|--------|--------|
