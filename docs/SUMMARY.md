@@ -1,6 +1,7 @@
 # Summary
 
 - [Overview](./overview.md)
+- [Meetings](./meetings.md)
 - [Member Directory](./members.md)
 - [Fund the Rust Ecosystem](./funding.md)
   - [Funding Directory](./funding-directory.md)
@@ -12,7 +13,6 @@
 - [Membership](./membership.md)
 - [Governance](./governance.md)
 - [Conflict of Interest Policy](./conflict-of-interest-policy.md)
-- [Meetings](./meetings.md)
 - [Initiatives](./initiatives.md)
 - [Meeting Notetaker Role](./notetaker-role.md)
 
