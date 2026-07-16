@@ -4,6 +4,31 @@ RCN meetings may cover sensitive adoption, production, or ecosystem concerns. To
 
 \*The RCN will determine the cadence and number of meetings per year.
 
+## Calendar
+
+See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
+
+## Next Meeting
+
+**July 20, 2026**
+
+| Time zone | Time |
+| :--- | :--- |
+| Pacific (PT) | 10:30 AM |
+| Eastern (ET) | 1:30 PM |
+| UTC | 17:30 |
+| Central European (CEST) | 7:30 PM |
+| Japan (JST) | 2:30 AM (July 21) |
+| Australia Eastern (AEST) | 3:30 AM (July 21) |
+
+[Calendar link](https://calendar.google.com/calendar/u/0/event?eid=MTh2a2s0NWgyNm9lbzl2Ym1yYWxsbTE2c3EgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
+
+Agenda will follow.
+
+## Past Meeting Notes
+
+* [2026-06-22 Rust Commercial Network Meeting](../meetings/2026-06-22.md)
+
 ## Chatham House Rule
 
 [Chatham House Rule](https://www.chathamhouse.org/about-us/chatham-house-rule) means participants may share what was said, but may not identify who said it.
