@@ -30,24 +30,16 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**July 9, 2026**
+**August 6, 2026**
 
-| Time zone | Time |
-| :--- | :--- |
-| Pacific (PT) | 8:00 AM |
-| Eastern (ET) | 11:00 AM |
-| UTC | 15:00 |
-| Central European (CEST) | 5:00 PM |
-| Japan (JST) | 12:00 AM (July 10) |
-| Australia Eastern (AEST) | 1:00 AM (July 10) |
+Time pending.
 
-[Calendar link](https://tinyurl.com/rcn-nswg-7-10-26) ·
-[Notes and agenda](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
-
-Discussion: [Network Services WG meeting schedule on Zulip][zulip-thread]
+Scheduling: [August meeting Zulip thread][august-meeting-thread]
 
 ## Past Meeting Notes
 
+* [2026-07-09 Meeting notes](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
 * [2025-06-09 Kickoff](https://docs.google.com/document/d/1Awt5K_TrUx7Mv_I7oIkKvm7cZPEtZzpRNCkJAqnnXrQ/edit?usp=drivesdk)
 
 [zulip-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Network.20Services.20WG.20meeting.20schedule/with/606595503
+[august-meeting-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/August.20Meeting.3A.20Network.20services.20working.20group/with/611175383
