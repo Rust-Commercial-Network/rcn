@@ -14,12 +14,12 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 | Time zone | Time |
 | :--- | :--- |
-| Pacific (PT) | 10:30 AM |
-| Eastern (ET) | 1:30 PM |
-| UTC | 17:30 |
-| Central European (CEST) | 7:30 PM |
-| Japan (JST) | 2:30 AM (July 21) |
-| Australia Eastern (AEST) | 3:30 AM (July 21) |
+| Pacific (PT) | 7:30 AM |
+| Eastern (ET) | 10:30 AM |
+| UTC | 14:30 |
+| Central European (CEST) | 4:30 PM |
+| Japan (JST) | 11:30 PM |
+| Australia Eastern (AEST) | 12:30 AM (July 21) |
 
 [Calendar link](https://calendar.google.com/calendar/u/0/event?eid=MTh2a2s0NWgyNm9lbzl2Ym1yYWxsbTE2c3EgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
 
