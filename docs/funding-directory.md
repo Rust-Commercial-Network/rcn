@@ -58,7 +58,7 @@ Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-go
 
 **Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
 
-**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
 
 **Contributor:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)).
 
@@ -92,7 +92,7 @@ Related: [Incremental Compilation System, Rethought][incremental-system-rethough
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-**Billing route:** see the [Fast Builds project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
 
 **Project contact:** Alejandra González ([contact](https://rust-lang.zulipchat.com/#narrow/dm/560802-Alejandra-Gonzalez), [profile](https://github.com/blyxyas)).
 
@@ -112,7 +112,7 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 
 **Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
 
-**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
 
 **Contributor:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)).
 
@@ -246,7 +246,9 @@ Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust]
 
 **Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
 
-**Billing route:** [WyeWorks](https://www.wyeworks.com/); see the [project goal funding details][async-fn-traits].
+**Billing route:** see the [project goal funding details][async-fn-traits].
+
+**Organization:** [WyeWorks](https://www.wyeworks.com/).
 
 ## Language and Compiler
 
@@ -266,7 +268,7 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 
 **Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
 
-**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details][async-state-machine-goal].
+**Billing route:** see the [project goal funding details][async-state-machine-goal].
 
 **Contributor:** Dion Dokter ([contact](https://rust-lang.zulipchat.com/#narrow/dm/631861-Dion-Dokter), [profile](https://github.com/diondokter)).
 
@@ -404,7 +406,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 
 **Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
 
-**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details][f16-stabilization].
+**Billing route:** see the [project goal funding details][f16-stabilization].
 
 **Contributor:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)).
 
