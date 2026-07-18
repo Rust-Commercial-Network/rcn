@@ -4,9 +4,7 @@ This directory lists Rust ecosystem work seeking funding from companies using Ru
 
 The initiatives below represent active funding opportunities. Most already have at least one supporting organization and are looking for additional partners.
 
-To discuss funding, procurement, or sharing private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
-
-RFEF sponsors may receive recognition, fund reporting, sponsorship coordination, and advance security disclosures when coordinated private notice is needed.
+Rust Foundation Ecosystem Fund (RFEF) sponsors may receive recognition, fund reporting, sponsorship coordination, and advance security disclosures when coordinated private notice is needed.
 
 ## How to Help
 
@@ -20,19 +18,29 @@ Use public project venues for technical feedback when possible. If confidential 
 
 Named contributors and related projects are included to identify likely contacts and work owners. Inclusion does not mean the RCN, Rust Foundation, or Rust Project has endorsed a specific technical decision.
 
+## Contact
+
+For general questions about ecosystem funding, procurement, or sharing private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
+
+For project-specific billing questions, use the billing contact listed inline beneath that project's funding status.
+
 ## Build Performance
 
 ### Wild
 
 Wild is a [Rust Innovation Lab](https://rustfoundation.org/rust-innovation-lab/) project building a faster linker for Rust workloads. It addresses link time as a visible cost in CI or local development. Current work is aimed at large binaries, more platforms, and the missing linker features that prevent projects from trying Wild today.
 
-The most useful sponsor input is real build data: linker timing profiles, crate graph shape, binary size, platform constraints, and failure cases. Maintainers will prioritize work that fits Wild's goals and available time.
+The most useful sponsor input is real build data: linker timing profiles, crate graph shape, binary size, platform constraints, and failure cases. Funding also supports basic maintenance, PR review, and platform support work. Organizations planning contributions can use this support to coordinate with Wild's maintainers, while maintainers continue to prioritize work that fits Wild's goals and available time.
 
 Led by [David Lattimore (@davidlattimore)](https://github.com/davidlattimore). Related project: [Wild](https://github.com/wild-linker/wild).
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
 
 ### Faster Builds Roadmap
 
@@ -44,7 +52,11 @@ Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-go
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
-| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a></span></div>
+
+**Billing contact:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)), through [Tweede Golf][tweede-golf]. bjorn3's work is partially funded by Tweede Golf.
 
 ### Cargo Cross-Workspace Cache
 
@@ -58,6 +70,10 @@ Related: [Cargo Cross-Workspace Cache][cargo-cross-workspace-cache], [Cargo][car
 |--------|--------|--------|
 | ✅ Funded | ✅ Funded | ⚠️ Partial |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Billing contact:** Jess Izen ([contact and profile](https://book.jessizen.com/)); see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/cargo-cross-workspace-cache.html#funding).
+
 ### Reusable Build Artifacts
 
 Today, `cargo check` and `cargo build` largely duplicate work, which matters for teams that run both in local development or CI. This project aims to make build artifacts reusable across both workflows, so work done for `cargo check` can carry into `cargo build`.
@@ -69,6 +85,8 @@ Related: [Incremental Compilation System, Rethought][incremental-system-rethough
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html#funding). **Project contact:** Alejandra González ([contact](https://rust-lang.zulipchat.com/#narrow/dm/560802-Alejandra-Gonzalez), [profile](https://github.com/blyxyas)).
 
 ### Cranelift
 
@@ -82,19 +100,43 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 |--------|--------|--------|--------|
 | ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
+
+**Billing contact:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)), through [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
+
 ## Developer Experience and Tooling
 
 ### cargo-nextest
 
 `cargo-nextest` is a Rust test runner used in local development and CI. For teams whose Rust test suites gate releases, slow or flaky runs can delay shipping. Maintenance funding pays for the work users rely on but do not always see: releases, issue triage, contributor review, platform support, and CI-scale fixes.
 
-Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://github.com/sunshowers): releases, issue triage, contributor review, and fixes requested by users running nextest in CI. RCN members can provide feedback, test cases, or contributions through the same public channels as other users.
+Funding would buy down unpaid maintenance work for [Rain (@sunshowers)](https://github.com/sunshowers): releases, issue triage, contributor review, and fixes requested by users running nextest in CI. Organizations planning contributions can use this support to coordinate with Rain before investing in implementation, while technical decisions and reviews continue through the project's public channels.
 
 Related: [cargo-nextest](https://nexte.st/).
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Billing contact:** Rain ([contact and profile](https://github.com/sunshowers)).
+
+### Symposium
+
+[Symposium](https://symposium.dev/) helps Rust crates provide agent skills, MCP servers, and other development extensions based on project dependencies. Funding supports feature development and basic maintenance, including releases, issue triage, integration work, and review of contributions.
+
+Organizations planning contributions can use this support to coordinate with Symposium's maintainers before investing in implementation. Technical direction and contribution review remain with the project.
+
+Related: [Symposium](https://symposium.dev/), [Symposium on GitHub](https://github.com/symposium-dev/symposium), [Rust Innovation Lab](https://rustfoundation.org/rust-innovation-lab/).
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
 
 ### cargo-semver-checks
 
@@ -112,6 +154,10 @@ Related:
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
+
+**Billing contact:** Predrag Gruevski ([contact](https://rust-lang.zulipchat.com/#narrow/dm/474284-Predrag-Gruevski), [profile](https://github.com/obi1kenobi)); see the [project goal](https://rust-lang.github.io/rust-project-goals/2026/cargo-semver-checks.html).
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -123,6 +169,8 @@ Related: [Cargo][cargo], [crates.io][crates-io].
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+**Billing contacts:** [Rust Project Funding Team](https://rust-lang.org/funding/) and Jess Izen ([contact and profile](https://book.jessizen.com/)).
 
 ### C and C++ Interoperability
 
@@ -143,6 +191,10 @@ Links:
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
+
+**Billing contacts:** teor ([contact](https://rust-lang.zulipchat.com/#narrow/dm/325209-teor), [profile](https://github.com/teor2345)), followed by [Tweede Golf][tweede-golf].
 
 ### Crate Namespaces
 
@@ -170,6 +222,10 @@ Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust]
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)), through [WyeWorks](https://www.wyeworks.com/); see the [project goal funding details][async-fn-traits].
+
 ## Language and Compiler
 
 ### Async State Machine Improvements
@@ -183,6 +239,10 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 | Q3 '26 | Q4 '26 |
 |--------|--------|
 | ✅ Funded | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
+
+**Billing contact:** Dion Dokter ([contact](https://rust-lang.zulipchat.com/#narrow/dm/631861-Dion-Dokter), [profile](https://github.com/diondokter)), through [Tweede Golf][tweede-golf]; see the [project goal funding details][async-state-machine-goal].
 
 ### rustc_public
 
@@ -206,7 +266,11 @@ Related: [rust-lang/rust][rust-lang-rust]. Binary-size roadmap link to be added 
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
-| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsor:</strong> <span class="sponsor-logos"><a href="https://hexcat.nl/" title="Hexcat"><img src="images/sponsors/hexcat.svg" alt="Hexcat"></a></span></div>
+
+**Billing contact:** Mara Bos ([contact](https://rust-lang.zulipchat.com/#narrow/dm/310399-Mara-Bos), [profile](https://github.com/m-ou-se)). **Project contact:** Nia ([contact](https://rust-lang.zulipchat.com/#narrow/dm/571657-Nia), [profile](https://github.com/nia-e)).
 
 ### Declarative Macro Improvements
 
@@ -222,6 +286,22 @@ Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust
 
 ## Production Systems
 
+### Tokio Maintenance
+
+[Tokio](https://tokio.rs/) is maintained through ongoing releases, issue triage, PR review, contributor support, and coordination across its runtime and related crates. Funding supports this basic maintenance work independently of targeted runtime optimization projects.
+
+Organizations that want to contribute to Tokio can use this support to coordinate with maintainers before investing in implementation. Current sponsorship covers the displayed baseline maintenance period, while additional support can expand maintenance capacity and sustain it beyond those quarters. Funding does not buy technical priority or change Tokio's public design and review process.
+
+Related: [Tokio][tokio], [Tokio on GitHub](https://github.com/tokio-rs/tokio).
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ✅ Funded | ✅ Funded | ✅ Funded | ✅ Funded |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
+
+**Billing contact:** Carl Lerche ([contact and profile](https://github.com/carllerche)), through the Tokio collective ([billing page](https://github.com/sponsors/tokio-rs), [profile](https://github.com/tokio-rs)).
+
 ### Tokio Runtime Optimizations
 
 [Tokio](https://tokio.rs/) is the foundation for many Rust network services and async applications. Runtime and scheduler work matters when production workloads combine network IO, timers, and compute-heavy tasks, especially where scheduler behavior affects latency, fairness, CPU use, or incident risk.
@@ -234,11 +314,15 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 |--------|--------|--------|--------|
 | ✅ Funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+
+**Contributor contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
+
 ### rustls
 
 [rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Production services that terminate or initiate TLS depend on timely security response, compatibility, and connection-heavy performance. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
 
-[Dirkjan Ochtman (@djc)](https://github.com/djc) is seeking maintenance time for rustls security coordination, releases, contribution review, 1.0 work, async handshake performance, and production-user feedback.
+[Dirkjan Ochtman (@djc)](https://github.com/djc) is seeking maintenance time for rustls security coordination, releases, contribution review, 1.0 work, async handshake performance, and production-user feedback. Organizations planning contributions can use this support to coordinate with rustls maintainers before investing in implementation.
 
 Related: [rustls][rustls].
 
@@ -246,11 +330,15 @@ Related: [rustls][rustls].
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.arm.com/" title="Arm"><img src="images/sponsors/arm.svg" alt="Arm"></a></span></div>
+
+**Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
+
 ### Hyperium
 
 [Hyperium][hyperium] maintains Hyper, Tower, h2, and related networking crates used by Rust services. Teams depend on those crates for availability, protocol correctness, observability, and performance.
 
-[Sean McArthur (@seanmonstar)](https://github.com/seanmonstar) is seeking time for the work that keeps Hyperium crates healthy: releases, issue triage, modularization, h2 performance, buffer pooling, observability, and production-user feedback.
+[Sean McArthur (@seanmonstar)](https://github.com/seanmonstar) is seeking time for the work that keeps Hyperium crates healthy: releases, issue triage, contribution and PR review, modularization, h2 performance, buffer pooling, observability, and production-user feedback. Organizations planning contributions can use this support to coordinate with Hyperium maintainers before investing in implementation.
 
 Related: [Hyperium Roadmap][hyperium-roadmap].
 
@@ -258,9 +346,9 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-## Contact
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-To discuss funding, procurement, or private production feedback, come to [Funding Initiative office hours](./funding-office-hours.md). For async public discussion, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
+**Billing contact:** Sean McArthur ([contact](https://rust-lang.zulipchat.com/#narrow/dm/243965-Sean-McArthur), [profile](https://github.com/seanmonstar)).
 
 ## Fully Funded
 
@@ -275,6 +363,10 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 | Q1 '26 | Q2 '26 |
 |--------|--------|
 | ✅ Funded | ✅ Funded |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a><a href="https://vectorware.com/" title="VectorWare"><img src="images/sponsors/vectorware.png" alt="VectorWare"></a></span></div>
+
+**Contributor contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
 
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state

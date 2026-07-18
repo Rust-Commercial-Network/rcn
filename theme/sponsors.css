@@ -1,0 +1,33 @@
+.funding-sponsors {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.sponsor-logos {
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sponsor-logos a {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  display: inline-flex;
+  height: 2.5rem;
+  justify-content: center;
+  min-width: 3.75rem;
+  padding: 0.15rem 0.3rem;
+}
+
+.sponsor-logos img {
+  max-height: 2.15rem;
+  max-width: 8.5rem;
+  object-fit: contain;
+}
