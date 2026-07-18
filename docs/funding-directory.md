@@ -56,7 +56,11 @@ Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-go
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a></span></div>
 
-**Billing contact:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)), through [Tweede Golf][tweede-golf]. bjorn3's work is partially funded by Tweede Golf.
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
+
+**Contributor:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)).
 
 ### Cargo Cross-Workspace Cache
 
@@ -72,7 +76,9 @@ Related: [Cargo Cross-Workspace Cache][cargo-cross-workspace-cache], [Cargo][car
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-**Billing contact:** Jess Izen ([contact and profile](https://book.jessizen.com/)); see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/cargo-cross-workspace-cache.html#funding).
+**Billing contact:** Jess Izen ([contact and profile](https://book.jessizen.com/)).
+
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/cargo-cross-workspace-cache.html#funding).
 
 ### Reusable Build Artifacts
 
@@ -86,7 +92,9 @@ Related: [Incremental Compilation System, Rethought][incremental-system-rethough
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html#funding). **Project contact:** Alejandra González ([contact](https://rust-lang.zulipchat.com/#narrow/dm/560802-Alejandra-Gonzalez), [profile](https://github.com/blyxyas)).
+**Billing route:** see the [Fast Builds project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
+
+**Project contact:** Alejandra González ([contact](https://rust-lang.zulipchat.com/#narrow/dm/560802-Alejandra-Gonzalez), [profile](https://github.com/blyxyas)).
 
 ### Cranelift
 
@@ -102,7 +110,11 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
 
-**Billing contact:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)), through [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
+
+**Contributor:** bjorn3 ([contact](https://rust-lang.zulipchat.com/#narrow/dm/133247-bjorn3), [profile](https://github.com/bjorn3)).
 
 ## Developer Experience and Tooling
 
@@ -156,7 +168,7 @@ Related:
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
 
-**Billing contact:** Predrag Gruevski ([contact](https://rust-lang.zulipchat.com/#narrow/dm/474284-Predrag-Gruevski), [profile](https://github.com/obi1kenobi)); see the [project goal](https://rust-lang.github.io/rust-project-goals/2026/cargo-semver-checks.html).
+**Billing contact:** Predrag Gruevski ([contact](https://rust-lang.zulipchat.com/#narrow/dm/474284-Predrag-Gruevski), [profile](https://github.com/obi1kenobi)).
 
 ### Cargo Maintenance
 
@@ -170,7 +182,9 @@ Related: [Cargo][cargo], [crates.io][crates-io].
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-**Billing contacts:** [Rust Project Funding Team](https://rust-lang.org/funding/) and Jess Izen ([contact and profile](https://book.jessizen.com/)).
+**Billing contact:** Jess Izen ([contact and profile](https://book.jessizen.com/)).
+
+**Billing route:** [Rust Project Funding Team](https://rust-lang.org/funding/).
 
 ### C and C++ Interoperability
 
@@ -194,7 +208,9 @@ Links:
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
 
-**Billing contacts:** teor ([contact](https://rust-lang.zulipchat.com/#narrow/dm/325209-teor), [profile](https://github.com/teor2345)), followed by [Tweede Golf][tweede-golf].
+**Billing contacts:** teor ([contact](https://rust-lang.zulipchat.com/#narrow/dm/325209-teor), [profile](https://github.com/teor2345)) and Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf].
 
 ### Crate Namespaces
 
@@ -208,7 +224,9 @@ Related: [RFC 3243][rfc-3243], [2026 project goal](https://rust-lang.github.io/r
 |--------|--------|--------|
 | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
-**Billing route:** see the [2026 project goal](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html). **Project contact:** Takayuki Maeda ([contact](https://rust-lang.zulipchat.com/#narrow/dm/343125-Takayuki-Maeda), [profile](https://github.com/TaKO8Ki)).
+**Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html#funding).
+
+**Project contact:** Takayuki Maeda ([contact](https://rust-lang.zulipchat.com/#narrow/dm/343125-Takayuki-Maeda), [profile](https://github.com/TaKO8Ki)).
 
 ### Native async fn dynamic dispatch in traits
 
@@ -226,7 +244,9 @@ Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust]
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-**Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)), through [WyeWorks](https://www.wyeworks.com/); see the [project goal funding details][async-fn-traits].
+**Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
+
+**Billing route:** [WyeWorks](https://www.wyeworks.com/); see the [project goal funding details][async-fn-traits].
 
 ## Language and Compiler
 
@@ -244,7 +264,11 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
 
-**Billing contact:** Dion Dokter ([contact](https://rust-lang.zulipchat.com/#narrow/dm/631861-Dion-Dokter), [profile](https://github.com/diondokter)), through [Tweede Golf][tweede-golf]; see the [project goal funding details][async-state-machine-goal].
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details][async-state-machine-goal].
+
+**Contributor:** Dion Dokter ([contact](https://rust-lang.zulipchat.com/#narrow/dm/631861-Dion-Dokter), [profile](https://github.com/diondokter)).
 
 ### rustc_public
 
@@ -306,7 +330,9 @@ Related: [Tokio][tokio], [Tokio on GitHub](https://github.com/tokio-rs/tokio).
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
 
-**Billing contact:** Carl Lerche ([contact and profile](https://github.com/carllerche)), through the Tokio collective ([billing page](https://github.com/sponsors/tokio-rs), [profile](https://github.com/tokio-rs)).
+**Billing contact:** Carl Lerche ([contact and profile](https://github.com/carllerche)).
+
+**Billing route:** Tokio collective ([billing page](https://github.com/sponsors/tokio-rs), [profile](https://github.com/tokio-rs)).
 
 ### Tokio Runtime Optimizations
 
@@ -322,7 +348,11 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-**Billing contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf].
+
+**Contributor:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)).
 
 ### rustls
 
@@ -372,7 +402,11 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a><a href="https://vectorware.com/" title="VectorWare"><img src="images/sponsors/vectorware.png" alt="VectorWare"></a></span></div>
 
-**Contributor contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+
+**Billing route:** [Tweede Golf][tweede-golf]; see the [project goal funding details][f16-stabilization].
+
+**Contributor:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)).
 
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
