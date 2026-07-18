@@ -208,6 +208,8 @@ Related: [RFC 3243][rfc-3243], [2026 project goal](https://rust-lang.github.io/r
 |--------|--------|--------|
 | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
+**Billing route:** see the [2026 project goal](https://rust-lang.github.io/rust-project-goals/2026/open-namespaces.html). **Project contact:** Takayuki Maeda ([contact](https://rust-lang.zulipchat.com/#narrow/dm/343125-Takayuki-Maeda), [profile](https://github.com/TaKO8Ki)).
+
 ### Native async fn dynamic dispatch in traits
 
 Rust supports async fn in traits, but using async methods through dyn trait objects still requires workarounds such as #[async_trait], which add allocation overhead, obscure signatures, and split the ecosystem between native async traits and boxed trait-object patterns.
@@ -256,6 +258,8 @@ Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rus
 |--------|--------|--------|--------|
 | ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
+**Billing contact:** Makai ([contact](https://rust-lang.zulipchat.com/#narrow/dm/759102-Makai), [profile](https://github.com/makai410)).
+
 ### Binary Size Reduction
 
 A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcatnl)](https://github.com/hexcatnl). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
@@ -283,6 +287,8 @@ Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
+**Billing contact:** Josh Triplett ([contact](https://rust-lang.zulipchat.com/#narrow/dm/239881-Josh-Triplett), [profile](https://github.com/joshtriplett)).
 
 ## Production Systems
 
@@ -316,7 +322,7 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-**Contributor contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
+**Billing contact:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)), through [Tweede Golf][tweede-golf].
 
 ### rustls
 
