@@ -28,6 +28,8 @@ For project-specific billing questions, use the billing contact listed inline be
 
 ### Wild
 
+<div class="project-logo"><a href="https://github.com/wild-linker/wild"><img src="images/projects/wild-logo.svg" alt="Wild linker"></a></div>
+
 Wild is a [Rust Innovation Lab](https://rustfoundation.org/rust-innovation-lab/) project building a faster linker for Rust workloads. It addresses link time as a visible cost in CI or local development. Current work is aimed at large binaries, more platforms, and the missing linker features that prevent projects from trying Wild today.
 
 The most useful sponsor input is real build data: linker timing profiles, crate graph shape, binary size, platform constraints, and failure cases. Funding also supports basic maintenance, PR review, and platform support work. Organizations planning contributions can use this support to coordinate with Wild's maintainers, while maintainers continue to prioritize work that fits Wild's goals and available time.
@@ -151,6 +153,8 @@ Related: [Symposium](https://symposium.dev/), [Symposium on GitHub](https://gith
 **Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
 
 ### cargo-semver-checks
+
+<div class="project-logo"><a href="https://github.com/obi1kenobi/cargo-semver-checks"><img src="images/projects/cargo-semver-checks-logo.svg" alt="cargo-semver-checks"></a></div>
 
 `cargo-semver-checks` helps Rust maintainers catch accidental SemVer breakage before publishing releases. This is especially useful for SDKs and libraries where breaking changes can disrupt downstream customers and make dependency upgrades risky.
 
@@ -320,6 +324,8 @@ Related: [Declarative Macro Improvements][declarative-macro-improvements], [rust
 
 ### Tokio Maintenance
 
+<div class="project-logo project-logo--tokio"><a href="https://tokio.rs/"><img src="images/projects/tokio-logo.svg" alt="Tokio"></a></div>
+
 [Tokio](https://tokio.rs/) is maintained through ongoing releases, issue triage, PR review, contributor support, and coordination across its runtime and related crates. Funding supports this basic maintenance work independently of targeted runtime optimization projects.
 
 Organizations that want to contribute to Tokio can use this support to coordinate with maintainers before investing in implementation. Current sponsorship covers the displayed baseline maintenance period, while additional support can expand maintenance capacity and sustain it beyond those quarters. Funding does not buy technical priority or change Tokio's public design and review process.
@@ -337,6 +343,8 @@ Related: [Tokio][tokio], [Tokio on GitHub](https://github.com/tokio-rs/tokio).
 **Billing route:** Tokio collective ([billing page](https://github.com/sponsors/tokio-rs), [profile](https://github.com/tokio-rs)).
 
 ### Tokio Runtime Optimizations
+
+<div class="project-logo project-logo--tokio"><a href="https://tokio.rs/"><img src="images/projects/tokio-logo.svg" alt="Tokio"></a></div>
 
 [Tokio](https://tokio.rs/) is the foundation for many Rust network services and async applications. Runtime and scheduler work matters when production workloads combine network IO, timers, and compute-heavy tasks, especially where scheduler behavior affects latency, fairness, CPU use, or incident risk.
 
@@ -358,6 +366,8 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 
 ### rustls
 
+<div class="project-logo"><a href="https://rustls.dev/"><img src="images/projects/rustls-logo.svg" alt="rustls"></a></div>
+
 [rustls][rustls] is a Rust Innovation Lab project that provides TLS functionality for many Rust applications and services. Production services that terminate or initiate TLS depend on timely security response, compatibility, and connection-heavy performance. Maintenance support helps pay for security response, releases, dependent-crate compatibility, and production feedback work that otherwise competes with limited maintainer time.
 
 [Dirkjan Ochtman (@djc)](https://github.com/djc) is seeking maintenance time for rustls security coordination, releases, contribution review, 1.0 work, async handshake performance, and production-user feedback. Organizations planning contributions can use this support to coordinate with rustls maintainers before investing in implementation.
@@ -372,19 +382,23 @@ Related: [rustls][rustls].
 
 **Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
 
-### Dial9 Maintenance and Feature Development
+### dial9 Maintenance and Feature Development
 
-[Dial9](https://github.com/dial9-rs/dial9-tokio-telemetry) is a flight recorder for diagnosing Tokio applications in production. Funding supports ongoing PR review, performance optimizations, and feature development through [WyeWorks](https://www.wyeworks.com/).
+[dial9](https://github.com/dial9-rs/dial9-tokio-telemetry) is a flight recorder for diagnosing performance problems in Tokio and other applications running in production. Funding supports ongoing PR review, platform support, performance optimizations, and feature development through [WyeWorks](https://www.wyeworks.com/).
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
-| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
 **Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
 
 **Billing route:** [WyeWorks](https://www.wyeworks.com/).
 
 ### Hyperium
+
+<div class="project-logo"><a href="https://hyper.rs/"><img src="images/projects/hyper-logo.svg" alt="Hyper"></a></div>
 
 [Hyperium][hyperium] maintains Hyper, Tower, h2, and related networking crates used by Rust services. Teams depend on those crates for availability, protocol correctness, observability, and performance.
 

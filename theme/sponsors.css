@@ -31,3 +31,35 @@
   max-width: 8.5rem;
   object-fit: contain;
 }
+
+.project-logo {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 0.35rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 1rem;
+  min-height: 5rem;
+  padding: 0.5rem 0.75rem;
+  width: min(100%, 22rem);
+}
+
+.project-logo--tokio {
+  background: #201c3a;
+}
+
+.project-logo a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-logo img {
+  display: block;
+  max-height: 6rem;
+  max-width: 100%;
+  object-fit: contain;
+}
