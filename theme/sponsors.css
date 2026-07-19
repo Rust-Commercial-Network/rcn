@@ -73,8 +73,22 @@
 }
 
 /* Keep the book title accessible while displaying the RCN brand in its place. */
+:root {
+  --menu-bar-height: 8rem;
+}
+
 .menu-title {
-  background: url('../images/rcn-logo.svg') center / auto 2rem no-repeat;
+  background: url('../images/rcn-logo.svg') center / auto 6.5rem no-repeat;
   color: transparent;
   user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --menu-bar-height: 5rem;
+  }
+
+  .menu-title {
+    background-size: auto 3.5rem;
+  }
 }
