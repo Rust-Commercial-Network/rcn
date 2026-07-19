@@ -1,4 +1,5 @@
-.funding-sponsors {
+.funding-sponsors,
+.fiscal-sponsors {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -6,14 +7,16 @@
   margin: 0.75rem 0;
 }
 
-.sponsor-logos {
+.sponsor-logos,
+.fiscal-sponsor-logos {
   align-items: center;
   display: inline-flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.sponsor-logos a {
+.sponsor-logos a,
+.fiscal-sponsor-logos a {
   align-items: center;
   background: #fff;
   border: 1px solid rgba(127, 127, 127, 0.35);
@@ -26,10 +29,15 @@
   padding: 0.15rem 0.3rem;
 }
 
-.sponsor-logos img {
+.sponsor-logos img,
+.fiscal-sponsor-logos img {
   max-height: 2.15rem;
   max-width: 8.5rem;
   object-fit: contain;
+}
+
+.fiscal-sponsor-logos a.fiscal-sponsor-tile--dark {
+  background: #201c3a;
 }
 
 .project-logo {
