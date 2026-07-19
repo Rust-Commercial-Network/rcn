@@ -154,7 +154,7 @@ Related: [Symposium](https://symposium.dev/), [Symposium on GitHub](https://gith
 |--------|--------|--------|--------|
 | ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.wyeworks.com/" title="WyeWorks">WyeWorks</a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.wyeworks.com/" title="WyeWorks"><img src="images/sponsors/wyeworks.png" alt="WyeWorks"></a></span></div>
 
 <div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://rustfoundation.org/rust-innovation-lab/" title="Rust Innovation Lab"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Innovation Lab"></a></span></div>
 
@@ -258,7 +258,7 @@ Related: [Async fn in Traits][async-fn-traits], [rust-lang/rust][rust-lang-rust]
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://www.wyeworks.com/" title="WyeWorks">WyeWorks</a></span></div>
+<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://www.wyeworks.com/" title="WyeWorks"><img src="images/sponsors/wyeworks.png" alt="WyeWorks"></a></span></div>
 
 **Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
 
@@ -408,7 +408,7 @@ Related: [rustls][rustls].
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
-<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://www.wyeworks.com/" title="WyeWorks">WyeWorks</a></span></div>
+<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://www.wyeworks.com/" title="WyeWorks"><img src="images/sponsors/wyeworks.png" alt="WyeWorks"></a></span></div>
 
 **Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
 
