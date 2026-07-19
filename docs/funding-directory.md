@@ -56,9 +56,9 @@ Related: [Faster Builds Roadmap][faster-builds-roadmap], [Tweede Golf][tweede-go
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://rustnl.org/" title="RustNL"><img src="https://rustnl.org/images/svg/logo.svg" alt="RustNL"></a></span></div>
 
-**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@rustnl.org), [RustNL](https://rustnl.org/)).
 
 **Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/roadmap-fast-builds.html#funding).
 
@@ -110,9 +110,9 @@ Related: [Cranelift Performance Improvements][cranelift-performance], [Cranelift
 |--------|--------|--------|--------|
 | ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a><a href="https://rustnl.org/" title="RustNL"><img src="https://rustnl.org/images/svg/logo.svg" alt="RustNL"></a></span></div>
 
-**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@rustnl.org), [RustNL](https://rustnl.org/)).
 
 **Billing route:** see the [project goal funding details](https://rust-lang.github.io/rust-project-goals/2026/improve-cg_clif-performance.html#funding).
 
@@ -138,7 +138,7 @@ Related: [cargo-nextest](https://nexte.st/).
 
 ### Symposium
 
-[Symposium](https://symposium.dev/) helps Rust crates provide agent skills, MCP servers, and other development extensions based on project dependencies. Funding supports feature development and basic maintenance, including releases, issue triage, integration work, and review of contributions.
+[Symposium](https://symposium.dev/) helps Rust crates provide agent skills, MCP servers, and other development extensions based on project dependencies. Supported by AWS and [WyeWorks](https://www.wyeworks.com/), funding covers feature development and basic maintenance, including releases, issue triage, integration work, and review of contributions.
 
 Organizations planning contributions can use this support to coordinate with Symposium's maintainers before investing in implementation. Technical direction and contribution review remain with the project.
 
@@ -148,7 +148,7 @@ Related: [Symposium](https://symposium.dev/), [Symposium on GitHub](https://gith
 |--------|--------|--------|--------|
 | ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.wyeworks.com/" title="WyeWorks">WyeWorks</a></span></div>
 
 **Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
 
@@ -178,13 +178,15 @@ Related:
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
 
-[Arlo Siemsen (@arlosi)](https://github.com/arlosi) would use additional funded time for Cargo review, mentoring, implementation, and moving accepted changes through Cargo review. Cargo maintainers and Rust Project teams retain authority over review, acceptance, prioritization, and release timing.
+The work would be delivered through a Rust Project Maintainer in Residence, with the incoming maintainer providing Cargo review, mentoring, implementation, and support for moving accepted changes through review. Cargo maintainers and Rust Project teams retain authority over review, acceptance, prioritization, and release timing.
 
 Related: [Cargo][cargo], [crates.io][crates-io].
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
 
 **Billing contact:** Jess Izen ([contact and profile](https://book.jessizen.com/)).
 
@@ -302,9 +304,9 @@ Related: [rust-lang/rust][rust-lang-rust]. Binary-size roadmap link to be added 
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsor:</strong> <span class="sponsor-logos"><a href="https://hexcat.nl/" title="Hexcat"><img src="images/sponsors/hexcat.svg" alt="Hexcat"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://hexcat.nl/" title="Hexcat"><img src="images/sponsors/hexcat.svg" alt="Hexcat"></a><a href="https://rustnl.org/" title="RustNL"><img src="https://rustnl.org/images/svg/logo.svg" alt="RustNL"></a></span></div>
 
-**Billing contact:** Mara Bos ([contact](https://rust-lang.zulipchat.com/#narrow/dm/310399-Mara-Bos), [profile](https://github.com/m-ou-se)). **Project contact:** Nia ([contact](https://rust-lang.zulipchat.com/#narrow/dm/571657-Nia), [profile](https://github.com/nia-e)).
+**Billing contact:** Mara Bos ([contact](mailto:mara@rustnl.org), [profile](https://github.com/m-ou-se)). **Project contact:** Nia ([contact](https://rust-lang.zulipchat.com/#narrow/dm/571657-Nia), [profile](https://github.com/nia-e)).
 
 ### Declarative Macro Improvements
 
