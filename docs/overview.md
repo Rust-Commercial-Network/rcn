@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://rust-commercial-network.github.io/rcn/">
+    <img src="images/rcn-logo.svg" alt="Rust Commercial Network" width="520">
+  </a>
+</p>
+
 # Rust Commercial Network (RCN)
 
 Where Rust users, businesses, and communities work together to make Rust easier to adopt and maintain.

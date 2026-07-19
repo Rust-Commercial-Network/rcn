@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://rust-commercial-network.github.io/rcn/">
+    <img src="docs/images/rcn-logo.svg" alt="Rust Commercial Network" width="520">
+  </a>
+</p>
+
 # Rust Commercial Network (RCN)
 
 Read the full RCN guide and process docs on the [RCN website](https://rust-commercial-network.github.io/rcn/).
