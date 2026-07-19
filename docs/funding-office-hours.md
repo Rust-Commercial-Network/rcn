@@ -32,6 +32,8 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 [Calendar link](https://calendar.google.com/calendar/u/0/event?eid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MTlUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw)
 
+## Contact
+
 For async public discussion outside office hours, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
 [funding-office-hours-zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Funding.20Initiative.20.2F.20office.20hours/with/607451311
