@@ -1,10 +1,10 @@
 # Rust Commercial Network (RCN)
 
-Read the full RCN guide and process docs on the [RCN website](https://rust-commercial-network.github.io/rcn/).
-
 Where Rust users, businesses, and communities work together to make Rust easier to adopt and maintain.
 
 The Rust Commercial Network (RCN) is a Rust Foundation group for people and organizations using Rust in professional settings. Members compare notes on adoption blockers, improve Rust supply chain health, and support the basic tooling, libraries, and maintenance work that make Rust dependable in production.
+
+**Website:** [RCN website](https://rust-commercial-network.github.io/rcn/).
 
 **Join:** fill out the [membership application](https://github.com/Rust-Commercial-Network/rcn/issues/new?assignees=lorilorusso&labels=membership%2Cstatus%3A+needs+review&projects=&template=membership.yml).
 
