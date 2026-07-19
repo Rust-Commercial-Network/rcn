@@ -11,7 +11,26 @@ Use office hours to:
 * Work through sponsorship logistics
 * Ask about items in the [Funding Directory](./funding-directory.md)
 
-The first office hours are scheduled for July 8, 2026 at 8:00 AM Pacific on the RCN calendar. Scheduling and agenda discussion happen in the [Funding Initiative office hours Zulip thread][funding-office-hours-zulip].
+Scheduling and agenda discussion happen in the [Funding Initiative office hours Zulip thread][funding-office-hours-zulip].
+
+## Calendar
+
+See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
+
+## Next Meeting
+
+**August 19, 2026**
+
+| Time zone | Time |
+| :--- | :--- |
+| Pacific (PT) | 8:00 AM |
+| Eastern (ET) | 11:00 AM |
+| UTC | 15:00 |
+| Central European (CEST) | 5:00 PM |
+| Japan (JST) | 12:00 AM (August 20) |
+| Australia Eastern (AEST) | 1:00 AM (August 20) |
+
+[Calendar link](https://calendar.google.com/calendar/u/0/event?eid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MTlUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw)
 
 For async public discussion outside office hours, join us on the [commercial-network channel in Rust Project Zulip][zulip]. For private discussion or to schedule private office hours, contact [rust-commercial-network@rustfoundation.org][rcn-email].
 
