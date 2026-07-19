@@ -368,9 +368,21 @@ Related: [rustls][rustls].
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.arm.com/" title="Arm"><img src="images/sponsors/arm.svg" alt="Arm"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://www.arm.com/" title="Arm"><img src="images/sponsors/arm.svg" alt="Arm"></a><a href="https://www.abetterinternet.org/" title="Internet Security Research Group"><img src="images/sponsors/isrg.svg" alt="Internet Security Research Group"></a></span></div>
 
 **Billing contact:** Joel Marcey ([contact](https://calendly.com/joelmarcey), [profile](https://github.com/JoelMarcey)).
+
+### Dial9 Maintenance and Feature Development
+
+[Dial9](https://github.com/dial9-rs/dial9-tokio-telemetry) is a flight recorder for diagnosing Tokio applications in production. Funding supports ongoing PR review, performance optimizations, and feature development through [WyeWorks](https://www.wyeworks.com/).
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
+**Billing contact:** Santiago Pastorino ([contact](https://rust-lang.zulipchat.com/#narrow/dm/116266-Santiago-Pastorino), [profile](https://github.com/spastorino)).
+
+**Billing route:** [WyeWorks](https://www.wyeworks.com/).
 
 ### Hyperium
 
