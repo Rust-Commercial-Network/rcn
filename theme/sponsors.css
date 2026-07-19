@@ -71,3 +71,10 @@
   max-width: 100%;
   object-fit: contain;
 }
+
+/* Keep the book title accessible while displaying the RCN brand in its place. */
+.menu-title {
+  background: url('../images/rcn-logo.svg') center / auto 2rem no-repeat;
+  color: transparent;
+  user-select: none;
+}
