@@ -23,7 +23,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 [Calendar link](https://calendar.google.com/calendar/u/0/event?eid=MTh2a2s0NWgyNm9lbzl2Ym1yYWxsbTE2c3EgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
 
-Agenda will follow.
+[Agenda](https://docs.google.com/document/d/1z__VVvi6ned6f6UwPsburbxue8gcMPW_CpOijRPUTyo/edit?tab=t.0#heading=h.g0vz8lebr) | [Zulip thread](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/July.20Meeting/with/611260480)
 
 ## Past Meeting Notes
 
