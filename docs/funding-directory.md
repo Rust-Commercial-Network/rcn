@@ -302,11 +302,9 @@ Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rus
 
 ### Binary Size Reduction
 
-A roadmap is being prepared for binary size reduction work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcatnl)](https://github.com/hexcatnl). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Once the roadmap is published, support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
+The [Binary Size Reduction Roadmap][binary-size-roadmap] covers work led by [Nia Espera (@nia-e)](https://github.com/nia-e) and [Hexcat (@hexcatnl)](https://github.com/hexcatnl). The work is aimed at cases where Rust binary size affects cold-start time, memory footprint, storage pressure, firmware size, or rollout cost. Support should focus on reductions that translate into lower cold-start time, smaller firmware or container images, and lower rollout cost for size-sensitive Rust users.
 
-This is a funding interest area, not an approved Rust Project goal or committed outcome.
-
-Related: [rust-lang/rust][rust-lang-rust]. Binary-size roadmap link to be added once published.
+Related: [Binary Size Reduction Roadmap][binary-size-roadmap], [rust-lang/rust][rust-lang-rust].
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
@@ -457,6 +455,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [async-fn-traits]: https://rust-lang.github.io/rust-project-goals/2026/afidt-box.html#funding
 [async-state-machine-background]: https://tweedegolf.nl/en/blog/237/async-rust-never-left-the-mvp-state
 [async-state-machine-goal]: https://rust-lang.github.io/rust-project-goals/2026/async-statemachine-optimisation.html#funding
+[binary-size-roadmap]: https://rust-lang.github.io/rust-project-goals/2026/roadmap-binary-size-reduction.html
 [bjorn3]: https://github.com/bjorn3
 [cargo]: https://github.com/rust-lang/cargo
 [cargo-semver-checks]: https://github.com/obi1kenobi/cargo-semver-checks
