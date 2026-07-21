@@ -40,7 +40,7 @@ Led by [David Lattimore (@davidlattimore)](https://github.com/davidlattimore). R
 |--------|--------|--------|--------|
 | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
 
 <div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://rustfoundation.org/rust-innovation-lab/" title="Rust Innovation Lab"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Innovation Lab"></a></span></div>
 
