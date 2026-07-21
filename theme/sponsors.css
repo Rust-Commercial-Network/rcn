@@ -83,6 +83,13 @@
   user-select: none;
 }
 
+/* The title text is wrapped in a home-page link (theme/menu-title-link.js). */
+.menu-title a {
+  color: transparent;
+  display: block;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 600px) {
   :root {
     --menu-bar-height: 5rem;
