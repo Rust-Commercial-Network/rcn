@@ -368,7 +368,7 @@ Related: [Tokio][tokio], [time-based cooperative scheduling prototype][tokio-coo
 |--------|--------|--------|--------|
 | ✅ Funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
 
-<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a></span></div>
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://aws.amazon.com/" title="AWS"><img src="images/sponsors/aws.png" alt="AWS"></a><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a></span></div>
 
 <div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a></span></div>
 
