@@ -10,3 +10,4 @@ build-dir = "book"
 git-repository-url = "https://github.com/Rust-Commercial-Network/rcn"
 site-url = "/rcn/"
 additional-css = ["theme/sponsors.css"]
+additional-js = ["theme/menu-title-link.js"]
