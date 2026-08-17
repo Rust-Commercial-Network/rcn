@@ -5,6 +5,7 @@ const org = process.env.SPONSORS_PROJECT_ORG || 'Rust-Commercial-Network';
 const projectNumber = Number(process.env.SPONSORS_PROJECT_NUMBER || '1');
 const docsDir = process.env.DOCS_DIR || 'docs';
 const outputPath = `${docsDir}/members.md`;
+const jsonOutputPath = `${docsDir}/members.json`;
 const summaryPath = `${docsDir}/SUMMARY.md`;
 
 if (!token) {
@@ -221,14 +222,21 @@ async function projectItems() {
   return { project, items };
 }
 
-function render(project, items) {
+function directoryFromItems(items) {
   const members = items
     .map(memberFromItem)
     .filter((member) => member.name)
     .sort((a, b) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' }));
 
-  const companies = uniqueCompanies(members);
-  const memberNames = uniqueMembers(members);
+  return {
+    members,
+    companies: uniqueCompanies(members),
+    memberNames: uniqueMembers(members),
+  };
+}
+
+function render(project, directory) {
+  const { members, companies, memberNames } = directory;
 
   const lines = [
     '# Members',
@@ -254,6 +262,34 @@ function render(project, items) {
   return lines.join('\n');
 }
 
+// Machine-readable directory published alongside the book at /members.json.
+// Consumed by external sites (e.g. rustfoundation.org) to render the member
+// list, so treat the shape as a public contract: additive changes only.
+function renderJson(project, directory) {
+  const { companies, memberNames } = directory;
+
+  return JSON.stringify(
+    {
+      schema_version: 1,
+      generated_at: new Date().toISOString(),
+      source: {
+        project: project.title,
+        url: project.url,
+      },
+      organizations: companies.map((member) => ({
+        name: member.company || member.name,
+        url: member.url || null,
+      })),
+      members: memberNames.map((member) => ({
+        name: member.name,
+        url: member.url || null,
+      })),
+    },
+    null,
+    2,
+  );
+}
+
 async function addSummaryEntry() {
   const summary = await fs.readFile(summaryPath, 'utf8');
   if (summary.includes('./members.md')) {
@@ -270,6 +306,8 @@ async function addSummaryEntry() {
 }
 
 const { project, items } = await projectItems();
-await fs.writeFile(outputPath, render(project, items));
+const directory = directoryFromItems(items);
+await fs.writeFile(outputPath, render(project, directory));
+await fs.writeFile(jsonOutputPath, `${renderJson(project, directory)}\n`);
 await addSummaryEntry();
-console.log(`Generated ${outputPath} from ${items.length} project items.`);
+console.log(`Generated ${outputPath} and ${jsonOutputPath} from ${items.length} project items.`);
