@@ -89,6 +89,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+      actions: write
 
     steps:
       - name: Verify sender is assignee or admin
@@ -417,3 +418,18 @@ jobs:
             });
 
             core.info('Masked the public email address in the issue body.');
+
+      - name: Trigger website rebuild
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Regenerate the published member directory so the new member
+            // shows up without waiting for the next push to main.
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'mdbook.yml',
+              ref: 'main',
+            });
+
+            core.info('Dispatched the Deploy mdBook workflow.');
