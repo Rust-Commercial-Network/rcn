@@ -5,6 +5,10 @@ name: Deploy mdBook
 on:
   push:
     branches: [main]
+  schedule:
+    # Every 6 hours: picks up member directory changes made directly on the
+    # project board (corrections, removals) that don't dispatch a rebuild.
+    - cron: "23 */6 * * *"
   workflow_dispatch:
 
 permissions:
