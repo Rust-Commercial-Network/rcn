@@ -281,7 +281,6 @@ function renderJson(project, directory) {
   return JSON.stringify(
     {
       schema_version: 1,
-      generated_at: new Date().toISOString(),
       source: {
         project: project.title,
         url: project.url,
