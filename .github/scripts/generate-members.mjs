@@ -1,5 +1,12 @@
 import fs from 'node:fs/promises';
 
+// Organizations to omit from the generated organization list (case-insensitive
+// exact match on the organization name). Their individual representatives
+// still appear under Member Names, and the entries stay on the project board.
+const EXCLUDED_ORGANIZATIONS = new Set(
+  ['The Rust Foundation', 'Rust Project'].map((name) => name.toLowerCase()),
+);
+
 const token = process.env.GITHUB_TOKEN;
 const org = process.env.SPONSORS_PROJECT_ORG || 'Rust-Commercial-Network';
 const projectNumber = Number(process.env.SPONSORS_PROJECT_NUMBER || '1');
@@ -184,6 +191,10 @@ function uniqueCompanies(members) {
 
     const company = member.company || member.name;
     const key = company.toLowerCase();
+    if (EXCLUDED_ORGANIZATIONS.has(key)) {
+      continue;
+    }
+
     if (!companiesByName.has(key)) {
       companiesByName.set(key, { ...member, company });
     }
