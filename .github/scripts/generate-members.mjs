@@ -102,6 +102,13 @@ const query = `
   }
 `;
 
+// Member fields are plain text (names, entities, categories). Strip angle
+// brackets at the source so HTML markup submitted through the membership form
+// can never reach the rendered page or the published members.json.
+function sanitizeText(text) {
+  return text.replace(/[<>]/g, '').trim();
+}
+
 function fieldMap(item) {
   const fields = new Map();
 
@@ -109,7 +116,7 @@ function fieldMap(item) {
     const key = value.field?.name?.toLowerCase();
     const data = value.text ?? value.name ?? value.number ?? value.date ?? value.title;
     if (key && data !== undefined && data !== null && String(data).trim()) {
-      fields.set(key, String(data).trim());
+      fields.set(key, sanitizeText(String(data)));
     }
   }
 
@@ -128,7 +135,7 @@ function firstField(fields, names) {
 
 function memberFromItem(item) {
   const fields = fieldMap(item);
-  const title = item.content?.title?.trim() || '';
+  const title = sanitizeText(item.content?.title || '');
   const url = item.content?.url || '';
   const name = firstField(fields, ['Member Name', 'Name', 'Company', 'Organization', 'Entity']) || title;
   const company = firstField(fields, ['Company', 'Organization', 'Entity', 'Employer']);
@@ -153,7 +160,7 @@ function memberKind(member) {
 }
 
 function escapeMarkdown(text) {
-  return text.replace(/([\\`*_{}[\]()#+.!|-])/g, '\\$1');
+  return text.replace(/([\\`*_{}[\]()#+.!|<>-])/g, '\\$1');
 }
 
 function companyLine(member) {
@@ -264,8 +271,9 @@ function render(project, directory) {
 // Machine-readable directory published alongside the book at /members.json.
 // Consumed by external sites (e.g. rustfoundation.org) to render the member
 // list, so treat the shape as a public contract: additive changes only.
-// Strings are raw free text from the membership form; consumers MUST
-// HTML-escape them before rendering. `url` points at the member's GitHub
+// Strings have angle brackets stripped at generation time but are otherwise
+// raw free text from the membership form; consumers should still HTML-escape
+// them before rendering. `url` points at the member's GitHub
 // membership application issue, or null for board items without one.
 function renderJson(project, directory) {
   const { companies, memberNames } = directory;
