@@ -133,13 +133,12 @@ function memberFromItem(item) {
   const name = firstField(fields, ['Member Name', 'Name', 'Company', 'Organization', 'Entity']) || title;
   const company = firstField(fields, ['Company', 'Organization', 'Entity', 'Employer']);
   const type = firstField(fields, ['Member Type', 'Type', 'Category', 'Representation']);
-  const website = firstField(fields, ['Website', 'URL', 'Link']);
 
   return {
     name,
     company,
     type,
-    url: website || url,
+    url,
   };
 }
 
@@ -265,6 +264,9 @@ function render(project, directory) {
 // Machine-readable directory published alongside the book at /members.json.
 // Consumed by external sites (e.g. rustfoundation.org) to render the member
 // list, so treat the shape as a public contract: additive changes only.
+// Strings are raw free text from the membership form; consumers MUST
+// HTML-escape them before rendering. `url` points at the member's GitHub
+// membership application issue, or null for board items without one.
 function renderJson(project, directory) {
   const { companies, memberNames } = directory;
 
