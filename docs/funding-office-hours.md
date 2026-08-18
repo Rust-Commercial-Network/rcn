@@ -19,7 +19,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**August 19, 2026**
+**August 27, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
@@ -27,10 +27,10 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 | Eastern (ET) | 11:00 AM |
 | UTC | 15:00 |
 | Central European (CEST) | 5:00 PM |
-| Japan (JST) | 12:00 AM (August 20) |
-| Australia Eastern (AEST) | 1:00 AM (August 20) |
+| Japan (JST) | 12:00 AM (August 28) |
+| Australia Eastern (AEST) | 1:00 AM (August 28) |
 
-[Calendar link](https://calendar.google.com/calendar/u/0/event?eid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MTlUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw)
+[Calendar link](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MjdUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw&tmsrc=c_4a1145af4cd496bfe0e40526ece9203925c671c6bfd24bb22cb31a23d6ae180c%40group.calendar.google.com&scp=ALL)
 
 ## Contact
 
