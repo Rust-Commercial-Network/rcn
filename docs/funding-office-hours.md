@@ -30,7 +30,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 | Japan (JST) | 12:00 AM (August 28) |
 | Australia Eastern (AEST) | 1:00 AM (August 28) |
 
-[Calendar link](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MjdUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw&tmsrc=c_4a1145af4cd496bfe0e40526ece9203925c671c6bfd24bb22cb31a23d6ae180c%40group.calendar.google.com&scp=ALL)
+[Calendar link](https://calendar.google.com/calendar/u/0/event?eid=bjQxbGFtNmZyc2owbW0wMXFtMnZhYmswZGRfMjAyNjA4MjdUMTUwMDAwWiBjXzRhMTE0NWFmNGNkNDk2YmZlMGU0MDUyNmVjZTkyMDM5MjVjNjcxYzZiZmQyNGJiMjJjYjMxYTIzZDZhZTE4MGNAZw) ([no Google account?](https://bit.ly/4xngeHr)) | [Join the call](https://meet.google.com/ohi-ukyt-ycr)
 
 ## Contact
 
