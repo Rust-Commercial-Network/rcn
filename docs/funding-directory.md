@@ -206,7 +206,7 @@ Related: [Cargo][cargo], [crates.io][crates-io].
 
 Many organizations adopting Rust continue to operate in mixed-language environments. Improving interoperability with existing C and C++ codebases lowers adoption barriers, simplifies migrations, and makes it easier to incrementally introduce Rust into existing systems.
 
-Funding would support work by [teor (@teor2345)](https://github.com/teor2345), [folkertdev (Folkert de Vries)](https://github.com/folkertdev) at Tweede Golf, and other collaborators working to identify and address high-impact interoperability gaps between Rust and C/C++.
+Funding would support work by [teor (@teor2345)](https://github.com/teor2345), [folkertdev (Folkert de Vries)](https://github.com/folkertdev) at Trifecta Tech Foundation, and other collaborators working to identify and address high-impact interoperability gaps between Rust and C/C++.
 
 Dozens of interoperability problem statements and use cases have already been identified with industry participants, and new implementation efforts continue to emerge from that work. Current areas of interest include support for C floating-point types such as `long double`, function overloading, variable arguments, smoother Rust onboarding into existing C++ projects, build and linking improvements, and other high-impact gaps.
 
@@ -216,7 +216,6 @@ Links:
 - [Detailed problem statements](https://github.com/rustfoundation/interop-initiative/tree/main/problem-space)
 - [Interop project goals and proposals](https://docs.google.com/document/d/1pFOUJXcs3bZKsCwrMOVHaCbjSe8XEb5ZtHux_4nTwp0/edit?usp=drivesdk)
 - [Interop work inventory](https://docs.google.com/document/d/1-REi68Us_fPOlW1GlEmEqdbtDJAt4UjhBgnXHs-NEmc/edit?usp=drivesdk)
-- [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://rust-lang.github.io/rust-project-goals/2026/interop-f80-f128.html)
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
@@ -224,9 +223,9 @@ Links:
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
 
-<div class="fiscal-sponsors"><strong>Fiscal sponsors:</strong> <span class="fiscal-sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a><a href="https://rustfoundation.org/" title="Rust Foundation"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Foundation"></a></span></div>
+<div class="fiscal-sponsors"><strong>Fiscal sponsors:</strong> <span class="fiscal-sponsor-logos"><a href="https://trifectatech.org/" title="Trifecta Tech Foundation"><img src="images/sponsors/trifecta-tech.png" alt="Trifecta Tech Foundation"></a><a href="https://rustfoundation.org/" title="Rust Foundation"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Foundation"></a></span></div>
 
-**Billing contacts:** teor ([contact](https://rust-lang.zulipchat.com/#narrow/dm/325209-teor), [profile](https://github.com/teor2345)) and Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+**Billing contacts:** teor ([contact](https://rust-lang.zulipchat.com/#narrow/dm/325209-teor), [profile](https://github.com/teor2345)) and Erik Jonkers ([contact](mailto:erik@trifectatech.org), [profile](https://github.com/erikjee)).
 
 ### Crate Namespaces
 
@@ -434,11 +433,24 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 
 ## Fully Funded
 
+### C and C++ Interoperability
+
+- [C floating-point interoperability (`f80`, `f128`, `c_longdouble`)](https://rust-lang.github.io/goals/2026/interop-f80-f128.html)
+- [C interop: Complex<T>](https://rust-lang.github.io/goals/2026/interop-complex.html)
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://www.google.com/" title="Google"><img src="images/sponsors/google.png" alt="Google"></a></span></div>
+
+<div class="fiscal-sponsors"><strong>Fiscal sponsors:</strong> <span class="fiscal-sponsor-logos"><a href="https://trifectatech.org/" title="Trifecta Tech Foundation"><img src="images/sponsors/trifecta-tech.png" alt="Trifecta Tech Foundation"></a></span></div>
+
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@trifectatech.org), [profile](https://github.com/erikjee)).
+
+**Contributor:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)).
+
 ### F16 Stabilization
 
 Many machine learning, graphics, simulation, and scientific computing workloads use 16-bit floating point formats. Native f16 support would make it easier to pass f16 data between Rust, hardware APIs, and libraries that already use those values.
 
-Sponsor support would help [Folkert de Vries (@folkertdev)][folkertdev], through [Tweede Golf][tweede-golf], continue the implementation, testing, documentation, and review work needed before f16 can be considered for stabilization. Stabilization would still be decided through the Rust Project process.
+Sponsor support would help [Folkert de Vries (@folkertdev)][folkertdev], through [Trifecta Tech][trifecta-tech], continue the implementation, testing, documentation, and review work needed before f16 can be considered for stabilization. Stabilization would still be decided through the Rust Project process.
 
 Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust].
 
@@ -448,9 +460,9 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 
 <div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://developers.openai.com/community/codex-for-oss" title="OpenAI Codex"><img src="images/sponsors/openai-codex.png" alt="OpenAI Codex"></a><a href="https://vectorware.com/" title="VectorWare"><img src="images/sponsors/vectorware.png" alt="VectorWare"></a></span></div>
 
-<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://tweedegolf.nl/" title="Tweede Golf"><img src="images/sponsors/tweede-golf.png" alt="Tweede Golf"></a></span></div>
+<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://trifectatech.org/" title="Trifecta Tech"><img src="images/sponsors/trifecta-tech.png" alt="Trifecta Tech"></a></span></div>
 
-**Billing contact:** Erik Jonkers ([contact](mailto:erik@tweedegolf.com), [profile](https://tweedegolf.nl/en/about/6/erik/)).
+**Billing contact:** Erik Jonkers ([contact](mailto:erik@trifectatech.org), [profile](https://github.com/erikjee)).
 
 **Contributor:** Folkert de Vries ([contact](https://rust-lang.zulipchat.com/#narrow/dm/416089-Folkert-de-Vries), [profile](https://github.com/folkertdev)).
 
@@ -484,4 +496,5 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
 [tokio-runtime-discussion]: https://github.com/tokio-rs/tokio/issues/8085
 [tweede-golf]: https://tweedegolf.nl/
+[trifecta-tech]: https://trifectatech.org/
 [zulip]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network
