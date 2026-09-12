@@ -289,9 +289,9 @@ Related: [project goal][async-state-machine-goal], [background][async-state-mach
 
 `rustc_public`(formerly Stable MIR) is intended to give external tools a supported way to read compiler data without depending on unstable rustc internals. That matters for static analysis, verification, GPU, compliance, and internal platform tooling.
 
-The next project goal is still pending. Funding would help [Makai (@makai410)](https://github.com/makai410) and the Rustc Public project publish `rustc_public` to crates.io, expand API coverage, and improve documentation. API additions should be evaluated for general Rust tooling value, not for any one downstream project.
+Funding would help [Makai (@makai410)](https://github.com/makai410) and the Rustc Public project publish `rustc_public` to crates.io, expand API coverage, and improve documentation. API additions should be evaluated for general Rust tooling value, not for any one downstream project.
 
-Related: [previous project goal][stable-mir-previous-goal], [rust-lang/rust][rust-lang-rust]. The next project goal has not been published yet.
+Related: [project goal][stable-mir-goal], [rust-lang/rust][rust-lang-rust].
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
@@ -491,7 +491,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
-[stable-mir-previous-goal]: https://github.com/rust-lang/rust-project-goals/issues/266
+[stable-mir-goal]: https://github.com/rust-lang/rust-project-goals/issues/266
 [tokio]: https://tokio.rs/
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
 [tokio-runtime-discussion]: https://github.com/tokio-rs/tokio/issues/8085
