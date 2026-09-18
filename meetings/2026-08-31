@@ -1,0 +1,126 @@
+## Aug 31, 2026 | [RCN Monthly Meeting](https://www.google.com/calendar/event?eid=MzJiN3Ftdmh0Mmo1OTBtdXI3c2ZoYjcxODggY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
+
+**Attendees:** 
+
+* Victor Ciura \- Microsoft  
+* Max Gallup \- Defined Once Engineering  
+* Sebastian Martinez \- WyeWorks  
+* Orhun Parmaksiz \- JetBrains & Ratatui  
+* René Paris \- in-tech  
+* Arianna Cook- Lawrence Harvey   
+* Moaz Mokhtar \- Un-employed  
+* Richard Scott McNew \- Canonical  
+* Adam Wilson \- SonarSource  
+* Russell Cohen \- AWS  
+* Enow Scott \- Adorsys   
+* Ni Chan \- ExpressVPN  
+* Mikhail Pertsev  
+* Emil Hernvall \- AWS  
+* Ilya Baryshnikov \- independent \- fullstack rust, building android apps with rust  
+* Aaron Todd \- AWS  
+* Pete LeVasseur \- Safety-Critical Rust Consortium  
+* Joel Marcey \- Rust Foundation
+
+Agenda
+
+House keeping
+
+* 119 emails Google Group mailing list  
+* 91 Members \- [please join by filing an issue](https://github.com/Rust-Commercial-Network/rcn/issues)  
+* Meeting minutes  
+  * [June](https://github.com/Rust-Commercial-Network/rcn/blob/main/meetings/2026-06-22.md)   
+  * [July](https://github.com/Rust-Commercial-Network/rcn/blob/main/meetings/2026-07-20.md)
+
+* Future Meetings \- [https://bit.ly/4xngeHr](https://bit.ly/4xngeHr)   
+  * Monday, September 21  
+  * Monday, October 26  
+  * Monday, November 30  
+  * December \- canceled
+
+* Steering Committee Change   
+  * Emil Hernvall, AWS  
+  * Jess Izen \- [Engineer in Residence at Rust Foundation](https://rustfoundation.org/media/welcoming-jess-izen-as-engineer-in-residence-at-the-rust-foundation/)  
+    
+
+Working Groups
+
+* Safety Critical Rust Consortium \- [June, 22, 2026](https://rfcs.arewesafetycriticalyet.org/0002-join-the-rust-commercial-network-rcn.html)  
+* Network Services Working Group \- [August 24, 2026](https://github.com/Rust-Commercial-Network/rcn/issues/139)  
+* Cross-Platform GUI Desktop Apps \- [August 26, 2026](https://github.com/Rust-Commercial-Network/rcn/issues/46)
+
+
+Case Studies
+
+* ExpressVPN \- [https://rustfoundation.org/media/built-with-rust-expressvpn/](https://rustfoundation.org/media/built-with-rust-expressvpn/)  
+* Processing Foundation \- [https://rustfoundation.org/media/built-with-rust-processing-foundation/](https://rustfoundation.org/media/built-with-rust-processing-foundation/)
+
+
+Presentations
+
+* [Apache Iggy](http://iggy.apache.org/)   
+  * Kranti Parisa, LaserData  
+  * challenges we've faced and solutions implemented  
+* [Dial9](https://github.com/dial9-rs/dial9#dial9)  
+  * Russell Cohen, AWS  
+  * \-Demo  
+  * Repo [https://github.com/dial9-rs/dial9/](https://github.com/dial9-rs/dial9/)  
+  * Slides: [https://github.com/rcoh/dial9-rcn-lightning-talk/tree/main](https://github.com/rcoh/dial9-rcn-lightning-talk/tree/main)  
+  * dial9 enables exporting profiling data & application events off production hosts.  
+  * [\#commercial-network \> dial9, async observability and OTeL](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/dial9.2C.20async.20observability.20and.20OTeL/with/610897865)  
+  * Disscussion   
+    * [https://crates.io/crates/defmt](https://crates.io/crates/defmt)  
+      * 
+
+Zulip Threads
+
+* [\#commercial-network \> Long-Term Support (LTS) Rust toolchain](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Long-Term.20Support.20.28LTS.29.20Rust.20toolchain/with/613282483)  
+  * Pre RFC \- crystal is working on a questionnaire   
+    * [https://internals.rust-lang.org/t/pre-rfc-lts-for-the-rust-toolchain/24476/72](https://internals.rust-lang.org/t/pre-rfc-lts-for-the-rust-toolchain/24476/72)   
+      * Need feedback/thoughts to move to the next step  
+      * Interest, funding, who is interested in doing this, what do they want done  
+    * What does Long term mean  
+      * What time frame   
+      * What is the need/want  
+      * Microsoft offers 6 months support \- difficulty bc of MSRVs  
+        * Strong demand for stability   
+        * Struggle w/dependancies  
+        * Expectations are different coming from different languages  
+    * Need more engagement to see what the need/tolerance is for creating this  
+    * Align ecosystem around LTS bc general policies aren’t aligned   
+      * Could this influence the ecosystem around LTS  
+      * Not something that has been looked at before \- should consider moving forward  
+        * Need to support the concept in general   
+        * Need an LTS toolchain to work need ecosystem support  
+        * Pitched as another benefit/cost depending on the community
+
+* [\#commercial-network \> Battery Pack-powered Extended Standard Libraries](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Battery.20Pack-powered.20Extended.20Standard.20Libraries/with/611979600)  
+  * Scott has an example  
+    * Here is an experimental prototype Battery Pack I put together:  
+    * [https://crates.io/crates/curated-library-battery-pack](https://crates.io/crates/curated-library-battery-pack)  
+    * [https://github.com/rmcnew/curated-library-battery-pack/tree/main](https://github.com/rmcnew/curated-library-battery-pack/tree/main)
+
+  * Niko talked to Niko \- [blessed.rs](http://blessed.rs) \- try to build on that  
+    * Make the page easier to find battery packs  
+* [\#commercial-network \> Cross-platform Desktop GUI in Rust](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Cross-platform.20Desktop.20GUI.20in.20Rust/with/619386030)
+
+* [\#commercial-network \> Rust Special Interest Group at Eclipse SDV WG](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Rust.20Special.20Interest.20Group.20at.20Eclipse.20SDV.20WG/with/619053757)  
+  * RCN will present Sept 29  
+  * Automotive companies 
+
+* [\#commercial-network \> Rust toolchain/ WebAssembly interest group](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Rust.20toolchain.2F.20WebAssembly.20interest.20group/with/618139230)  
+  * Ilya \- been working on WASM since 2018
+
+* [\#commercial-network \> async observability wg](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/async.20observability.20wg/with/614411088)
+
+* [\#commercial-network \> Embedded Interest Group](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Embedded.20Interest.20Group/with/613273555)
+
+* [\#commercial-network \> Porting to Rust with AI working group](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Porting.20to.20Rust.20with.20AI.20working.20group/with/620343880)  
+  * Niko wants to gauge interest
+
+* Mobile applications & Rust [https://github.com/ibaryshnikov/android-iced-example](https://github.com/ibaryshnikov/android-iced-example)  
+  * Don’t have many crates that support Rust 
+
+Action items
+
+- [ ] 
+
