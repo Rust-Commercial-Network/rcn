@@ -3,7 +3,7 @@
 - [Overview](./overview.md)
 - [Meetings](./meetings.md)
 - [Member Directory](./members.md)
-- [Fund the Rust Ecosystem](./funding.md)
+- [Fund the Rust Ecosystem](./funding-directory.md)
 - [Network Services Working Group](./network-services-wg.md)
 
 # Process
