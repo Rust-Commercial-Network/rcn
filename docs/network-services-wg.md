@@ -30,23 +30,24 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**August 13, 2026**
+**October 22, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
-| Pacific (PT) | 9:00 AM |
-| Eastern (ET) | 12:00 PM |
-| UTC | 16:00 |
-| Central European (CEST) | 6:00 PM |
-| Japan (JST) | 1:00 AM (August 14) |
-| Australia Eastern (AEST) | 2:00 AM (August 14) |
+| Pacific (PT) | 8:00 AM |
+| Eastern (ET) | 11:00 PM |
+| UTC | 15:00 |
+| Central European (CEST) | 17:00 PM |
+| Japan (JST) | 12:00 AM (October 23) |
+| Australia Eastern (AEST) | 1:00 AM (October 23) |
 
 [Calendar link](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MHB1a2FxNDgwYW51a2M4NHU1b2VuaDQ5MXIgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc&tmsrc=c_4a1145af4cd496bfe0e40526ece9203925c671c6bfd24bb22cb31a23d6ae180c%40group.calendar.google.com) | [Join the call](https://meet.google.com/usq-soar-gzq)
 
-[Agenda and notes](https://hackmd.io/n5BLOxSEQc6V9NRnapEiIA) | [Zulip thread][august-meeting-thread]
+[Agenda and notes](https://hackmd.io/@emilhernvall/r1wdyMSszx) | [Zulip thread][august-meeting-thread]
 
 ## Past Meeting Notes
 
+* [2026-09-17 Meeting notes](https://hackmd.io/b8nnc-zkTG-EMhdXdhhaow)
 * [2026-07-09 Meeting notes](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
 * [2025-06-09 Kickoff](https://docs.google.com/document/d/1Awt5K_TrUx7Mv_I7oIkKvm7cZPEtZzpRNCkJAqnnXrQ/edit?usp=drivesdk)
 
