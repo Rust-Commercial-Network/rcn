@@ -41,7 +41,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 | Japan (JST) | 12:00 AM (October 28) |
 | Australia Eastern (AEDT) | 2:00 AM (October 28) |
 
-[Agenda and notes](https://hackmd.io/@sduquette/rk_8UWNsfg) | [Zulip thread][zulip-thread]
+[Join meeting](https://meet.google.com/gnh-ywzx-knk) | [Agenda and notes](https://hackmd.io/@sduquette/rk_8UWNsfg) | [Zulip thread][zulip-thread]
 
 The meeting invitation was sent to the RCN and Supply Chain mailing lists. If you did not receive it, ask in the Zulip thread to be added.
 
