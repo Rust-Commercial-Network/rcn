@@ -5,6 +5,7 @@
 - [Member Directory](./members.md)
 - [Fund the Rust Ecosystem](./funding-directory.md)
 - [Network Services Working Group](./network-services-wg.md)
+- [Supply Chain Security Working Group](./supply-chain-security-wg.md)
 
 # Process
 
