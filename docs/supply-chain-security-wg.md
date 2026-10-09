@@ -4,7 +4,7 @@ The Supply Chain Security Working Group brings together everyone running Rust in
 
 ## Status
 
-The working group held its kickoff meeting on September 22, 2026, and has scheduled its next meeting for October 27, 2026. Discussion is ongoing in the [commercial-network channel on Zulip][zulip-thread]. We are looking for participants to help prioritize the first deliverables.
+The working group held its kickoff meeting on September 22, 2026. Discussion is ongoing in the [commercial-network channel on Zulip][zulip-thread]. We are looking for participants to help prioritize the first deliverables.
 
 ## Goals
 
@@ -51,9 +51,9 @@ The meeting invitation was sent to the RCN and Supply Chain mailing lists. If yo
 
 ## Coordinators
 
-* Tyler Rarick
-* Sébastien Duquette
-* Saiteja Kura
+* [Tyler Rarick](https://rust-lang.zulipchat.com/#narrow/dm/899298-tyler-rarick)
+* [Sébastien Duquette](https://rust-lang.zulipchat.com/#narrow/dm/1201741-s.C3.A9bastien-duquette)
+* [Saiteja Kura](https://rust-lang.zulipchat.com/#narrow/dm/970937-saiteja-kura)
 
 [proposal]: https://github.com/Rust-Commercial-Network/rcn/issues/168
 [zulip-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Interest.20meeting.3A.20Supply.20chains/near/629928667
