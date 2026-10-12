@@ -431,6 +431,22 @@ Related: [Hyperium Roadmap][hyperium-roadmap].
 
 **Billing contact:** Sean McArthur ([contact](https://rust-lang.zulipchat.com/#narrow/dm/243965-Sean-McArthur), [profile](https://github.com/seanmonstar)).
 
+### Diesel
+<div class="project-logo"><a href="https://diesel/"><img src="images/projects/diesel-logo.svg" alt="Diesel"></a></div>
+
+[Diesel](https://crates.io/crates/diesel) provides a performant and compile time checked SQL query-builder and ORM written in Rust. [Diesel-async](https://crates.io/crates/diesel-async) provides a pure async interface extending Diesel with additional capabilities. Both crates are a common choice for interacting with relational databases in Rust and both are used as central part of the implementation of crates.io itself, so most of the Rust ecosystem relies on 
+[Georg Semmler (@weiznich)](https://github.com/weiznich) is seeking time for the work that keeps the Diesel crates healthy: releases, issue triage, contribution and PR review, modularization, performance work, and production-user feedback. Organizations planning contributions can use this support to coordinate with Diesel maintainers before investing in implementation.
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ✅ Funded | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://rustfoundation.org/" title="Rust Foundation"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Foundation"></a><a href="https://giga-infosystems.com/" title="GiGa infosystems GmbH"><img src="images/sponsors/giga_infosystems.svg" alt="GiGa infosystems GmbH"></a></span></div>
+
+<div class="fiscal-sponsors"><strong>Fiscal sponsors:</strong> <span class="fiscal-sponsor-logos"><a href="https://rustfoundation.org/" title="Rust Foundation"><img src="https://rustfoundation.org/wp-content/uploads/2023/10/Rust-Foundation-Black.png" alt="Rust Foundation"></a></span></div>
+  
+**Billing contact:** Georg Semmler ([contact](https://rust-lang.zulipchat.com/#user/215423), [profile](https://github.com/weiznich)).
+
 ## Fully Funded
 
 ### C and C++ Interoperability
