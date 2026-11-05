@@ -30,7 +30,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**November 26, 2026**
+**November 25, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
