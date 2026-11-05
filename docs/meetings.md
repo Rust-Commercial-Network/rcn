@@ -10,24 +10,28 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**July 20, 2026**
+**November 30, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
-| Pacific (PT) | 7:30 AM |
-| Eastern (ET) | 10:30 AM |
-| UTC | 14:30 |
-| Central European (CEST) | 4:30 PM |
-| Japan (JST) | 11:30 PM |
-| Australia Eastern (AEST) | 12:30 AM (July 21) |
+| Pacific (PT) | 7:00 AM |
+| Eastern (ET) | 10:00 AM |
+| UTC | 14:00 |
+| Central European (CEST) | 4:00 PM |
+| Japan (JST) | 11:00 PM |
+| Australia Eastern (AEST) | 12:00 AM (July 21) |
 
-[Calendar link](https://calendar.google.com/calendar/u/0/event?eid=MTh2a2s0NWgyNm9lbzl2Ym1yYWxsbTE2c3EgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
+[Calendar Link](https://calendar.google.com/calendar/u/0/event?eid=MG1tbXN0MWFwYjM3N3Y5aGpnZWEycWkwdXYgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc)
 
 [Agenda](https://docs.google.com/document/d/1z__VVvi6ned6f6UwPsburbxue8gcMPW_CpOijRPUTyo/edit?tab=t.0#heading=h.g0vz8lebr) | [Zulip thread](https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/July.20Meeting/with/611260480)
 
 ## Past Meeting Notes
 
 * [2026-06-22 Rust Commercial Network Meeting](../meetings/2026-06-22.md)
+* [2026-07-20 Rust Commercial Network Meeting](../meetings/2026-07-20.md)
+* [2026-08-31 Rust Commercial Network Meeting](../meetings/2026-08-31.md)
+* [2026-09-21 Rust Commercial Network Meeting](../meetings/2026-09-21.md)
+* [2026-10-26 Rust Commercial Network Meeting](../meetings/2026-10-26.md)
 
 ## Chatham House Rule
 
