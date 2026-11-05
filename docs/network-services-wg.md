@@ -30,7 +30,7 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**October 22, 2026**
+**November 25, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
@@ -41,15 +41,10 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 | Japan (JST) | 12:00 AM (October 23) |
 | Australia Eastern (AEST) | 1:00 AM (October 23) |
 
-[Calendar link](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MHB1a2FxNDgwYW51a2M4NHU1b2VuaDQ5MXIgY180YTExNDVhZjRjZDQ5NmJmZTBlNDA1MjZlY2U5MjAzOTI1YzY3MWM2YmZkMjRiYjIyY2IzMWEyM2Q2YWUxODBjQGc&tmsrc=c_4a1145af4cd496bfe0e40526ece9203925c671c6bfd24bb22cb31a23d6ae180c%40group.calendar.google.com) | [Join the call](https://meet.google.com/usq-soar-gzq)
-
-[Agenda and notes](https://hackmd.io/@emilhernvall/r1wdyMSszx) | [Zulip thread][august-meeting-thread]
-
 ## Past Meeting Notes
 
+* [2026-10-17 Meeting notes](https://hackmd.io/ulfefTtDSqaolUKusT8RyA)
 * [2026-09-17 Meeting notes](https://hackmd.io/b8nnc-zkTG-EMhdXdhhaow)
 * [2026-07-09 Meeting notes](https://hackmd.io/@fpj7k0xwQg-7_naupZgV3A/Hykn0IEmze)
 * [2025-06-09 Kickoff](https://docs.google.com/document/d/1Awt5K_TrUx7Mv_I7oIkKvm7cZPEtZzpRNCkJAqnnXrQ/edit?usp=drivesdk)
 
-[zulip-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/Network.20Services.20WG.20meeting.20schedule/with/606595503
-[august-meeting-thread]: https://rust-lang.zulipchat.com/#narrow/channel/594428-commercial-network/topic/August.20Meeting.3A.20Network.20services.20working.20group/with/611175383
