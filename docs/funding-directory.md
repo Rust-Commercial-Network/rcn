@@ -184,6 +184,25 @@ Related:
 
 **Billing contact:** Predrag Gruevski ([contact](https://rust-lang.zulipchat.com/#narrow/dm/474284-Predrag-Gruevski), [profile](https://github.com/obi1kenobi)).
 
+### release-plz
+
+<div class="project-logo"><a href="https://release-plz.dev/"><img src="images/projects/release-plz-logo.jpeg" alt="release-plz"></a></div>
+
+[release-plz][release-plz] releases Rust crates from CI, using [cargo-semver-checks][cargo-semver-checks] when calculating the next version. As of November 2026, 3,790 public repositories with 451k stars in total use the release-plz GitHub Action.
+Among these projects, 14 belong to the [rust-lang](https://github.com/rust-lang) GitHub organization.
+
+Funding would support work for maintenance (issue triage, PR review, bug fixes), new features, and keeping up with Cargo, crates.io and git forges integrations.
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ⚠️ Partial | ⚠️ Partial | ⚠️ Partial | ⚠️ Partial |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://encore.dev/" title="Encore"><img src="images/sponsors/encore.svg" alt="Encore"></a></span></div>
+
+<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://opencollective.com/release-plz" title="Open Collective"><img src="images/sponsors/opencollective.svg" alt="Open Collective"></a></span></div>
+
+**Billing contact:** Marco Ieni ([contact](https://rust-lang.zulipchat.com/#narrow/dm/378651-Marco-Ieni), [profile](https://github.com/MarcoIeni)).
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -504,6 +523,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [incremental-system-rethought]: https://rust-lang.github.io/rust-project-goals/2026/incremental-system-rethought.html
 [project-goals-funding]: https://rust-lang.github.io/rust-project-goals/2026/funding.html
 [rcn-email]: mailto:rust-commercial-network@rustfoundation.org
+[release-plz]: https://release-plz.dev/
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
