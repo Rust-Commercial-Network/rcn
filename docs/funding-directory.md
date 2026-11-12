@@ -203,6 +203,23 @@ Funding would support work for maintenance (issue triage, PR review, bug fixes),
 
 **Billing contact:** Marco Ieni ([contact](https://rust-lang.zulipchat.com/#narrow/dm/378651-Marco-Ieni), [profile](https://github.com/MarcoIeni)).
 
+### SmallVec
+
+<div class="project-logo"><a href="https://smallvec.rs/"><img src="images/projects/smallvec-logo.svg" alt="smallvec"></a></div>
+
+[SmallVec][smallvec] implements a widely used low-level vector-like container that improves program performance in certain scenarios. As of November 2026, it has 1.4B downloads and 150k dependent crates.
+Among those dependencies, SmallVec is used by the Rust compiler itself, and is also vendored inside Chromium and Android.
+
+Funding would support work for maintenance (issue triage, PR review, security vulnerability fixes), new features, and keeping up with applicable `Vec` parity and ecosystem needs.
+
+| Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
+|--------|--------|--------|--------|
+| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
+<div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://opencollective.com/smallvec" title="Open Collective"><img src="images/sponsors/opencollective.svg" alt="Open Collective"></a></span></div>
+
+**Billing contact:** Alejandro Vaz ([contact](https://rust-lang.zulipchat.com/#narrow/dm/1236960-Alejandro-Vaz), [profile](https://github.com/alejandro-vaz)).
+
 ### Cargo Maintenance
 
 Many Rust roadmap items need Cargo review or implementation work, including work on supply-chain policy, build reproducibility, C++ interoperability, signed crates, and sandboxed build scripts. This item funds general Cargo review and implementation time, not reserved reviewer time for funder-requested changes.
@@ -527,6 +544,7 @@ Related: [F16 Stabilization][f16-stabilization], [rust-lang/rust][rust-lang-rust
 [rfc-3243]: https://github.com/rust-lang/rfcs/issues/3243
 [rust-lang-rust]: https://github.com/rust-lang/rust
 [rustls]: https://rustls.dev/
+[smallvec]: https://smallvec.rs/
 [stable-mir-goal]: https://github.com/rust-lang/rust-project-goals/issues/266
 [tokio]: https://tokio.rs/
 [tokio-coop-prototype]: https://github.com/tokio-rs/tokio/tree/time-based-coop-poc
