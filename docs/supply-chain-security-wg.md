@@ -30,23 +30,24 @@ See the [RCN meeting calendar](https://bit.ly/4xngeHr) for upcoming meetings.
 
 ## Next Meeting
 
-**October 27, 2026**
+**December 1, 2026**
 
 | Time zone | Time |
 | :--- | :--- |
-| Pacific (PDT) | 8:00 AM |
-| Eastern (EDT) | 11:00 AM |
-| UTC | 15:00 |
-| Central European (CET) | 4:00 PM |
-| Japan (JST) | 12:00 AM (October 28) |
-| Australia Eastern (AEDT) | 2:00 AM (October 28) |
+| Pacific (PST) | 8:00 AM |
+| Eastern (EST) | 11:00 AM |
+| UTC | 16:00 |
+| Central European (CET) | 5:00 PM |
+| Japan (JST) | 1:00 AM (December 2) |
+| Australia Eastern (AEDT) | 3:00 AM (December 2) |
 
-[Join meeting](https://meet.google.com/gnh-ywzx-knk) | [Agenda and notes](https://hackmd.io/@sduquette/rk_8UWNsfg) | [Zulip thread][zulip-thread]
+[Join meeting](https://meet.google.com/izk-qucy-rgn) | [Agenda and notes](https://hackmd.io/izL1XktsSHaxwOGXojetgw) | [Zulip thread][zulip-thread]
 
 The meeting invitation was sent to the RCN and Supply Chain mailing lists. If you did not receive it, ask in the Zulip thread to be added.
 
 ## Past Meeting Notes
 
+* [2026-10-27 Meeting notes](https://hackmd.io/6z7P12R3TqSwVZcCkdbJWA)
 * [2026-09-22 Kickoff meeting notes](https://hackmd.io/MXToBbMITs65v-icM0kmjg)
 
 ## Coordinators
