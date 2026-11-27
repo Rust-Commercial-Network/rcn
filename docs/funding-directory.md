@@ -214,7 +214,9 @@ Funding would support work for maintenance (issue triage, PR review, security vu
 
 | Q3 '26 | Q4 '26 | Q1 '27 | Q2 '27 |
 |--------|--------|--------|--------|
-| ❌ Not funded | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+| ⚠️ Partial | ❌ Not funded | ❌ Not funded | ❌ Not funded |
+
+<div class="funding-sponsors"><strong>Sponsors:</strong> <span class="sponsor-logos"><a href="https://servo.org/" title="Servo"><img src="images/sponsors/servo.png" alt="Servo"></a></span></div>
 
 <div class="fiscal-sponsors"><strong>Fiscal sponsor:</strong> <span class="fiscal-sponsor-logos"><a href="https://opencollective.com/smallvec" title="Open Collective"><img src="images/sponsors/opencollective.svg" alt="Open Collective"></a></span></div>
 
